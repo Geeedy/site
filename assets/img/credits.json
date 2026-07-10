@@ -1,0 +1,439 @@
+{
+ "vnedrenie-ii": [
+  {
+   "file": "vnedrenie-ii-hero.jpg",
+   "pexels_id": 8439093,
+   "photographer": "Pavel Danilyuk",
+   "page": "https://www.pexels.com/photo/a-robot-holding-a-cup-8439093/",
+   "alt_hint": "An elderly man receives a cup from a robotic arm in a modern office setting."
+  },
+  {
+   "file": "vnedrenie-ii-1.jpg",
+   "pexels_id": 16544931,
+   "photographer": "Tope J. Asokere",
+   "page": "https://www.pexels.com/photo/robot-in-corridor-of-goethe-institut-nigeria-16544931/",
+   "alt_hint": "A humanoid robot stands in a vibrant, modern hallway in Lagos, Nigeria."
+  },
+  {
+   "file": "vnedrenie-ii-2.jpg",
+   "pexels_id": 8297362,
+   "photographer": "Mikhail Nilov",
+   "page": "https://www.pexels.com/photo/documents-on-a-man-s-desk-8297362/",
+   "alt_hint": "A business professional organizing documents at a busy office desk, emphasizing productivity."
+  }
+ ],
+ "ii-agenty": [
+  {
+   "file": "ii-agenty-hero.jpg",
+   "pexels_id": 5473956,
+   "photographer": "cottonbro studio",
+   "page": "https://www.pexels.com/photo/a-woman-with-number-code-on-her-face-while-looking-afar-5473956/",
+   "alt_hint": "Silhouette of a woman with binary code projected on her face in a digital concept setting."
+  },
+  {
+   "file": "ii-agenty-1.jpg",
+   "pexels_id": 3861969,
+   "photographer": "ThisIsEngineering",
+   "page": "https://www.pexels.com/photo/code-projected-over-woman-3861969/",
+   "alt_hint": "A woman with digital code projections on her face, representing technology and future concepts."
+  },
+  {
+   "file": "ii-agenty-2.jpg",
+   "pexels_id": 7709176,
+   "photographer": "MART  PRODUCTION",
+   "page": "https://www.pexels.com/photo/a-headset-on-a-laptop-7709176/",
+   "alt_hint": "Close-up of a headset resting on a laptop, symbolizing efficient work environment technology."
+  }
+ ],
+ "chat-boty": [
+  {
+   "file": "chat-boty-hero.jpg",
+   "pexels_id": 30479283,
+   "photographer": "Airam Dato-on",
+   "page": "https://www.pexels.com/photo/smartphone-displaying-ai-chatbot-interface-30479283/",
+   "alt_hint": "A smartphone on a wooden table showing an AI chatbot interface called DeepSeek."
+  },
+  {
+   "file": "chat-boty-1.jpg",
+   "pexels_id": 30479287,
+   "photographer": "Airam Dato-on",
+   "page": "https://www.pexels.com/photo/smartphone-displaying-ai-chat-interface-30479287/",
+   "alt_hint": "Close-up of a smartphone showing a chat app interface on a wooden table."
+  },
+  {
+   "file": "chat-boty-2.jpg",
+   "pexels_id": 7658369,
+   "photographer": "Pavel Danilyuk",
+   "page": "https://www.pexels.com/photo/a-man-with-headphones-sitting-at-a-desk-with-computer-writing-on-a-notebook-7658369/",
+   "alt_hint": "A focused team of customer service representatives working on computers and answering calls in an office"
+  }
+ ],
+ "razrabotka-saitov": [
+  {
+   "file": "razrabotka-saitov-hero.jpg",
+   "pexels_id": 256502,
+   "photographer": "Pixabay",
+   "page": "https://www.pexels.com/photo/close-up-of-text-on-black-background-256502/",
+   "alt_hint": "Close-up of colorful CSS code lines on a computer screen for web development."
+  },
+  {
+   "file": "razrabotka-saitov-1.jpg",
+   "pexels_id": 14553707,
+   "photographer": "Bibek ghosh",
+   "page": "https://www.pexels.com/photo/programming-data-on-a-computer-14553707/",
+   "alt_hint": "Colorful HTML code displayed on a computer screen for programming projects."
+  },
+  {
+   "file": "razrabotka-saitov-2.jpg",
+   "pexels_id": 196644,
+   "photographer": "picjumbo.com",
+   "page": "https://www.pexels.com/photo/notebook-beside-the-iphone-on-table-196644/",
+   "alt_hint": "Close-up of a notebook with wireframe sketches and a smartphone on a wooden desk."
+  }
+ ],
+ "vnedrenie-crm": [
+  {
+   "file": "vnedrenie-crm-hero.jpg",
+   "pexels_id": 36733313,
+   "photographer": "Vitaly Gariev",
+   "page": "https://www.pexels.com/photo/business-team-analyzing-sales-data-in-meeting-36733313/",
+   "alt_hint": "Group of professionals discussing charts during a business meeting."
+  },
+  {
+   "file": "vnedrenie-crm-1.jpg",
+   "pexels_id": 36733316,
+   "photographer": "Vitaly Gariev",
+   "page": "https://www.pexels.com/photo/business-meeting-team-discussing-sales-strategy-36733316/",
+   "alt_hint": "Team of professionals discussing sales strategies with charts in a modern office."
+  },
+  {
+   "file": "vnedrenie-crm-2.jpg",
+   "pexels_id": 3727469,
+   "photographer": "Anna Shvets",
+   "page": "https://www.pexels.com/photo/woman-in-black-blazer-holding-smartphone-3727469/",
+   "alt_hint": "Businesswoman making a phone call while working at the desk, focused and professional."
+  }
+ ],
+ "seo-prodvizhenie": [
+  {
+   "file": "seo-prodvizhenie-hero.jpg",
+   "pexels_id": 3861957,
+   "photographer": "ThisIsEngineering",
+   "page": "https://www.pexels.com/photo/graph-on-laptop-screen-3861957/",
+   "alt_hint": "Laptop displaying data analytics graph in a modern office setting, symbolizing growth and technology."
+  },
+  {
+   "file": "seo-prodvizhenie-1.jpg",
+   "pexels_id": 577195,
+   "photographer": "Lukas Blazek",
+   "page": "https://www.pexels.com/photo/turned-on-laptop-computer-577195/",
+   "alt_hint": "Overhead view of a laptop showing data visualizations and charts on its screen."
+  },
+  {
+   "file": "seo-prodvizhenie-2.jpg",
+   "pexels_id": 97080,
+   "photographer": "Negative Space",
+   "page": "https://www.pexels.com/photo/blue-and-green-pie-chart-97080/",
+   "alt_hint": "Abstract visualization of data analytics with graphs and charts showing dynamic growth."
+  }
+ ],
+ "golosovye-boty": [
+  {
+   "file": "golosovye-boty-hero.jpg",
+   "pexels_id": 7658369,
+   "photographer": "Pavel Danilyuk",
+   "page": "https://www.pexels.com/photo/a-man-with-headphones-sitting-at-a-desk-with-computer-writing-on-a-notebook-7658369/",
+   "alt_hint": "A focused team of customer service representatives working on computers and answering calls in an office"
+  },
+  {
+   "file": "golosovye-boty-1.jpg",
+   "pexels_id": 8867208,
+   "photographer": "Yan Krukau",
+   "page": "https://www.pexels.com/photo/woman-with-afro-hair-holding-cellphone-8867208/",
+   "alt_hint": "A cheerful call center agent talking on the phone with a headset."
+  },
+  {
+   "file": "golosovye-boty-2.jpg",
+   "pexels_id": 7709193,
+   "photographer": "MART  PRODUCTION",
+   "page": "https://www.pexels.com/photo/a-close-up-shot-of-a-man-wearing-a-headset-7709193/",
+   "alt_hint": "Close-up of a call center agent with a headset and eyeglasses providing customer support."
+  }
+ ],
+ "agenty-dlya-prodazh": [
+  {
+   "file": "agenty-dlya-prodazh-hero.jpg",
+   "pexels_id": 618613,
+   "photographer": "Snapwire",
+   "page": "https://www.pexels.com/photo/man-in-black-holding-phone-618613/",
+   "alt_hint": "Businessman in formal attire working on a laptop and smartphone at an indoor office desk."
+  },
+  {
+   "file": "agenty-dlya-prodazh-1.jpg",
+   "pexels_id": 7857526,
+   "photographer": "Kampus Production",
+   "page": "https://www.pexels.com/photo/person-looking-at-charts-displayed-on-a-laptop-and-sitting-at-the-table-with-cardboard-boxes-7857526/",
+   "alt_hint": "Small business owner managing online orders from a laptop in Portugal."
+  },
+  {
+   "file": "agenty-dlya-prodazh-2.jpg",
+   "pexels_id": 36733313,
+   "photographer": "Vitaly Gariev",
+   "page": "https://www.pexels.com/photo/business-team-analyzing-sales-data-in-meeting-36733313/",
+   "alt_hint": "Group of professionals discussing charts during a business meeting."
+  }
+ ],
+ "agenty-dlya-yuristov": [
+  {
+   "file": "agenty-dlya-yuristov-hero.jpg",
+   "pexels_id": 7876203,
+   "photographer": "www.kaboompics.com",
+   "page": "https://www.pexels.com/photo/sad-woman-sitting-beside-the-bearded-man-in-blue-blazer-7876203/",
+   "alt_hint": "A woman appears distressed while two lawyers converse in an office."
+  },
+  {
+   "file": "agenty-dlya-yuristov-1.jpg",
+   "pexels_id": 7841478,
+   "photographer": "RDNE Stock project",
+   "page": "https://www.pexels.com/photo/close-up-shot-of-a-person-holding-divorce-papers-7841478/",
+   "alt_hint": "Close-up of hands exchanging divorce documents during legal proceedings in office."
+  },
+  {
+   "file": "agenty-dlya-yuristov-2.jpg",
+   "pexels_id": 159832,
+   "photographer": "Pixabay",
+   "page": "https://www.pexels.com/photo/icra-iflas-piled-book-159832/",
+   "alt_hint": "Detailed close-up of law and regulation books on a bookshelf, emphasizing education and knowledge."
+  }
+ ],
+ "ii-analitika": [
+  {
+   "file": "ii-analitika-hero.jpg",
+   "pexels_id": 97080,
+   "photographer": "Negative Space",
+   "page": "https://www.pexels.com/photo/blue-and-green-pie-chart-97080/",
+   "alt_hint": "Abstract visualization of data analytics with graphs and charts showing dynamic growth."
+  },
+  {
+   "file": "ii-analitika-1.jpg",
+   "pexels_id": 577210,
+   "photographer": "Lukas Blazek",
+   "page": "https://www.pexels.com/photo/close-up-photo-of-gray-laptop-577210/",
+   "alt_hint": "Sleek laptop showcasing data analytics and graphs on the screen in a bright room."
+  },
+  {
+   "file": "ii-analitika-2.jpg",
+   "pexels_id": 7693692,
+   "photographer": "Yan Krukau",
+   "page": "https://www.pexels.com/photo/businesspeople-brainstorming-in-a-meeting-7693692/",
+   "alt_hint": "Business professionals engaging in a collaborative meeting with charts and documents."
+  }
+ ],
+ "korporativnyi-sait": [
+  {
+   "file": "korporativnyi-sait-hero.jpg",
+   "pexels_id": 6476253,
+   "photographer": "Mikael Blomkvist",
+   "page": "https://www.pexels.com/photo/a-woman-using-a-laptop-at-work-6476253/",
+   "alt_hint": "Diverse business team in a meeting analyzing client testimonial on laptop screen."
+  },
+  {
+   "file": "korporativnyi-sait-1.jpg",
+   "pexels_id": 1181449,
+   "photographer": "Christina Morillo",
+   "page": "https://www.pexels.com/photo/woman-sitting-near-table-using-macbook-1181449/",
+   "alt_hint": "Businesswoman working on laptop with Android 6.0 Marshmallow webpage open."
+  },
+  {
+   "file": "korporativnyi-sait-2.jpg",
+   "pexels_id": 23496672,
+   "photographer": "Vitaly Gariev",
+   "page": "https://www.pexels.com/photo/interior-designers-talking-over-house-construction-drawing-23496672/",
+   "alt_hint": "Group of diverse adults collaborating on architectural plans in modern office."
+  }
+ ],
+ "internet-magazin": [
+  {
+   "file": "internet-magazin-hero.jpg",
+   "pexels_id": 34577,
+   "photographer": "Negative Space",
+   "page": "https://www.pexels.com/photo/working-macbook-computer-keyboard-34577/",
+   "alt_hint": "Person holding a credit card while shopping online on a laptop, indicating ecommerce transactions."
+  },
+  {
+   "file": "internet-magazin-1.jpg",
+   "pexels_id": 6956903,
+   "photographer": "Cup of  Couple",
+   "page": "https://www.pexels.com/photo/macbook-pro-with-shopping-bags-and-boxes-on-blue-couch-6956903/",
+   "alt_hint": "A laptop surrounded by shopping bags and boxes on a blue sofa, ideal for online shopping themes."
+  },
+  {
+   "file": "internet-magazin-2.jpg",
+   "pexels_id": 6169043,
+   "photographer": "Tima Miroshnichenko",
+   "page": "https://www.pexels.com/photo/brown-cardboard-box-with-fragile-sticker-6169043/",
+   "alt_hint": "A person organizing fragile cardboard boxes in a warehouse setting."
+  }
+ ],
+ "lending": [
+  {
+   "file": "lending-hero.jpg",
+   "pexels_id": 6986455,
+   "photographer": "cottonbro studio",
+   "page": "https://www.pexels.com/photo/google-browser-on-laptop-6986455/",
+   "alt_hint": "A close-up view of a laptop displaying a search engine page."
+  },
+  {
+   "file": "lending-1.jpg",
+   "pexels_id": 4249027,
+   "photographer": "Erik Mclean",
+   "page": "https://www.pexels.com/photo/customer-s-feedback-shown-on-monitor-4249027/",
+   "alt_hint": "Website design with web banner of order feedback on online shopping center on computer screen"
+  },
+  {
+   "file": "lending-2.jpg",
+   "pexels_id": 12969403,
+   "photographer": "Atlantic Ambience",
+   "page": "https://www.pexels.com/photo/close-up-shot-of-a-laptop-computer-12969403/",
+   "alt_hint": "A laptop displaying an analytics dashboard with real-time data tracking and analysis tools."
+  }
+ ],
+ "sait-s-ii": [
+  {
+   "file": "sait-s-ii-hero.jpg",
+   "pexels_id": 1921326,
+   "photographer": "Markus Spiske",
+   "page": "https://www.pexels.com/photo/display-coding-programming-development-1921326/",
+   "alt_hint": "Vibrant close-up of multicolor programming code lines displayed on a screen."
+  },
+  {
+   "file": "sait-s-ii-1.jpg",
+   "pexels_id": 92905,
+   "photographer": "Negative Space",
+   "page": "https://www.pexels.com/photo/purple-and-green-computer-screen-type-92905/",
+   "alt_hint": "Close-up of CSS code displayed on a computer monitor, showcasing web development."
+  },
+  {
+   "file": "sait-s-ii-2.jpg",
+   "pexels_id": 27141313,
+   "photographer": "Egor Komarov",
+   "page": "https://www.pexels.com/photo/options-on-modern-device-touchscreen-27141313/",
+   "alt_hint": "A high-tech digital interface showcasing control parameters and futuristic data visualization."
+  }
+ ],
+ "sait-na-tilde": [
+  {
+   "file": "sait-na-tilde-hero.jpg",
+   "pexels_id": 285814,
+   "photographer": "Tranmautritam",
+   "page": "https://www.pexels.com/photo/macbook-pro-displaying-website-version-2-on-table-285814/",
+   "alt_hint": "A stylish workspace featuring a laptop and monitors displaying design software."
+  },
+  {
+   "file": "sait-na-tilde-1.jpg",
+   "pexels_id": 7191162,
+   "photographer": "Pavel Danilyuk",
+   "page": "https://www.pexels.com/photo/close-up-shot-of-laptop-screen-7191162/",
+   "alt_hint": "A laptop displaying an online checkout form, highlighting technology and e-commerce."
+  },
+  {
+   "file": "sait-na-tilde-2.jpg",
+   "pexels_id": 5083407,
+   "photographer": "cottonbro studio",
+   "page": "https://www.pexels.com/photo/man-browsing-pexels-on-an-imac-5083407/",
+   "alt_hint": "Back view of a man sitting at a computer, browsing images in a modern workspace."
+  }
+ ],
+ "veb-prilozheniya": [
+  {
+   "file": "veb-prilozheniya-hero.jpg",
+   "pexels_id": 36598855,
+   "photographer": "Jakub Zerdzicki",
+   "page": "https://www.pexels.com/photo/developer-reviewing-code-on-tablet-in-office-36598855/",
+   "alt_hint": "Software developer analyzing code on a tablet in a modern office workspace."
+  },
+  {
+   "file": "veb-prilozheniya-1.jpg",
+   "pexels_id": 3861951,
+   "photographer": "ThisIsEngineering",
+   "page": "https://www.pexels.com/photo/female-software-engineer-coding-on-computer-3861951/",
+   "alt_hint": "A female engineer works on code in a contemporary office setting, showcasing software development."
+  },
+  {
+   "file": "veb-prilozheniya-2.jpg",
+   "pexels_id": 106344,
+   "photographer": "AS Photography",
+   "page": "https://www.pexels.com/photo/black-samsung-tablet-computer-106344/",
+   "alt_hint": "Close-up of a tablet displaying analytics charts on a wooden office desk, alongside a smartphone and coffee cup."
+  }
+ ],
+ "bitrix24": [
+  {
+   "file": "bitrix24-hero.jpg",
+   "pexels_id": 7709146,
+   "photographer": "MART  PRODUCTION",
+   "page": "https://www.pexels.com/photo/a-woman-in-gray-sweater-attending-a-call-7709146/",
+   "alt_hint": "Professional customer service team working in a modern office setting with headsets and laptops."
+  },
+  {
+   "file": "bitrix24-1.jpg",
+   "pexels_id": 6804068,
+   "photographer": "cottonbro studio",
+   "page": "https://www.pexels.com/photo/men-sitting-at-the-desks-in-an-office-and-using-computers-6804068/",
+   "alt_hint": "Team of developers working together on computers in a modern tech office."
+  },
+  {
+   "file": "bitrix24-2.jpg",
+   "pexels_id": 1181210,
+   "photographer": "Christina Morillo",
+   "page": "https://www.pexels.com/photo/two-people-working-on-laptops-1181210/",
+   "alt_hint": "Two people working on blue laptops at a round table, focusing on teamwork and technology."
+  }
+ ],
+ "amocrm": [
+  {
+   "file": "amocrm-hero.jpg",
+   "pexels_id": 38310033,
+   "photographer": "Doğan Alpaslan  Demir",
+   "page": "https://www.pexels.com/photo/modern-pos-system-in-a-cafe-in-izmir-38310033/",
+   "alt_hint": "A modern point of sale system setup in an İzmir café, ready for transactions."
+  },
+  {
+   "file": "amocrm-1.jpg",
+   "pexels_id": 17485348,
+   "photographer": "Shoper .pl",
+   "page": "https://www.pexels.com/photo/laptop-z-wlaczonymi-statystykami-sklepu-internetowego-ecommerce-shoper-17485348/",
+   "alt_hint": "Person working on a laptop with business analytics displayed on the screen."
+  },
+  {
+   "file": "amocrm-2.jpg",
+   "pexels_id": 30692593,
+   "photographer": "AMORIE SAM",
+   "page": "https://www.pexels.com/photo/professional-businessman-working-at-desk-in-office-30692593/",
+   "alt_hint": "Senior businessman in formal attire working at his office desk with focused expression."
+  }
+ ],
+ "seo-audit": [
+  {
+   "file": "seo-audit-hero.jpg",
+   "pexels_id": 13156204,
+   "photographer": "Towfiqu barbhuiya",
+   "page": "https://www.pexels.com/photo/pen-calculator-and-magnifying-glass-on-documents-13156204/",
+   "alt_hint": "Close-up of calculator, pen, and magnifying glass on financial documents."
+  },
+  {
+   "file": "seo-audit-1.jpg",
+   "pexels_id": 7821689,
+   "photographer": "RDNE Stock project",
+   "page": "https://www.pexels.com/photo/a-hand-holding-a-magnifying-glass-near-wooden-table-7821689/",
+   "alt_hint": "Close-up of a balance sheet document on wooden surface with a magnifying glass held by a hand."
+  },
+  {
+   "file": "seo-audit-2.jpg",
+   "pexels_id": 669623,
+   "photographer": "Lukas Blazek",
+   "page": "https://www.pexels.com/photo/paper-beside-macbook-669623/",
+   "alt_hint": "Modern desk setup with a laptop and analytical charts showcasing data interpretation and business analysis."
+  }
+ ]
+}
