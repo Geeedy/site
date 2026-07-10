@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /
+Sitemap: https://geeedy.github.io/site/sitemap.xml

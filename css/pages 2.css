@@ -3,10 +3,6 @@
 .inner-page .header { position: sticky; top: 0; background: #fff; }
 
 .page-hero { background: linear-gradient(135deg, #0b1c33 0%, #123056 60%, #0066FF 130%); color: #fff; padding: 48px 0 56px; }
-
-/* Единая контентная ширина: hero выровнен с колонкой текста (v3) */
-.page-article .page-hero .container,
-.page-article .page-content { max-width: 880px; }
 .page-hero__title { color: #fff; margin: 10px 0 14px; }
 .page-hero__lead { max-width: 76ch; font-size: 18px; line-height: 1.6; opacity: .95; }
 .page-hero__lead a { color: #9cc4ff; }
