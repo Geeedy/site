@@ -37,6 +37,14 @@ PAGES = {
  "seo-audit":           ("/uslugi/seo-prodvizhenie/seo-audit/", "SEO-аудит", "seo-prodvizhenie"),
  "geo-aeo":             ("/uslugi/seo-prodvizhenie/geo-aeo/", "GEO/AEO-продвижение", "seo-prodvizhenie"),
  "o-kompanii":          ("/o-kompanii/", "О компании", None),
+ "audit-ii-strategiya":  ("/uslugi/vnedrenie-ii/audit-ii-strategiya/", "Аудит и ИИ-стратегия", "vnedrenie-ii"),
+ "avtomatizatsiya-dokumentooborota": ("/uslugi/vnedrenie-ii/avtomatizatsiya-dokumentooborota/", "Автоматизация документооборота", "vnedrenie-ii"),
+ "ii-v-1c":              ("/uslugi/vnedrenie-ii/ii-v-1c/", "ИИ в 1С", "vnedrenie-ii"),
+ "obuchenie-ii":         ("/uslugi/vnedrenie-ii/obuchenie-ii/", "Обучение команды ИИ", "vnedrenie-ii"),
+ "dlya-hr":              ("/uslugi/ii-agenty/dlya-hr/", "ИИ в HR", "ii-agenty"),
+ "bot-na-sait":          ("/uslugi/chat-boty/bot-na-sait/", "Чат-бот на сайт", "chat-boty"),
+ "telegram-bot":         ("/uslugi/chat-boty/telegram-bot/", "Телеграм-бот", "chat-boty"),
+ "skvoznaya-analitika":  ("/uslugi/vnedrenie-crm/skvoznaya-analitika/", "Сквозная аналитика", "vnedrenie-crm"),
 }
 HUBS = ["vnedrenie-ii","ii-agenty","chat-boty","razrabotka-saitov","vnedrenie-crm","seo-prodvizhenie"]
 KIDS = {h: [s for s,(u,t,p) in PAGES.items() if p==h] for h in HUBS}
