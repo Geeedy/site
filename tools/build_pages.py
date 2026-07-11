@@ -380,7 +380,7 @@ def build_kontakty():
 <main class="page-main page-article">
 <section class="page-hero"><div class="container">{bc}
 <h1 class="heading1 page-hero__title">Контакты</h1>
-<div class="page-hero__lead"><p>Опишите задачу своими словами, и мы вернёмся с расчётом за 2 дня. Реквизиты и адрес: <mark class="tbd">уточняется</mark>.</p></div></div></section>
+<div class="page-hero__lead"><p>Опишите задачу своими словами, и мы вернёмся с расчётом за 2 дня. Сроки и цены обсуждаем индивидуально, с вами будет работать персональный менеджер.</p></div></div></section>
 <section class="contact-section" id="contact"><div class="container"><div class="contact-grid">
 <div class="contact-info"><h2 class="heading2">Нужна консультация?</h2><p>hello@skill-dev.ai</p><p>Работаем по всей России, удалённо.</p></div>
 <form class="contact-form" id="contactForm">
