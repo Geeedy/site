@@ -250,8 +250,8 @@ def page_shell(slug, meta, hero_html, body_html, faq, bc_ld):
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{u('/css/styles.css')}?v=3">
-  <link rel="stylesheet" href="{u('/css/pages.css')}?v=3">
+  <link rel="stylesheet" href="{u('/css/styles.css')}?v=4">
+  <link rel="stylesheet" href="{u('/css/pages.css')}?v=4">
   {schema(slug, meta, faq, bc_ld)}
 </head>
 <body class="inner-page">
@@ -318,7 +318,7 @@ def build_uslugi_catalog():
 <meta name="description" content="Шесть направлений: внедрение ИИ, ИИ-агенты, чат-боты, разработка сайтов, CRM и SEO. Внутри направлений: 13 услуг под конкретные задачи.">{noindex}
 <link rel="canonical" href="{SITE}/uslugi/">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{u('/css/styles.css')}?v=3"><link rel="stylesheet" href="{u('/css/pages.css')}?v=3"></head>
+<link rel="stylesheet" href="{u('/css/styles.css')}?v=4"><link rel="stylesheet" href="{u('/css/pages.css')}?v=4"></head>
 <body class="inner-page">{header_html()}
 <main class="page-main page-article">
 <section class="page-hero"><div class="container">{bc}
@@ -338,7 +338,7 @@ def build_kontakty():
 <title>Контакты — Skill Dev</title><meta name="description" content="Свяжитесь с командой Skill Dev: обсудим задачу и вернёмся с расчётом за 2 дня.">{noindex}
 <link rel="canonical" href="{SITE}/kontakty/">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{u('/css/styles.css')}?v=3"><link rel="stylesheet" href="{u('/css/pages.css')}?v=3"></head>
+<link rel="stylesheet" href="{u('/css/styles.css')}?v=4"><link rel="stylesheet" href="{u('/css/pages.css')}?v=4"></head>
 <body class="inner-page">{header_html()}
 <main class="page-main page-article">
 <section class="page-hero"><div class="container">{bc}

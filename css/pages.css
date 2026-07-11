@@ -4,11 +4,9 @@
 
 .page-hero { background: linear-gradient(135deg, #0b1c33 0%, #123056 60%, #0066FF 130%); color: #fff; padding: 48px 0 56px; }
 
-/* Единая контентная ширина: hero выровнен с колонкой текста (v3) */
-.page-article .page-hero .container,
-.page-article .page-content { max-width: 880px; }
+/* Ширину задаёт универсальный .container (styles.css) — без локальных исключений */
 .page-hero__title { color: #fff; margin: 10px 0 14px; }
-.page-hero__lead { max-width: 76ch; font-size: 18px; line-height: 1.6; opacity: .95; }
+.page-hero__lead { font-size: 18px; line-height: 1.6; opacity: .95; }
 .page-hero__lead a { color: #9cc4ff; }
 .page-hero__actions { margin-top: 22px; display: flex; gap: 12px; flex-wrap: wrap; }
 .page-hero .btn--outline { border-color: rgba(255,255,255,.6); color: #fff; }
@@ -18,7 +16,7 @@
 .breadcrumbs a:hover { text-decoration: underline; }
 .breadcrumbs span[aria-current] { color: #fff; }
 
-.page-content { max-width: 880px; padding-top: 34px; padding-bottom: 64px; }
+.page-content { padding-top: 34px; padding-bottom: 64px; }
 .page-content > p { font-size: 16.5px; line-height: 1.65; margin: 14px 0; color: #2a2f34; }
 .page-content .heading2 { margin: 44px 0 6px; }
 .page-h3 { font-size: 19px; margin: 26px 0 6px; color: #14181c; }
