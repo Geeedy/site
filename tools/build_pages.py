@@ -261,7 +261,7 @@ def footer_html():
     return f'''<footer class="footer"><div class="container">
     <div class="footer__top">
       <div class="footer__brand"><div class="footer__logo">Skill Dev</div></div>
-      <div class="footer__contacts"><p><strong>Контакты</strong></p><p>hello@skill-dev.ai</p><p>Работаем по всей России</p></div>
+      <div class="footer__contacts"><p><strong>Контакты</strong></p><p>hello@skill-dev.ai</p><p>Работаем по всему миру</p></div>
     </div>
     <div class="footer__grid footer__grid--silo">{''.join(cols)}
       <div><h4>Компания</h4><ul><li><a href="{u('/o-kompanii/')}">О нас</a></li><li><a href="{u('/kontakty/')}">Контакты</a></li><li><a href="{u('/uslugi/')}">Все услуги</a></li></ul></div>
@@ -382,7 +382,7 @@ def build_kontakty():
 <h1 class="heading1 page-hero__title">Контакты</h1>
 <div class="page-hero__lead"><p>Опишите задачу своими словами, и мы вернёмся с расчётом за 2 дня. Сроки и цены обсуждаем индивидуально, с вами будет работать персональный менеджер.</p></div></div></section>
 <section class="contact-section" id="contact"><div class="container"><div class="contact-grid">
-<div class="contact-info"><h2 class="heading2">Нужна консультация?</h2><p>hello@skill-dev.ai</p><p>Работаем по всей России, удалённо.</p></div>
+<div class="contact-info"><h2 class="heading2">Нужна консультация?</h2><p>hello@skill-dev.ai</p><p>Работаем по всему миру, удалённо.</p></div>
 <form class="contact-form" id="contactForm">
 <div class="form-group"><label for="msg">Чем помочь?</label><textarea id="msg" rows="4" required placeholder="Опишите задачу..."></textarea></div>
 <div class="form-row"><div class="form-group"><label>Имя</label><input type="text" required></div>
