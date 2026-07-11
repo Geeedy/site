@@ -232,7 +232,7 @@ def header_html():
         <div class="nav__item has-mega">
           <a class="nav__link" href="{u('/uslugi/')}">Услуги</a>
           <div class="mega mega--wide"><div class="container mega__grid">{cols}
-            <div class="mega__promo"><h4>С чего начать?</h4><p>Бесплатный аудит одного процесса: расчёт экономии до внедрения.</p><a href="{u('/kontakty/')}" class="btn btn--primary btn--sm">Обсудить задачу</a></div>
+            <div class="mega__promo"><h4>С чего начать?</h4><p>Бесплатный аудит одного процесса покажет расчёт экономии до внедрения.</p><a href="{u('/kontakty/')}" class="btn btn--primary btn--sm">Обсудить задачу</a></div>
           </div></div>
         </div>
         <div class="nav__item"><a class="nav__link" href="{u('/o-kompanii/')}">О компании</a></div>
@@ -344,7 +344,7 @@ def build_uslugi_catalog():
     doc = f'''<!DOCTYPE html>
 <html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Услуги Skill Dev: внедрение ИИ, разработка, CRM, SEO</title>
-<meta name="description" content="Шесть направлений: внедрение ИИ, ИИ-агенты, чат-боты, разработка сайтов, CRM и SEO. Внутри направлений: 13 услуг под конкретные задачи.">{noindex}
+<meta name="description" content="Шесть направлений: внедрение ИИ, ИИ-агенты, чат-боты, разработка сайтов, CRM и SEO. Внутри направлений 13 услуг под конкретные задачи.">{noindex}
 <link rel="canonical" href="{SITE}/uslugi/">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{u('/css/styles.css')}?v=6"><link rel="stylesheet" href="{u('/css/pages.css')}?v=6"></head>
@@ -352,7 +352,7 @@ def build_uslugi_catalog():
 <main class="page-main page-article">
 <section class="page-hero"><div class="container">{bc}
 <h1 class="heading1 page-hero__title">Услуги</h1>
-<div class="page-hero__lead"><p>Мы сокращаем расходы бизнеса технологиями: внедряем ИИ, строим сайты любой сложности, наводим порядок в продажах и приводим трафик. Выберите направление: внутри каждого есть услуги под конкретные задачи.</p></div>
+<div class="page-hero__lead"><p>Мы сокращаем расходы бизнеса технологиями: внедряем ИИ, строим сайты любой сложности, наводим порядок в продажах и приводим трафик. Выберите направление, внутри каждого есть услуги под конкретные задачи.</p></div>
 </div></section>
 <div class="container page-content"><div class="catalog-grid">{''.join(cards)}</div></div>
 </main>{footer_html()}<script src="{u('/js/main.js')}?v=6"></script></body></html>'''
@@ -372,7 +372,7 @@ def build_kontakty():
 <main class="page-main page-article">
 <section class="page-hero"><div class="container">{bc}
 <h1 class="heading1 page-hero__title">Контакты</h1>
-<div class="page-hero__lead"><p>Опишите задачу своими словами: вернёмся с расчётом за 2 дня. Реквизиты и адрес: <mark class="tbd">уточняется</mark>.</p></div></div></section>
+<div class="page-hero__lead"><p>Опишите задачу своими словами, и мы вернёмся с расчётом за 2 дня. Реквизиты и адрес: <mark class="tbd">уточняется</mark>.</p></div></div></section>
 <section class="contact-section" id="contact"><div class="container"><div class="contact-grid">
 <div class="contact-info"><h2 class="heading2">Нужна консультация?</h2><p>hello@skill-dev.ai</p><p>Работаем по всей России, удалённо.</p></div>
 <form class="contact-form" id="contactForm">
