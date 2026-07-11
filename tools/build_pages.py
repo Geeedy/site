@@ -35,6 +35,7 @@ PAGES = {
  "bitrix24":            ("/uslugi/vnedrenie-crm/bitrix24/", "Битрикс24", "vnedrenie-crm"),
  "amocrm":              ("/uslugi/vnedrenie-crm/amocrm/", "amoCRM", "vnedrenie-crm"),
  "seo-audit":           ("/uslugi/seo-prodvizhenie/seo-audit/", "SEO-аудит", "seo-prodvizhenie"),
+ "geo-aeo":             ("/uslugi/seo-prodvizhenie/geo-aeo/", "GEO/AEO-продвижение", "seo-prodvizhenie"),
  "o-kompanii":          ("/o-kompanii/", "О компании", None),
 }
 HUBS = ["vnedrenie-ii","ii-agenty","chat-boty","razrabotka-saitov","vnedrenie-crm","seo-prodvizhenie"]

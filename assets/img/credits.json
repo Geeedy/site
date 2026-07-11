@@ -435,5 +435,25 @@
    "page": "https://www.pexels.com/photo/paper-beside-macbook-669623/",
    "alt_hint": "Modern desk setup with a laptop and analytical charts showcasing data interpretation and business analysis."
   }
+ ],
+ "geo-aeo": [
+  {
+   "file": "geo-aeo-hero.jpg",
+   "pexels_id": 30530414,
+   "photographer": "Matheus Bertelli",
+   "page": "https://www.pexels.com/photo/ai-interface-on-dark-screen-display-30530414/"
+  },
+  {
+   "file": "geo-aeo-1.jpg",
+   "pexels_id": 30530415,
+   "photographer": "Matheus Bertelli",
+   "page": "https://www.pexels.com/photo/laptop-displaying-ai-chat-interface-at-night-30530415/"
+  },
+  {
+   "file": "geo-aeo-2.jpg",
+   "pexels_id": 8204311,
+   "photographer": "Kampus Production",
+   "page": "https://www.pexels.com/photo/computer-monitor-with-stock-exchange-figures-in-an-office-8204311/"
+  }
  ]
 }
