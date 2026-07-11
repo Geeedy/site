@@ -43,10 +43,11 @@
 
   // Header scroll + transparent
   const header = document.querySelector('.header');
+  const isHome = document.body.classList.contains('home-page');
   const updateHeader = () => {
     const scrolled = window.scrollY > 80;
     header?.classList.toggle('scrolled', scrolled);
-    header?.classList.toggle('header-transparent', !scrolled);
+    header?.classList.toggle('header-transparent', isHome && !scrolled);
   };
   window.addEventListener('scroll', updateHeader, { passive: true });
   updateHeader();

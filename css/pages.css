@@ -57,3 +57,9 @@ mark.tbd { background: #fff3bf; color: #7a5a00; padding: 0 6px; border-radius: 4
   .page-hero { padding: 34px 0 40px; }
   .page-content { padding-top: 22px; }
 }
+
+/* v5: мобильные hero-CTA — кнопки в столбик, текст в одну строку */
+@media (max-width: 560px) {
+  .page-hero__actions { display: flex; flex-direction: column; align-items: stretch; gap: 10px; }
+  .page-hero__actions .btn { width: 100%; font-size: 14px; padding-left: 10px; padding-right: 10px; }
+}

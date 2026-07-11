@@ -112,6 +112,9 @@ def render_cta(kind, payload):
         p = re.sub(r'\s*→\s*(форма|сессия.*|демо)$', '', p).strip()
         m = re.search(r'(.*?):?\s*→\s*(/\S+)$', p)
         href, label = (u(m.group(2)), m.group(1)) if m else (u('/kontakty/'), p)
+        if kind == 'cta_hero' and len(label) > 38:
+            short = label.split(':')[0].strip()
+            label = short if len(short) <= 38 else 'Оставить заявку'
         cls = 'btn--primary' if j == 0 else 'btn--outline'
         btns.append(f'<a class="btn {cls}" href="{href}">{esc(label)}</a>')
     if kind == 'cta_hero':
@@ -201,22 +204,43 @@ def schema(slug, meta, faq, bc_ld):
     return '<script type="application/ld+json">' + json.dumps({"@context":"https://schema.org","@graph":g}, ensure_ascii=False) + '</script>'
 
 def header_html():
-    hubs_links = ''.join(f'<li><a href="{u(PAGES[h][0])}">{esc(PAGES[h][1])}</a></li>' for h in HUBS)
-    return f'''<header class="header scrolled" id="siteHeader">
+    mega_groups = [
+        ("Искусственный интеллект", ["vnedrenie-ii","ii-agenty","chat-boty","golosovye-boty"]),
+        ("Разработка", ["razrabotka-saitov","internet-magazin","veb-prilozheniya","sait-s-ii"]),
+        ("Продажи и трафик", ["vnedrenie-crm","bitrix24","seo-prodvizhenie","seo-audit","geo-aeo"]),
+    ]
+    cols = ''.join(
+        f'<div class="mega__col"><h4>{esc(g)}</h4><ul>' +
+        ''.join(f'<li><a href="{u(PAGES[k][0])}">{esc(PAGES[k][1])}</a></li>' for k in kids) +
+        '</ul></div>'
+        for g, kids in mega_groups)
+    return f'''<header class="header" id="siteHeader">
+    <div class="header-global-line">
+      <div class="container header-global-line__inner">
+        <div class="header-global-line__sites">
+          <a href="{u(PAGES["vnedrenie-ii"][0])}" class="hgl-link"><span class="hgl-icon hgl-icon--ai"></span>Skill Dev AI</a>
+          <a href="{u(PAGES["razrabotka-saitov"][0])}" class="hgl-link"><span class="hgl-icon hgl-icon--web"></span>Skill Dev Web</a>
+        </div>
+        <a href="mailto:hello@skill-dev.ai" class="header-global-line__contact">
+          <img src="{u('/assets/ui/email-icon.svg')}" alt="" width="18" height="12">hello@skill-dev.ai
+        </a>
+      </div>
+    </div>
     <div class="container header__inner">
       <a href="{u('/')}" class="logo"><img src="{u('/assets/ui/skilldev-logo.svg')}" alt="Skill Dev" class="logo__img" width="196" height="36"></a>
       <nav class="nav" id="mainNav">
         <div class="nav__item has-mega">
           <a class="nav__link" href="{u('/uslugi/')}">Услуги</a>
-          <div class="mega mega--wide"><div class="container mega__grid">
-            <div class="mega__col"><h4>Направления</h4><ul>{hubs_links}</ul></div>
-            <div class="mega__promo"><h4>Не знаете, с чего начать?</h4><p>Бесплатный аудит одного процесса: расчёт экономии до внедрения.</p><a href="{u('/kontakty/')}" class="btn btn--primary btn--sm">Обсудить задачу</a></div>
+          <div class="mega mega--wide"><div class="container mega__grid">{cols}
+            <div class="mega__promo"><h4>С чего начать?</h4><p>Бесплатный аудит одного процесса: расчёт экономии до внедрения.</p><a href="{u('/kontakty/')}" class="btn btn--primary btn--sm">Обсудить задачу</a></div>
           </div></div>
         </div>
         <div class="nav__item"><a class="nav__link" href="{u('/o-kompanii/')}">О компании</a></div>
+        <div class="nav__item"><a class="nav__link" href="{u('/')}#industries">Отрасли</a></div>
+        <div class="nav__item"><a class="nav__link" href="{u('/')}#full-cycle">Как мы работаем</a></div>
         <div class="nav__item"><a class="nav__link" href="{u('/kontakty/')}">Контакты</a></div>
       </nav>
-      <div class="nav__actions"><a href="{u('/kontakty/')}" class="btn btn--accent">Связаться с нами</a></div>
+      <div class="nav__actions"><a href="{u(PAGES["seo-audit"][0])}" class="btn btn--accent">Бесплатный аудит</a></div>
       <button class="menu-toggle" id="menuToggle" aria-label="Меню"><span></span><span></span><span></span></button>
     </div>
   </header>'''
@@ -227,6 +251,10 @@ def footer_html():
         kid_links = ''.join(f'<li><a href="{u(PAGES[k][0])}">{esc(PAGES[k][1])}</a></li>' for k in KIDS[h])
         cols.append(f'<div><h4><a href="{u(PAGES[h][0])}">{esc(PAGES[h][1])}</a></h4><ul>{kid_links}</ul></div>')
     return f'''<footer class="footer"><div class="container">
+    <div class="footer__top">
+      <div class="footer__brand"><div class="footer__logo">Skill Dev</div></div>
+      <div class="footer__contacts"><p><strong>Контакты</strong></p><p>hello@skill-dev.ai</p><p>Работаем по всей России</p></div>
+    </div>
     <div class="footer__grid footer__grid--silo">{''.join(cols)}
       <div><h4>Компания</h4><ul><li><a href="{u('/o-kompanii/')}">О нас</a></li><li><a href="{u('/kontakty/')}">Контакты</a></li><li><a href="{u('/uslugi/')}">Все услуги</a></li></ul></div>
     </div>
@@ -251,8 +279,8 @@ def page_shell(slug, meta, hero_html, body_html, faq, bc_ld):
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{u('/css/styles.css')}?v=4">
-  <link rel="stylesheet" href="{u('/css/pages.css')}?v=4">
+  <link rel="stylesheet" href="{u('/css/styles.css')}?v=6">
+  <link rel="stylesheet" href="{u('/css/pages.css')}?v=6">
   {schema(slug, meta, faq, bc_ld)}
 </head>
 <body class="inner-page">
@@ -264,7 +292,7 @@ def page_shell(slug, meta, hero_html, body_html, faq, bc_ld):
   </div>
 </main>
 {footer_html()}
-<script src="{u('/js/main.js')}"></script>
+<script src="{u('/js/main.js')}?v=6"></script>
 </body>
 </html>'''
 
@@ -319,7 +347,7 @@ def build_uslugi_catalog():
 <meta name="description" content="Шесть направлений: внедрение ИИ, ИИ-агенты, чат-боты, разработка сайтов, CRM и SEO. Внутри направлений: 13 услуг под конкретные задачи.">{noindex}
 <link rel="canonical" href="{SITE}/uslugi/">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{u('/css/styles.css')}?v=4"><link rel="stylesheet" href="{u('/css/pages.css')}?v=4"></head>
+<link rel="stylesheet" href="{u('/css/styles.css')}?v=6"><link rel="stylesheet" href="{u('/css/pages.css')}?v=6"></head>
 <body class="inner-page">{header_html()}
 <main class="page-main page-article">
 <section class="page-hero"><div class="container">{bc}
@@ -327,7 +355,7 @@ def build_uslugi_catalog():
 <div class="page-hero__lead"><p>Мы сокращаем расходы бизнеса технологиями: внедряем ИИ, строим сайты любой сложности, наводим порядок в продажах и приводим трафик. Выберите направление: внутри каждого есть услуги под конкретные задачи.</p></div>
 </div></section>
 <div class="container page-content"><div class="catalog-grid">{''.join(cards)}</div></div>
-</main>{footer_html()}<script src="{u('/js/main.js')}"></script></body></html>'''
+</main>{footer_html()}<script src="{u('/js/main.js')}?v=6"></script></body></html>'''
     os.makedirs(os.path.join(ROOT, 'uslugi'), exist_ok=True)
     open(os.path.join(ROOT, 'uslugi', 'index.html'), 'w', encoding='utf-8').write(doc)
 
@@ -339,22 +367,21 @@ def build_kontakty():
 <title>Контакты — Skill Dev</title><meta name="description" content="Свяжитесь с командой Skill Dev: обсудим задачу и вернёмся с расчётом за 2 дня.">{noindex}
 <link rel="canonical" href="{SITE}/kontakty/">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{u('/css/styles.css')}?v=4"><link rel="stylesheet" href="{u('/css/pages.css')}?v=4"></head>
+<link rel="stylesheet" href="{u('/css/styles.css')}?v=6"><link rel="stylesheet" href="{u('/css/pages.css')}?v=6"></head>
 <body class="inner-page">{header_html()}
 <main class="page-main page-article">
 <section class="page-hero"><div class="container">{bc}
 <h1 class="heading1 page-hero__title">Контакты</h1>
 <div class="page-hero__lead"><p>Опишите задачу своими словами: вернёмся с расчётом за 2 дня. Реквизиты и адрес: <mark class="tbd">уточняется</mark>.</p></div></div></section>
-<div class="container page-content">
-<section class="contact-section" id="contact"><div class="contact-grid">
+<section class="contact-section" id="contact"><div class="container"><div class="contact-grid">
 <div class="contact-info"><h2 class="heading2">Нужна консультация?</h2><p>hello@skill-dev.ai</p><p>Работаем по всей России, удалённо.</p></div>
 <form class="contact-form" id="contactForm">
 <div class="form-group"><label for="msg">Чем помочь?</label><textarea id="msg" rows="4" required placeholder="Опишите задачу..."></textarea></div>
 <div class="form-row"><div class="form-group"><label>Имя</label><input type="text" required></div>
 <div class="form-group"><label>Email или Telegram</label><input type="text" required></div></div>
 <button type="submit" class="btn btn--primary" style="width:100%">Отправить</button></form>
-</div></section></div>
-</main>{footer_html()}<script src="{u('/js/main.js')}"></script></body></html>'''
+</div></div></section>
+</main>{footer_html()}<script src="{u('/js/main.js')}?v=6"></script></body></html>'''
     os.makedirs(os.path.join(ROOT, 'kontakty'), exist_ok=True)
     open(os.path.join(ROOT, 'kontakty', 'index.html'), 'w', encoding='utf-8').write(doc)
 
@@ -366,7 +393,19 @@ def build_sitemap(urls):
     open(os.path.join(ROOT, 'robots.txt'), 'w').write(
         f"User-agent: *\n{'Disallow: /' if NOINDEX else 'Allow: /'}\nSitemap: {SITE}/sitemap.xml\n")
 
+def patch_home():
+    """Единые header/footer на главной: заменяем блоки сгенерированными."""
+    p = os.path.join(ROOT, 'index.html')
+    h = open(p, encoding='utf-8').read()
+    h = re.sub(r'<header class="header[^"]*" id="siteHeader">.*?</header>', header_html(), h, count=1, flags=re.S)
+    h = re.sub(r'<footer class="footer">.*?</footer>', footer_html(), h, count=1, flags=re.S)
+    h = re.sub(r'href="[^"]*css/(styles|pages)\.css[^"]*"', lambda m: f'href="{u("/css/"+m.group(1)+".css")}?v=6"', h)
+    h = re.sub(r'src="[^"]*/js/main\.js[^"]*"', f'src="{u("/js/main.js")}?v=6"', h)
+    open(p, 'w', encoding='utf-8').write(h)
+    print('patched index.html (header/footer unified)')
+
 if __name__ == '__main__':
+    patch_home()
     urls = ['/uslugi/']
     build_uslugi_catalog()
     build_kontakty(); urls.append('/kontakty/')
