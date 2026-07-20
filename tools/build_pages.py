@@ -211,6 +211,15 @@ def schema(slug, meta, faq, bc_ld):
             for q,a in faq]})
     return '<script type="application/ld+json">' + json.dumps({"@context":"https://schema.org","@graph":g}, ensure_ascii=False) + '</script>'
 
+def head_common():
+    """Верификации ПС + фавиконки — во все страницы."""
+    return f'''<meta name="yandex-verification" content="bac091f33d55ea2c">
+  <meta name="google-site-verification" content="a6Kww_ZoTqDVduplocAADN3G1dHjxKny1sv1Y1ag_f0">
+  <link rel="icon" href="{u('/favicon.ico')}" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="{u('/assets/ui/favicon-32.png')}">
+  <link rel="icon" type="image/png" sizes="192x192" href="{u('/assets/ui/favicon-192.png')}">
+  <link rel="apple-touch-icon" href="{u('/assets/ui/apple-touch-icon.png')}">'''
+
 def header_html():
     mega_groups = [
         ("Искусственный интеллект", ["vnedrenie-ii","ii-agenty","chat-boty","golosovye-boty"]),
@@ -235,7 +244,7 @@ def header_html():
       </div>
     </div>
     <div class="container header__inner">
-      <a href="{u('/')}" class="logo"><img src="{u('/assets/ui/skilldev-logo.svg')}" alt="Skill Dev" class="logo__img" width="196" height="36"></a>
+      <a href="{u('/')}" class="logo"><img src="{u('/assets/ui/logo-icon.png')}" alt="" class="logo__icon" width="36" height="40"><img src="{u('/assets/ui/logo-word.png')}" alt="skill-dev" class="logo__word" width="106" height="22"></a>
       <nav class="nav" id="mainNav">
         <div class="nav__item has-mega">
           <a class="nav__link" href="{u('/uslugi/')}">Услуги</a>
@@ -277,6 +286,7 @@ def page_shell(slug, meta, hero_html, body_html, faq, bc_ld):
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {head_common()}
   <title>{esc(meta.get("title", title))}</title>
   <meta name="description" content="{esc(meta.get("description",""))}">
   {noindex}
@@ -287,8 +297,8 @@ def page_shell(slug, meta, hero_html, body_html, faq, bc_ld):
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{u('/css/styles.css')}?v=6">
-  <link rel="stylesheet" href="{u('/css/pages.css')}?v=6">
+  <link rel="stylesheet" href="{u('/css/styles.css')}?v=7">
+  <link rel="stylesheet" href="{u('/css/pages.css')}?v=7">
   {schema(slug, meta, faq, bc_ld)}
 </head>
 <body class="inner-page">
@@ -300,7 +310,7 @@ def page_shell(slug, meta, hero_html, body_html, faq, bc_ld):
   </div>
 </main>
 {footer_html()}
-<script src="{u('/js/main.js')}?v=6"></script>
+<script src="{u('/js/main.js')}?v=7"></script>
 </body>
 </html>'''
 
@@ -351,11 +361,12 @@ def build_uslugi_catalog():
     noindex = '<meta name="robots" content="noindex,nofollow">' if NOINDEX else ''
     doc = f'''<!DOCTYPE html>
 <html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {head_common()}
 <title>Услуги Skill Dev: внедрение ИИ, разработка, CRM, SEO</title>
 <meta name="description" content="Шесть направлений: внедрение ИИ, ИИ-агенты, чат-боты, разработка сайтов, CRM и SEO. Внутри направлений 13 услуг под конкретные задачи.">{noindex}
 <link rel="canonical" href="{SITE}/uslugi/">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{u('/css/styles.css')}?v=6"><link rel="stylesheet" href="{u('/css/pages.css')}?v=6"></head>
+<link rel="stylesheet" href="{u('/css/styles.css')}?v=7"><link rel="stylesheet" href="{u('/css/pages.css')}?v=7"></head>
 <body class="inner-page">{header_html()}
 <main class="page-main page-article">
 <section class="page-hero"><div class="container">{bc}
@@ -363,7 +374,7 @@ def build_uslugi_catalog():
 <div class="page-hero__lead"><p>Мы сокращаем расходы бизнеса технологиями: внедряем ИИ, строим сайты любой сложности, наводим порядок в продажах и приводим трафик. Выберите направление, внутри каждого есть услуги под конкретные задачи.</p></div>
 </div></section>
 <div class="container page-content"><div class="catalog-grid">{''.join(cards)}</div></div>
-</main>{footer_html()}<script src="{u('/js/main.js')}?v=6"></script></body></html>'''
+</main>{footer_html()}<script src="{u('/js/main.js')}?v=7"></script></body></html>'''
     os.makedirs(os.path.join(ROOT, 'uslugi'), exist_ok=True)
     open(os.path.join(ROOT, 'uslugi', 'index.html'), 'w', encoding='utf-8').write(doc)
 
@@ -372,10 +383,11 @@ def build_kontakty():
     bc = f'<nav class="breadcrumbs" aria-label="Хлебные крошки"><a href="{u("/")}">Главная</a><span>/</span><span aria-current="page">Контакты</span></nav>'
     doc = f'''<!DOCTYPE html>
 <html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {head_common()}
 <title>Контакты — Skill Dev</title><meta name="description" content="Свяжитесь с командой Skill Dev: обсудим задачу и вернёмся с расчётом за 2 дня.">{noindex}
 <link rel="canonical" href="{SITE}/kontakty/">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{u('/css/styles.css')}?v=6"><link rel="stylesheet" href="{u('/css/pages.css')}?v=6"></head>
+<link rel="stylesheet" href="{u('/css/styles.css')}?v=7"><link rel="stylesheet" href="{u('/css/pages.css')}?v=7"></head>
 <body class="inner-page">{header_html()}
 <main class="page-main page-article">
 <section class="page-hero"><div class="container">{bc}
@@ -389,7 +401,7 @@ def build_kontakty():
 <div class="form-group"><label>Email или Telegram</label><input type="text" required></div></div>
 <button type="submit" class="btn btn--primary" style="width:100%">Отправить</button></form>
 </div></div></section>
-</main>{footer_html()}<script src="{u('/js/main.js')}?v=6"></script></body></html>'''
+</main>{footer_html()}<script src="{u('/js/main.js')}?v=7"></script></body></html>'''
     os.makedirs(os.path.join(ROOT, 'kontakty'), exist_ok=True)
     open(os.path.join(ROOT, 'kontakty', 'index.html'), 'w', encoding='utf-8').write(doc)
 
@@ -405,10 +417,12 @@ def patch_home():
     """Единые header/footer на главной: заменяем блоки сгенерированными."""
     p = os.path.join(ROOT, 'index.html')
     h = open(p, encoding='utf-8').read()
+    if 'yandex-verification' not in h:
+        h = h.replace('</head>', '  ' + head_common() + '\n</head>')
     h = re.sub(r'<header class="header[^"]*" id="siteHeader">.*?</header>', header_html(), h, count=1, flags=re.S)
     h = re.sub(r'<footer class="footer">.*?</footer>', footer_html(), h, count=1, flags=re.S)
-    h = re.sub(r'href="[^"]*css/(styles|pages)\.css[^"]*"', lambda m: f'href="{u("/css/"+m.group(1)+".css")}?v=6"', h)
-    h = re.sub(r'src="[^"]*/js/main\.js[^"]*"', f'src="{u("/js/main.js")}?v=6"', h)
+    h = re.sub(r'href="[^"]*css/(styles|pages)\.css[^"]*"', lambda m: f'href="{u("/css/"+m.group(1)+".css")}?v=7"', h)
+    h = re.sub(r'src="[^"]*/js/main\.js[^"]*"', f'src="{u("/js/main.js")}?v=7"', h)
     open(p, 'w', encoding='utf-8').write(h)
     print('patched index.html (header/footer unified)')
 
