@@ -289,7 +289,7 @@ def schema(slug, meta, faq, bc_ld, lang):
     area = "Worldwide" if lang == "en" else "RU"
     g = [
       {"@type":"Organization","@id":SITE+"/#org","name":"Skill Dev","url":SITE+"/",
-       "logo":SITE+"/assets/ui/skilldev-logo.svg"},
+       "logo":SITE+"/assets/ui/logo-full.png"},
       {"@type":"WebPage","@id":SITE+url,"url":SITE+url,"name":meta.get("title",title),
        "description":meta.get("description",""),"inLanguage":lang,"isPartOf":{"@id":SITE+"/#org"}},
       {"@type":"BreadcrumbList","itemListElement":bc_ld},
@@ -313,6 +313,15 @@ def lang_switcher(lang):
       f'<button type="button" class="{en_cls}" data-lang="en" aria-pressed="{str(lang=="en").lower()}">EN</button>'
       f'</div>'
     )
+
+def head_common():
+    """Верификации ПС + фавиконки — на все страницы обеих локалей."""
+    return f'''<meta name="yandex-verification" content="bac091f33d55ea2c">
+  <meta name="google-site-verification" content="a6Kww_ZoTqDVduplocAADN3G1dHjxKny1sv1Y1ag_f0">
+  <link rel="icon" href="{u('/favicon.ico')}" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="{u('/assets/ui/favicon-32.png')}">
+  <link rel="icon" type="image/png" sizes="192x192" href="{u('/assets/ui/favicon-192.png')}">
+  <link rel="apple-touch-icon" href="{u('/assets/ui/apple-touch-icon.png')}">'''
 
 def header_html(lang="ru"):
     S = STRINGS[lang]
@@ -460,6 +469,7 @@ def build_uslugi_catalog(lang):
     noindex = '<meta name="robots" content="noindex,nofollow">' if NOINDEX else ''
     doc = f'''<!DOCTYPE html>
 <html lang="{lang}"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {head_common()}
 <title>{esc(S["catalog_title"])}</title>
 <meta name="description" content="{esc(S["catalog_desc"])}">
 <meta http-equiv="content-language" content="{lang}">{noindex}
@@ -484,6 +494,7 @@ def build_kontakty(lang):
     bc = f'<nav class="breadcrumbs" aria-label="{esc(S["breadcrumbs"])}"><a href="{u("/")}">{esc(S["home"])}</a><span>/</span><span aria-current="page">{esc(S["contacts"])}</span></nav>'
     doc = f'''<!DOCTYPE html>
 <html lang="{lang}"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {head_common()}
 <title>{esc(S["kontakty_title"])}</title><meta name="description" content="{esc(S["kontakty_desc"])}">
 <meta http-equiv="content-language" content="{lang}">{noindex}
 <link rel="canonical" href="{SITE}/kontakty/">
@@ -530,6 +541,8 @@ def patch_home(lang="ru"):
         print(f"skip home {lang}: missing {p}", file=sys.stderr)
         return
     h = open(p, encoding='utf-8').read()
+    if 'yandex-verification' not in h:
+        h = h.replace('</head>', '  ' + head_common() + '\n</head>')
     h = re.sub(r'<html\s+lang="[^"]*"', f'<html lang="{lang}"', h, count=1)
     if 'http-equiv="content-language"' not in h:
         h = h.replace('<meta charset="UTF-8">',
