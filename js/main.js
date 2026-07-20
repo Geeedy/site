@@ -1,13 +1,125 @@
 (function () {
   'use strict';
 
-  const ASSETS = 'assets/hero';
+  const LANG_COOKIE = 'sd_lang';
+  const LANG_KEY = 'sd_lang';
+  const LANG_EXPLICIT = 'sd_lang_explicit';
+  const pageLang = (document.documentElement.lang || 'ru').slice(0, 2).toLowerCase() === 'en' ? 'en' : 'ru';
+
+  function readCookieLang() {
+    const m = document.cookie.match(/(?:^|;\s*)sd_lang=(ru|en)/);
+    return m ? m[1] : null;
+  }
+
+  /** Explicit choice via RU/EN switcher only (survives sessions). */
+  function getExplicitLang() {
+    try {
+      if (localStorage.getItem(LANG_EXPLICIT) !== '1') return null;
+      const fromLs = localStorage.getItem(LANG_KEY);
+      if (fromLs === 'ru' || fromLs === 'en') return fromLs;
+    } catch (_) { /* ignore */ }
+    return null;
+  }
+
+  function clearLangCookie() {
+    document.cookie = `${LANG_COOKIE}=;path=/;max-age=0;SameSite=Lax`;
+    document.cookie = `${LANG_COOKIE}=;path=/site;max-age=0;SameSite=Lax`;
+  }
+
+  function setLangPreference(lang, explicit) {
+    clearLangCookie();
+    if (explicit) {
+      const maxAge = 60 * 60 * 24 * 365;
+      document.cookie = `${LANG_COOKIE}=${lang};path=/;max-age=${maxAge};SameSite=Lax`;
+      try {
+        localStorage.setItem(LANG_EXPLICIT, '1');
+        localStorage.setItem(LANG_KEY, lang);
+      } catch (_) { /* ignore */ }
+    } else {
+      // Session cookie for server negotiation; do not lock language forever
+      document.cookie = `${LANG_COOKIE}=${lang};path=/;SameSite=Lax`;
+    }
+  }
+
+  function detectBrowserLang() {
+    const primary = String(navigator.language || '').toLowerCase();
+    if (primary.startsWith('ru')) return 'ru';
+    if (primary.startsWith('en')) return 'en';
+    const list = navigator.languages || [];
+    for (const raw of list) {
+      if (String(raw || '').toLowerCase().startsWith('ru')) return 'ru';
+    }
+    for (const raw of list) {
+      if (String(raw || '').toLowerCase().startsWith('en')) return 'en';
+    }
+    return 'ru';
+  }
+
+  function reloadForLang() {
+    try { sessionStorage.removeItem('sd_lang_redirected'); } catch (_) { /* ignore */ }
+    // Bypass cached HTML for the same URL (cookie alone is not part of the cache key)
+    const url = new URL(window.location.href);
+    url.searchParams.set('_l', String(Date.now()));
+    window.location.replace(url.pathname + url.search + url.hash);
+  }
+
+  // Auto-detect unless user explicitly chose a language via the switcher.
+  (function initLangPreference() {
+    let preferred = getExplicitLang();
+    if (!preferred) {
+      preferred = detectBrowserLang();
+      setLangPreference(preferred, false);
+    } else {
+      setLangPreference(preferred, true);
+    }
+    if (preferred !== pageLang) {
+      const flag = 'sd_lang_redirected';
+      if (!sessionStorage.getItem(flag)) {
+        sessionStorage.setItem(flag, '1');
+        reloadForLang();
+        return;
+      }
+    } else {
+      try { sessionStorage.removeItem('sd_lang_redirected'); } catch (_) { /* ignore */ }
+      // Drop cache-buster query from the address bar once language matches
+      try {
+        const url = new URL(window.location.href);
+        if (url.searchParams.has('_l')) {
+          url.searchParams.delete('_l');
+          const clean = url.pathname + (url.searchParams.toString() ? '?' + url.searchParams.toString() : '') + url.hash;
+          window.history.replaceState(null, '', clean);
+        }
+      } catch (_) { /* ignore */ }
+    }
+  })();
+
+  document.querySelectorAll('.lang-switch__btn').forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const lang = btn.getAttribute('data-lang');
+      if (lang !== 'ru' && lang !== 'en') return;
+      setLangPreference(lang, true);
+      if (lang !== pageLang) reloadForLang();
+    });
+  });
+
+  const ASSETS = (() => {
+    const base = document.querySelector('link[href*="css/styles.css"]')?.getAttribute('href') || '';
+    const root = base.replace(/\/css\/styles\.css.*$/, '') || '';
+    // On home, hero assets are relative; on inner pages use absolute base
+    if (document.body.classList.contains('home-page')) return 'assets/hero';
+    return `${root}/assets/hero`;
+  })();
+
+  const heroTabLabels = pageLang === 'en'
+    ? ['E-commerce', 'B2B', 'Finance', 'Other industries']
+    : ['E-commerce', 'B2B', 'Финансы', 'Другие отрасли'];
 
   const heroSlides = [
-    { tab: 'E-commerce', color: '#0066FF', slide: `${ASSETS}/healthcare-ui-animated.svg`, time: 5000 },
-    { tab: 'B2B', color: '#6F00FF', slide: `${ASSETS}/insurance-ui-animated.svg`, time: 5000 },
-    { tab: 'Финансы', color: '#00A6FF', slide: `${ASSETS}/lending-ui-animated.svg`, time: 5000 },
-    { tab: 'Другие отрасли', color: '#4000FF', slide: `${ASSETS}/more-industries-ui-animated.svg`, time: 10000 },
+    { tab: heroTabLabels[0], color: '#0066FF', slide: `${ASSETS}/healthcare-ui-animated.svg`, time: 5000 },
+    { tab: heroTabLabels[1], color: '#6F00FF', slide: `${ASSETS}/insurance-ui-animated.svg`, time: 5000 },
+    { tab: heroTabLabels[2], color: '#00A6FF', slide: `${ASSETS}/lending-ui-animated.svg`, time: 5000 },
+    { tab: heroTabLabels[3], color: '#4000FF', slide: `${ASSETS}/more-industries-ui-animated.svg`, time: 10000 },
   ];
 
   // Animated hero background (svgator waves)
@@ -17,7 +129,8 @@
     const wrap = document.querySelector('.wp-hts-bg-wrapper');
     if (!wrap) return;
     try {
-      const res = await fetch('assets/hero/home-background.svg');
+      const bgSrc = `${ASSETS}/home-background.svg`;
+      const res = await fetch(bgSrc);
       if (!res.ok) throw new Error('bg fetch failed');
       const text = await res.text();
       const doc = new DOMParser().parseFromString(text, 'image/svg+xml');
@@ -37,7 +150,7 @@
         document.body.appendChild(runner);
       }
     } catch {
-      wrap.innerHTML = '<iframe class="wp-hts-bg-img" src="assets/hero/home-background.svg" title="" tabindex="-1"></iframe>';
+      wrap.innerHTML = `<iframe class="wp-hts-bg-img" src="${ASSETS}/home-background.svg" title="" tabindex="-1"></iframe>`;
     }
   }
 
@@ -369,7 +482,9 @@
   // Form
   document.getElementById('contactForm')?.addEventListener('submit', (e) => {
     e.preventDefault();
-    alert('Спасибо! Мы свяжемся с вами в течение 24 часов.');
+    alert(pageLang === 'en'
+      ? 'Thank you! We will contact you within 24 hours.'
+      : 'Спасибо! Мы свяжемся с вами в течение 24 часов.');
     e.target.reset();
   });
 

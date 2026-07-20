@@ -1,0 +1,45 @@
+# Skill Dev — same-URL language negotiation (RU/EN)
+#
+# Files per directory: index.html (RU), index.en.html (EN)
+# Cookie sd_lang=ru|en overrides Accept-Language. URL path never changes.
+#
+# Put the `map` blocks in http { }. Put the `location` blocks in server { }.
+
+# --- http { } ---
+map $http_accept_language $lang_from_header {
+    default   ru;
+    ~*^en     en;
+}
+
+map $cookie_sd_lang $sd_lang {
+    default   $lang_from_header;
+    "~*^en$"  en;
+    "~*^ru$"  ru;
+}
+
+map $sd_lang $lang_index {
+    default   index.html;
+    en        index.en.html;
+}
+
+map $sd_lang $content_language {
+    default   ru;
+    en        en;
+}
+
+# --- server { } ---
+# root /var/www/skill-dev;
+
+location = / {
+    add_header Content-Language $content_language always;
+    add_header Cache-Control "no-store, no-cache, must-revalidate" always;
+    add_header Vary "Cookie, Accept-Language" always;
+    try_files /$lang_index /index.html =404;
+}
+
+location ~ ^(?<dir>.+)/$ {
+    add_header Content-Language $content_language always;
+    add_header Cache-Control "no-store, no-cache, must-revalidate" always;
+    add_header Vary "Cookie, Accept-Language" always;
+    try_files $dir/$lang_index $dir/index.html =404;
+}

@@ -1,0 +1,21 @@
+[Unit]
+Description=Skill Dev website (git sync + HTTP)
+Documentation=https://github.com/Geeedy/site
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+EnvironmentFile=-/etc/skilldev-site.env
+WorkingDirectory=/var/www/skilldev-site
+ExecStart=/var/www/skilldev-site/deploy/run-site.sh
+Restart=on-failure
+RestartSec=5
+TimeoutStartSec=300
+
+# Hardening (relax if rebuild/git needs more)
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
