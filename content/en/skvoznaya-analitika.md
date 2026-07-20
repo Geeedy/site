@@ -4,7 +4,7 @@
 
 ## Мета
 
-- **Title:** End-to-End Analytics: From Click to Revenue | skill-dev.ai
+- **Title:** End-to-End Analytics: From Click to Revenue | Skill Dev
 - **Meta description:** End-to-end analytics turnkey: we connect ads, website, and CRM, and show cost per lead and per deal by channel. Budget savings 15–30% per case data. Free audit.
 - **OG title:** End-to-End Analytics: Which Channel Makes Money
 - **OG description:** From click to payment. Turnkey implementation with CRM in order.

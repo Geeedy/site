@@ -5,8 +5,8 @@
 
 ## Мета
 
-- **Title:** Turnkey Landing Page: a Page That Pays Back Clicks | skill-dev.ai
-- **Meta description:** Turnkey landing page development: offer for your segment, requests into CRM, analytics through to the lead. We will say honestly when a builder is enough. Timeline 3–6 weeks.
+- **Title:** Turnkey Landing Page: a Page That Pays Back | Skill Dev
+- **Meta description:** Turnkey landing page development: offer for your segment, requests into CRM, analytics through to the lead. We will say honestly when a builder is enough.
 - **OG title:** Turnkey Landing Page: we pay back clicks with leads
 - **OG description:** Offer, form to CRM, analytics. Honest path choice.
 

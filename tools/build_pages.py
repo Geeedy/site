@@ -220,7 +220,7 @@ def render_cta(kind, payload, lang):
         return '<div class="page-hero__actions">' + ' '.join(btns) + '</div>'
     text = parts[0]
     return (f'<div class="cta-horizontal step-up"><div class="cta-horizontal__text">'
-            f'<h3>{inline(text, lang)}</h3></div>'
+            f'<p class="cta-horizontal__title">{inline(text, lang)}</p></div>'
             f'<a href="{u("/kontakty/")}" class="btn btn--primary">{esc(S["cta_apply"])}</a></div>')
 
 def render_blocks(blocks, slug, lang):
@@ -331,7 +331,7 @@ def header_html(lang="ru"):
         (S["mega_sales"], ["vnedrenie-crm","bitrix24","seo-prodvizhenie","seo-audit","geo-aeo"]),
     ]
     cols = ''.join(
-        f'<div class="mega__col"><h4>{esc(g)}</h4><ul>' +
+        f'<div class="mega__col"><div class="mega__h">{esc(g)}</div><ul>' +
         ''.join(f'<li><a href="{u(PAGES[k][0])}">{esc(page_title(k, lang))}</a></li>' for k in kids) +
         '</ul></div>'
         for g, kids in mega_groups)
@@ -356,7 +356,7 @@ def header_html(lang="ru"):
         <div class="nav__item has-mega">
           <a class="nav__link" href="{u('/uslugi/')}">{esc(S["services"])}</a>
           <div class="mega mega--wide"><div class="container mega__grid">{cols}
-            <div class="mega__promo"><h4>{esc(S["mega_start"])}</h4><p>{esc(S["mega_start_p"])}</p><a href="{u('/kontakty/')}" class="btn btn--primary btn--sm">{esc(S["mega_discuss"])}</a></div>
+            <div class="mega__promo"><div class="mega__h">{esc(S["mega_start"])}</div><p>{esc(S["mega_start_p"])}</p><a href="{u('/kontakty/')}" class="btn btn--primary btn--sm">{esc(S["mega_discuss"])}</a></div>
           </div></div>
         </div>
         <div class="nav__item"><a class="nav__link" href="{u('/o-kompanii/')}">{esc(S["about"])}</a></div>
@@ -374,14 +374,14 @@ def footer_html(lang="ru"):
     cols = []
     for h in HUBS:
         kid_links = ''.join(f'<li><a href="{u(PAGES[k][0])}">{esc(page_title(k, lang))}</a></li>' for k in KIDS[h])
-        cols.append(f'<div><h4><a href="{u(PAGES[h][0])}">{esc(page_title(h, lang))}</a></h4><ul>{kid_links}</ul></div>')
+        cols.append(f'<div><div class="footer__h"><a href="{u(PAGES[h][0])}">{esc(page_title(h, lang))}</a></div><ul>{kid_links}</ul></div>')
     return f'''<footer class="footer"><div class="container">
     <div class="footer__top">
       <div class="footer__brand"><div class="footer__logo">Skill Dev</div></div>
       <div class="footer__contacts"><p><strong>{esc(S["contacts_label"])}</strong></p><p>hello@skill-dev.ai</p><p>{esc(S["worldwide"])}</p></div>
     </div>
     <div class="footer__grid footer__grid--silo">{''.join(cols)}
-      <div><h4>{esc(S["company"])}</h4><ul><li><a href="{u('/o-kompanii/')}">{esc(S["about_us"])}</a></li><li><a href="{u('/kontakty/')}">{esc(S["contacts"])}</a></li><li><a href="{u('/uslugi/')}">{esc(S["all_services"])}</a></li></ul></div>
+      <div><div class="footer__h">{esc(S["company"])}</div><ul><li><a href="{u('/o-kompanii/')}">{esc(S["about_us"])}</a></li><li><a href="{u('/kontakty/')}">{esc(S["contacts"])}</a></li><li><a href="{u('/uslugi/')}">{esc(S["all_services"])}</a></li></ul></div>
     </div>
     <div class="footer__bottom"><span>{esc(S["rights"])}</span><span>hello@skill-dev.ai</span></div>
   </div></footer>'''
@@ -404,12 +404,17 @@ def page_shell(slug, meta, hero_html, body_html, faq, bc_ld, lang):
   <meta property="og:title" content="{esc(meta.get("og_title", meta.get("title", title)))}">
   <meta property="og:description" content="{esc(meta.get("og_desc", meta.get("description","")))}">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="{SITE}{url}">
+  <meta property="og:image" content="{SITE}/assets/ui/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
   <meta property="og:locale" content="{"en_US" if lang=="en" else "ru_RU"}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{u('/css/styles.css')}?v=8">
-  <link rel="stylesheet" href="{u('/css/pages.css')}?v=8">
+  <link rel="stylesheet" href="{u('/css/styles.css')}?v=9">
+  <link rel="stylesheet" href="{u('/css/pages.css')}?v=9">
   {schema(slug, meta, faq, bc_ld, lang)}
 </head>
 <body class="inner-page">
@@ -421,7 +426,7 @@ def page_shell(slug, meta, hero_html, body_html, faq, bc_ld, lang):
   </div>
 </main>
 {footer_html(lang)}
-<script src="{u('/js/main.js')}?v=8"></script>
+<script src="{u('/js/main.js')}?v=9"></script>
 </body>
 </html>'''
 
@@ -466,6 +471,9 @@ def build_uslugi_catalog(lang):
           <p class="catalog-card__kids">{kid_links if kid_links else ''}</p>
         </div>''')
     bc = f'<nav class="breadcrumbs" aria-label="{esc(S["breadcrumbs"])}"><a href="{u("/")}">{esc(S["home"])}</a><span>/</span><span aria-current="page">{esc(S["services"])}</span></nav>'
+    itemlist = ",".join(
+        f'{{"@type":"ListItem","position":{i+1},"name":{json.dumps(page_title(h, lang), ensure_ascii=False)},"url":"{SITE}{PAGES[h][0]}"}}'
+        for i, h in enumerate(HUBS))
     noindex = '<meta name="robots" content="noindex,nofollow">' if NOINDEX else ''
     doc = f'''<!DOCTYPE html>
 <html lang="{lang}"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -474,8 +482,9 @@ def build_uslugi_catalog(lang):
 <meta name="description" content="{esc(S["catalog_desc"])}">
 <meta http-equiv="content-language" content="{lang}">{noindex}
 <link rel="canonical" href="{SITE}/uslugi/">
+<script type="application/ld+json">{{"@context":"https://schema.org","@graph":[{{"@type":"CollectionPage","@id":"{SITE}/uslugi/","url":"{SITE}/uslugi/","name":{json.dumps(S["catalog_title"], ensure_ascii=False)},"inLanguage":"{lang}"}},{{"@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":{json.dumps(S["home"], ensure_ascii=False)},"item":"{SITE}/"}},{{"@type":"ListItem","position":2,"name":{json.dumps(S["services"], ensure_ascii=False)},"item":"{SITE}/uslugi/"}}]}},{{"@type":"ItemList","itemListElement":[{itemlist}]}}]}}</script>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{u('/css/styles.css')}?v=8"><link rel="stylesheet" href="{u('/css/pages.css')}?v=8"></head>
+<link rel="stylesheet" href="{u('/css/styles.css')}?v=9"><link rel="stylesheet" href="{u('/css/pages.css')}?v=9"></head>
 <body class="inner-page">{header_html(lang)}
 <main class="page-main page-article">
 <section class="page-hero"><div class="container">{bc}
@@ -483,7 +492,7 @@ def build_uslugi_catalog(lang):
 <div class="page-hero__lead"><p>{esc(S["catalog_lead"])}</p></div>
 </div></section>
 <div class="container page-content"><div class="catalog-grid">{''.join(cards)}</div></div>
-</main>{footer_html(lang)}<script src="{u('/js/main.js')}?v=8"></script></body></html>'''
+</main>{footer_html(lang)}<script src="{u('/js/main.js')}?v=9"></script></body></html>'''
     d = os.path.join(ROOT, 'uslugi')
     os.makedirs(d, exist_ok=True)
     open(os.path.join(d, out_html_name(lang)), 'w', encoding='utf-8').write(doc)
@@ -499,7 +508,7 @@ def build_kontakty(lang):
 <meta http-equiv="content-language" content="{lang}">{noindex}
 <link rel="canonical" href="{SITE}/kontakty/">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{u('/css/styles.css')}?v=8"><link rel="stylesheet" href="{u('/css/pages.css')}?v=8"></head>
+<link rel="stylesheet" href="{u('/css/styles.css')}?v=9"><link rel="stylesheet" href="{u('/css/pages.css')}?v=9"></head>
 <body class="inner-page">{header_html(lang)}
 <main class="page-main page-article">
 <section class="page-hero"><div class="container">{bc}
@@ -513,16 +522,37 @@ def build_kontakty(lang):
 <div class="form-group"><label>{esc(S["form_contact"])}</label><input type="text" required></div></div>
 <button type="submit" class="btn btn--primary" style="width:100%">{esc(S["form_send"])}</button></form>
 </div></div></section>
-</main>{footer_html(lang)}<script src="{u('/js/main.js')}?v=8"></script></body></html>'''
+</main>{footer_html(lang)}<script src="{u('/js/main.js')}?v=9"></script></body></html>'''
     d = os.path.join(ROOT, 'kontakty')
     os.makedirs(d, exist_ok=True)
     open(os.path.join(d, out_html_name(lang)), 'w', encoding='utf-8').write(doc)
 
+
+def build_404():
+    """Брендированная страница ошибки (serve_i18n использует её как error page)."""
+    doc = f'''<!DOCTYPE html>
+<html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {head_common()}
+<title>Страница не найдена | Skill Dev</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="{u('/css/styles.css')}?v=9"><link rel="stylesheet" href="{u('/css/pages.css')}?v=9"></head>
+<body class="inner-page">{header_html("ru")}
+<main class="page-main page-article">
+<section class="page-hero"><div class="container">
+<h1 class="heading1 page-hero__title">Страница не найдена</h1>
+<div class="page-hero__lead"><p>Такого адреса нет или страница переехала. Вот куда можно пойти отсюда.</p></div>
+<div class="page-hero__actions"><a class="btn btn--primary" href="{u('/')}">На главную</a> <a class="btn btn--outline" href="{u('/uslugi/')}">Все услуги</a></div>
+</div></section>
+</main>{footer_html("ru")}<script src="{u('/js/main.js')}?v=9"></script></body></html>'''
+    open(os.path.join(ROOT, '404.html'), 'w', encoding='utf-8').write(doc)
+
 def build_sitemap(urls):
-    items = ''.join(f'<url><loc>{SITE}{p}</loc></url>' for p in urls)
+    import datetime
+    today = datetime.date.today().isoformat()
+    items = ''.join(f'<url><loc>{SITE}{p}</loc><lastmod>{today}</lastmod></url>' for p in urls)
     open(os.path.join(ROOT, 'sitemap.xml'), 'w').write(
         '<?xml version="1.0" encoding="UTF-8"?>'
-        f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>{SITE}/</loc></url>{items}</urlset>')
+        f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>{SITE}/</loc><lastmod>{today}</lastmod></url>{items}</urlset>')
     open(os.path.join(ROOT, 'robots.txt'), 'w').write(
         f"User-agent: *\n{'Disallow: /' if NOINDEX else 'Allow: /'}\nSitemap: {SITE}/sitemap.xml\n")
 
@@ -541,6 +571,12 @@ def patch_home(lang="ru"):
         print(f"skip home {lang}: missing {p}", file=sys.stderr)
         return
     h = open(p, encoding='utf-8').read()
+    if NOINDEX:
+        if 'name="robots"' not in h:
+            h = h.replace('</title>', '</title>\n  <meta name="robots" content="noindex,nofollow">')
+    else:
+        h = re.sub(r'\s*<meta name="robots" content="noindex,nofollow">(<!--[^>]*-->)?', '', h)
+        h = re.sub(r'\s*<!--[^>]*снять при запуске[^>]*-->', '', h)
     if 'yandex-verification' not in h:
         h = h.replace('</head>', '  ' + head_common() + '\n</head>')
     h = re.sub(r'<html\s+lang="[^"]*"', f'<html lang="{lang}"', h, count=1)
@@ -551,8 +587,8 @@ def patch_home(lang="ru"):
         h = re.sub(r'content-language" content="[^"]*"', f'content-language" content="{lang}"', h, count=1)
     h = re.sub(r'<header class="header[^"]*" id="siteHeader">.*?</header>', header_html(lang), h, count=1, flags=re.S)
     h = re.sub(r'<footer class="footer">.*?</footer>', footer_html(lang), h, count=1, flags=re.S)
-    h = re.sub(r'href="[^"]*css/(styles|pages)\.css[^"]*"', lambda m: f'href="{u("/css/"+m.group(1)+".css")}?v=8"', h)
-    h = re.sub(r'src="[^"]*/js/main\.js[^"]*"', f'src="{u("/js/main.js")}?v=8"', h)
+    h = re.sub(r'href="[^"]*css/(styles|pages)\.css[^"]*"', lambda m: f'href="{u("/css/"+m.group(1)+".css")}?v=9"', h)
+    h = re.sub(r'src="[^"]*/js/main\.js[^"]*"', f'src="{u("/js/main.js")}?v=9"', h)
     open(p, 'w', encoding='utf-8').write(h)
     print(f'patched {name} (header/footer unified, lang={lang})')
 
@@ -574,5 +610,6 @@ if __name__ == '__main__':
     for p in urls:
         if p not in seen:
             seen.add(p); uniq.append(p)
+    build_404()
     build_sitemap(uniq)
     print(f'\nDONE: {len(uniq)} URLs · BASE={BASE!r} · NOINDEX={NOINDEX}')

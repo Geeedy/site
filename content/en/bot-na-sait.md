@@ -4,8 +4,8 @@
 
 ## Мета
 
-- **Title:** Website Chatbot with AI: Leads Instead of Silence | skill-dev.ai
-- **Meta description:** Website chatbot: AI answers from your knowledge base in seconds, qualifies visitors, and sends leads to CRM. A reply within a minute raises lead chance 2–3×. Free demo.
+- **Title:** Website Chatbot with AI: Leads Instead of | Skill Dev
+- **Meta description:** Website chatbot: AI answers from your knowledge base in seconds, qualifies visitors, and sends leads to CRM. A reply within a minute raises lead chance 2–3×.
 - **OG title:** Website Chatbot: Visitor Gets Answers, You Get Leads
 - **OG description:** AI answers from your knowledge base, leads to CRM. Demo before a contract.
 

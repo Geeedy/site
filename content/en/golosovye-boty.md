@@ -5,7 +5,7 @@
 
 ## Мета
 
-- **Title:** Voice Bot for Business: AI Calls and Outbound Dialing | skill-dev.ai
+- **Title:** Voice Bot for Business: AI Calls and Outbound | Skill Dev
 - **Meta description:** A voice bot takes calls 24/7 and runs outbound dialing: confirmations, win-back, qualification. Every call result lands in CRM. Pay by the minute.
 - **OG title:** Voice Bots: A Phone That Never Misses a Call
 - **OG description:** Inbound 24/7 and outbound dialing. Every call result in CRM.

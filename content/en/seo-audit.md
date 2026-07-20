@@ -5,7 +5,7 @@
 
 ## Мета
 
-- **Title:** Website SEO Audit: 10 Reasons You Are Not Ranking | skill-dev.ai
+- **Title:** Website SEO Audit: 10 Reasons You Are Not | Skill Dev
 - **Meta description:** A hands-on website audit, not a robot: tech, content, demand, readiness for Yandex AI answers. Report with priorities “what to fix first.” Basic audit free.
 - **OG title:** SEO Audit: 10 Reasons the Site Is Not Ranking
 - **OG description:** Hands-on, not a robot. With priorities and a forecast.

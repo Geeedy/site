@@ -4,7 +4,7 @@
 
 ## Мета
 
-- **Title:** Process Audit and AI Strategy: Where AI Pays Back | skill-dev.ai
+- **Title:** Process Audit and AI Strategy: Where AI Pays | Skill Dev
 - **Meta description:** Business-process audit with economics for each process: hours, rates, errors. You get an AI strategy with rollout priorities. Free audit of one process.
 - **OG title:** Process Audit and AI Strategy: We Calculate Where AI Pays Back
 - **OG description:** Process map, economics per process, rollout priorities.

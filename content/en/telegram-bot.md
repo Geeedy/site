@@ -4,7 +4,7 @@
 
 ## Мета
 
-- **Title:** Telegram Bot for Business: Built for Your Processes | skill-dev.ai
+- **Title:** Telegram Bot for Business: Built for Your | Skill Dev
 - **Meta description:** Telegram bot development for business: leads, knowledge-base answers, payments, broadcasts. An AI bot replies in free text. Leads to CRM with dialog history.
 - **OG title:** Telegram Bot for Business: Built for Your Processes
 - **OG description:** Leads, answers, payments, broadcasts. AI instead of buttons.

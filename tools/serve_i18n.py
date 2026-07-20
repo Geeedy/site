@@ -14,6 +14,7 @@ from __future__ import annotations
 import http.server
 import os
 import re
+import re
 import urllib.parse
 from pathlib import Path
 
@@ -53,7 +54,21 @@ def prefer_en(headers, cookie_header: str) -> bool:
 
 
 class Handler(http.server.SimpleHTTPRequestHandler):
+    _err_tpl = None
+
+    @classmethod
+    def _load_error_page(cls):
+        if cls._err_tpl is None:
+            f = ROOT / "404.html"
+            try:
+                cls._err_tpl = f.read_text(encoding="utf-8").replace("%", "%%")
+            except Exception:
+                cls._err_tpl = "<h1>%(code)d %(message)s</h1>"
+        return cls._err_tpl
+
     def __init__(self, *args, **kwargs):
+        self.error_message_format = self._load_error_page()
+        self.error_content_type = "text/html;charset=utf-8"
         super().__init__(*args, directory=str(ROOT), **kwargs)
 
     def _lang_index_path(self, directory: Path) -> Path | None:
@@ -80,7 +95,9 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         fs = super().translate_path(path)
         p = Path(fs)
         if path.endswith("/") or p.is_dir():
-            directory = p if p.is_dir() else p.parent
+            if not p.is_dir():
+                return fs  # несуществующий путь: честный 404, без отката к родителю
+            directory = p
             if str(directory).startswith(str(ROOT)):
                 chosen = self._lang_index_path(directory)
                 if chosen:
@@ -103,6 +120,8 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             self.send_header("Cache-Control", "no-store, no-cache, must-revalidate")
             self.send_header("Pragma", "no-cache")
             self.send_header("Vary", "Cookie, Accept-Language")
+        elif re.search(r"\.(css|js|png|jpg|jpeg|svg|ico|webp|woff2?)($|\?)", path):
+            self.send_header("Cache-Control", "public, max-age=86400")
         super().end_headers()
 
     def log_message(self, fmt, *args):

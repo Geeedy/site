@@ -4,8 +4,8 @@
 
 ## Мета
 
-- **Title:** AI in HR: Agents for Hiring and People Ops | skill-dev.ai
-- **Meta description:** AI in HR: screen applications in minutes, HR bot for employees, onboarding, analytics. 57% of employers already use AI for HR tasks. People decisions stay with humans.
+- **Title:** AI in HR: Agents for Hiring and People Ops | Skill Dev
+- **Meta description:** AI in HR: screen applications in minutes, HR bot for employees, onboarding, analytics. 57% of employers already use AI for HR tasks.
 - **OG title:** AI in HR: Agent Screens Applications, Humans Decide
 - **OG description:** Screening, HR bot, onboarding, analytics. Pilot with metrics.
 

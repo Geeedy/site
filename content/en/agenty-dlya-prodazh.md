@@ -5,7 +5,7 @@
 
 ## Мета
 
-- **Title:** AI Sales Agent: Lead Scoring, CRM, Deal Control | skill-dev.ai
+- **Title:** AI Sales Agent: Lead Scoring, CRM, Deal Control | Skill Dev
 - **Meta description:** AI for sales: an agent qualifies leads in minutes, fills CRM, writes call summaries, and watches stalled deals. Win rate with scoring up to +76%. Free funnel audit.
 - **OG title:** AI Sales Agent for Your Sales Team
 - **OG description:** Managers sell. The agent handles the routine.

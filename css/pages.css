@@ -51,7 +51,7 @@ mark.tbd { background: #fff3bf; color: #7a5a00; padding: 0 6px; border-radius: 4
 
 /* Футер: silo-колонки */
 .footer__grid--silo { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 22px; }
-.footer__grid--silo h4 a { color: inherit; text-decoration: none; }
+.footer__grid--silo h4 a, .footer__grid--silo .footer__h a { color: inherit; text-decoration: none; }
 
 @media (max-width: 700px) {
   .page-hero { padding: 34px 0 40px; }
@@ -68,3 +68,7 @@ mark.tbd { background: #fff3bf; color: #7a5a00; padding: 0 6px; border-radius: 4
 .logo { gap: 10px; }
 .logo__icon { height: 40px; width: auto; display: block; }
 .logo__word { height: 21px; width: auto; display: block; }
+
+/* v9: h4 навигации/футера → div, CTA-заголовок → p (основные стили расширены в styles.css) */
+.footer__h a { color: inherit; text-decoration: none; }
+.footer__grid--silo .footer__h a { color: inherit; }

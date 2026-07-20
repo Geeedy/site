@@ -4,8 +4,8 @@
 
 ## Мета
 
-- **Title:** Turnkey Tilda Website: Fast and Without Illusions | skill-dev.ai
-- **Meta description:** A Tilda website in 1–3 weeks: landing page, brochure site, MVP. Honest about platform limits and four signals it is time for custom development. Migration without losing SEO.
+- **Title:** Turnkey Tilda Website: Fast and Without | Skill Dev
+- **Meta description:** A Tilda website in 1–3 weeks: landing page, brochure site, MVP. Honest about platform limits and four signals it is time for custom development.
 - **OG title:** Tilda website: fast, affordable, without illusions
 - **OG description:** We build on Tilda what it can handle. And say honestly when it is time to move on.
 

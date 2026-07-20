@@ -5,8 +5,8 @@
 
 ## Мета
 
-- **Title:** Website with AI: Bot, Smart Search, Personalization | skill-dev.ai
-- **Meta description:** What a website with AI is and how to get one: generate it with a neural network yourself or order it with AI features. A bot closes 66% of inquiries; personalization adds +15–30% conversion.
+- **Title:** Website with AI: Bot, Smart Search, | Skill Dev
+- **Meta description:** What a website with AI is and how to get one: generate it with a neural network yourself or order it with AI features.
 - **OG title:** Website with AI: A Process Workplace Instead of a Showcase
 - **OG description:** Two honest paths: generate it yourself or order it with AI features.
 

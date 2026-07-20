@@ -5,7 +5,7 @@
 
 ## Мета
 
-- **Title:** SEO Promotion for Websites: Leads from Yandex and Google | skill-dev.ai
+- **Title:** SEO Promotion for Websites: Leads from Yandex | Skill Dev
 - **Meta description:** SEO with honest timelines: first results in 3–6 months, an organic lead several times cheaper than paid. Optimization for Yandex AI answers. Free website audit.
 - **OG title:** SEO Promotion: Leads That Get Cheaper Over Time
 - **OG description:** Honest timelines, analytics to the lead, readiness for AI search.

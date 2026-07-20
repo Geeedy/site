@@ -5,7 +5,7 @@
 ## Мета
 
 - **Title:** About Skill Dev | Engineers from Big Tech
-- **Meta description:** For 3 years we cut business costs with technology. Team: big-tech alumni with 8–15 years of experience. We lock the estimate, hand over the code, and show before/after metrics.
+- **Meta description:** For 3 years we cut business costs with technology. Team: big-tech alumni with 8–15 years of experience.
 - **OG title:** Skill Dev: Engineers Who Count Your Money
 - **OG description:** 3 years. Big-tech experience. Before/after metrics on every project.
 
