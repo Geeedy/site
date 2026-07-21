@@ -12,7 +12,10 @@ import os, re, sys, html, json
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = os.environ.get("BASE", "/site")
 SITE = os.environ.get("SITE", "https://geeedy.github.io/site")
-NOINDEX = os.environ.get("NOINDEX", "1") == "1"
+# Индексация по домену: тестовые/локальные — закрыты, боевой домен — открыт.
+# Явный NOINDEX=1/0 всегда перекрывает автоопределение.
+_is_test = ("geeedy.github.io" in SITE) or ("localhost" in SITE) or ("127.0.0.1" in SITE) or (BASE == "/site")
+NOINDEX = os.environ.get("NOINDEX", "1" if _is_test else "0") == "1"
 
 # ---------- реестр: url, titles{ru,en}, parent ----------
 PAGES = {
@@ -787,6 +790,8 @@ def patch_home(lang="ru"):
     h = re.sub(r'<footer class="footer">.*?</footer>', footer_html(lang), h, count=1, flags=re.S)
     h = re.sub(r'href="[^"]*css/(styles|pages)\.css[^"]*"', lambda m: f'href="{u("/css/"+m.group(1)+".css")}?v=10"', h)
     h = re.sub(r'src="[^"]*/js/main\.js[^"]*"', f'src="{u("/js/main.js")}?v=10"', h)
+    # Домен: захардкоженный тестовый geeedy.github.io/site → фактический SITE (canonical, og, JSON-LD)
+    h = h.replace("https://geeedy.github.io/site", SITE)
     open(p, 'w', encoding='utf-8').write(h)
     print(f'patched {name} (header/footer unified, lang={lang})')
 
