@@ -79,6 +79,13 @@ STRINGS = {
     "kontakty_desc": "Свяжитесь с командой Skill Dev: обсудим задачу и вернёмся с расчётом за 2 дня.",
     "kontakty_h1": "Контакты",
     "kontakty_lead": "Опишите задачу своими словами, и мы вернёмся с расчётом за 2 дня. Сроки и цены обсуждаем индивидуально, с вами будет работать персональный менеджер.",
+    "cases_nav": "Кейсы",
+    "cases_title": "Кейсы Skill Dev: выполненные проекты",
+    "cases_desc": "Реальные проекты команды Skill Dev: инфраструктура, автоматизация, разработка. Каждый кейс с задачей, решением и результатом.",
+    "cases_h1": "Кейсы",
+    "cases_lead": "Мы показываем работу как есть: задача клиента, что мы сделали и какой получился результат. Список будет пополняться по мере новых проектов.",
+    "cases_read": "Читать кейс",
+    "cases_soon": "Скоро здесь появятся новые кейсы.",
     "kontakty_need": "Нужна консультация?",
     "kontakty_remote": "Работаем по всему миру, удалённо.",
     "form_help": "Чем помочь?", "form_placeholder": "Опишите задачу...",
@@ -113,6 +120,13 @@ STRINGS = {
     "kontakty_desc": "Contact the Skill Dev team: we'll discuss your project and return with an estimate within 2 days.",
     "kontakty_h1": "Contact",
     "kontakty_lead": "Describe your project in your own words — we'll return with an estimate in 2 days. Timelines and pricing are tailored; you'll work with a dedicated manager.",
+    "cases_nav": "Cases",
+    "cases_title": "Skill Dev Cases: Delivered Projects",
+    "cases_desc": "Real projects by the Skill Dev team: infrastructure, automation, development. Every case has the task, the solution, and the outcome.",
+    "cases_h1": "Cases",
+    "cases_lead": "We show the work as it is: the client's task, what we did, and the outcome. The list grows as new projects ship.",
+    "cases_read": "Read the case",
+    "cases_soon": "More cases coming soon.",
     "kontakty_need": "Need a consultation?",
     "kontakty_remote": "We work worldwide, remotely.",
     "form_help": "How can we help?", "form_placeholder": "Describe your project...",
@@ -360,6 +374,7 @@ def header_html(lang="ru"):
           </div></div>
         </div>
         <div class="nav__item"><a class="nav__link" href="{u('/o-kompanii/')}">{esc(S["about"])}</a></div>
+        <div class="nav__item"><a class="nav__link" href="{u('/kejsy/')}">{esc(S["cases_nav"])}</a></div>
         <div class="nav__item"><a class="nav__link" href="{u('/')}#industries">{esc(S["industries"])}</a></div>
         <div class="nav__item"><a class="nav__link" href="{u('/')}#full-cycle">{esc(S["how_we_work"])}</a></div>
         <div class="nav__item"><a class="nav__link" href="{u('/kontakty/')}">{esc(S["contacts"])}</a></div>
@@ -381,7 +396,7 @@ def footer_html(lang="ru"):
       <div class="footer__contacts"><p><strong>{esc(S["contacts_label"])}</strong></p><p>hello@skill-dev.ai</p><p>{esc(S["worldwide"])}</p></div>
     </div>
     <div class="footer__grid footer__grid--silo">{''.join(cols)}
-      <div><div class="footer__h">{esc(S["company"])}</div><ul><li><a href="{u('/o-kompanii/')}">{esc(S["about_us"])}</a></li><li><a href="{u('/kontakty/')}">{esc(S["contacts"])}</a></li><li><a href="{u('/uslugi/')}">{esc(S["all_services"])}</a></li></ul></div>
+      <div><div class="footer__h">{esc(S["company"])}</div><ul><li><a href="{u('/o-kompanii/')}">{esc(S["about_us"])}</a></li><li><a href="{u('/kejsy/')}">{esc(S["cases_nav"])}</a></li><li><a href="{u('/kontakty/')}">{esc(S["contacts"])}</a></li><li><a href="{u('/uslugi/')}">{esc(S["all_services"])}</a></li></ul></div>
     </div>
     <div class="footer__bottom"><span>{esc(S["rights"])}</span><span>hello@skill-dev.ai</span></div>
   </div></footer>'''
@@ -413,8 +428,8 @@ def page_shell(slug, meta, hero_html, body_html, faq, bc_ld, lang):
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{u('/css/styles.css')}?v=9">
-  <link rel="stylesheet" href="{u('/css/pages.css')}?v=9">
+  <link rel="stylesheet" href="{u('/css/styles.css')}?v=10">
+  <link rel="stylesheet" href="{u('/css/pages.css')}?v=10">
   {schema(slug, meta, faq, bc_ld, lang)}
 </head>
 <body class="inner-page">
@@ -426,7 +441,7 @@ def page_shell(slug, meta, hero_html, body_html, faq, bc_ld, lang):
   </div>
 </main>
 {footer_html(lang)}
-<script src="{u('/js/main.js')}?v=9"></script>
+<script src="{u('/js/main.js')}?v=10"></script>
 </body>
 </html>'''
 
@@ -484,7 +499,7 @@ def build_uslugi_catalog(lang):
 <link rel="canonical" href="{SITE}/uslugi/">
 <script type="application/ld+json">{{"@context":"https://schema.org","@graph":[{{"@type":"CollectionPage","@id":"{SITE}/uslugi/","url":"{SITE}/uslugi/","name":{json.dumps(S["catalog_title"], ensure_ascii=False)},"inLanguage":"{lang}"}},{{"@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":{json.dumps(S["home"], ensure_ascii=False)},"item":"{SITE}/"}},{{"@type":"ListItem","position":2,"name":{json.dumps(S["services"], ensure_ascii=False)},"item":"{SITE}/uslugi/"}}]}},{{"@type":"ItemList","itemListElement":[{itemlist}]}}]}}</script>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{u('/css/styles.css')}?v=9"><link rel="stylesheet" href="{u('/css/pages.css')}?v=9"></head>
+<link rel="stylesheet" href="{u('/css/styles.css')}?v=10"><link rel="stylesheet" href="{u('/css/pages.css')}?v=10"></head>
 <body class="inner-page">{header_html(lang)}
 <main class="page-main page-article">
 <section class="page-hero"><div class="container">{bc}
@@ -492,7 +507,7 @@ def build_uslugi_catalog(lang):
 <div class="page-hero__lead"><p>{esc(S["catalog_lead"])}</p></div>
 </div></section>
 <div class="container page-content"><div class="catalog-grid">{''.join(cards)}</div></div>
-</main>{footer_html(lang)}<script src="{u('/js/main.js')}?v=9"></script></body></html>'''
+</main>{footer_html(lang)}<script src="{u('/js/main.js')}?v=10"></script></body></html>'''
     d = os.path.join(ROOT, 'uslugi')
     os.makedirs(d, exist_ok=True)
     open(os.path.join(d, out_html_name(lang)), 'w', encoding='utf-8').write(doc)
@@ -508,7 +523,7 @@ def build_kontakty(lang):
 <meta http-equiv="content-language" content="{lang}">{noindex}
 <link rel="canonical" href="{SITE}/kontakty/">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{u('/css/styles.css')}?v=9"><link rel="stylesheet" href="{u('/css/pages.css')}?v=9"></head>
+<link rel="stylesheet" href="{u('/css/styles.css')}?v=10"><link rel="stylesheet" href="{u('/css/pages.css')}?v=10"></head>
 <body class="inner-page">{header_html(lang)}
 <main class="page-main page-article">
 <section class="page-hero"><div class="container">{bc}
@@ -522,7 +537,7 @@ def build_kontakty(lang):
 <div class="form-group"><label>{esc(S["form_contact"])}</label><input type="text" required></div></div>
 <button type="submit" class="btn btn--primary" style="width:100%">{esc(S["form_send"])}</button></form>
 </div></div></section>
-</main>{footer_html(lang)}<script src="{u('/js/main.js')}?v=9"></script></body></html>'''
+</main>{footer_html(lang)}<script src="{u('/js/main.js')}?v=10"></script></body></html>'''
     d = os.path.join(ROOT, 'kontakty')
     os.makedirs(d, exist_ok=True)
     open(os.path.join(d, out_html_name(lang)), 'w', encoding='utf-8').write(doc)
@@ -535,7 +550,7 @@ def build_404():
   {head_common()}
 <title>Страница не найдена | Skill Dev</title>
 <meta name="robots" content="noindex">
-<link rel="stylesheet" href="{u('/css/styles.css')}?v=9"><link rel="stylesheet" href="{u('/css/pages.css')}?v=9"></head>
+<link rel="stylesheet" href="{u('/css/styles.css')}?v=10"><link rel="stylesheet" href="{u('/css/pages.css')}?v=10"></head>
 <body class="inner-page">{header_html("ru")}
 <main class="page-main page-article">
 <section class="page-hero"><div class="container">
@@ -543,8 +558,191 @@ def build_404():
 <div class="page-hero__lead"><p>Такого адреса нет или страница переехала. Вот куда можно пойти отсюда.</p></div>
 <div class="page-hero__actions"><a class="btn btn--primary" href="{u('/')}">На главную</a> <a class="btn btn--outline" href="{u('/uslugi/')}">Все услуги</a></div>
 </div></section>
-</main>{footer_html("ru")}<script src="{u('/js/main.js')}?v=9"></script></body></html>'''
+</main>{footer_html("ru")}<script src="{u('/js/main.js')}?v=10"></script></body></html>'''
     open(os.path.join(ROOT, '404.html'), 'w', encoding='utf-8').write(doc)
+
+# ==================== КЕЙСЫ ====================
+CASES = ["claude-vps-sreda"]  # порядок на хабе (новые сверху)
+
+CASE_META = {
+  "claude-vps-sreda": {
+    "url": "/kejsy/claude-vps-sreda/",
+    "ru": {
+      "card_title": "Изолированная среда командной разработки на VPS",
+      "card_tag": "Инфраструктура · DevOps",
+      "card_descr": "Развернули общий VPS для распределённой SEO-команды: безопасный доступ по SSH, единый workspace, автоматизация SEO-пайплайнов.",
+    },
+    "en": {
+      "card_title": "Isolated team dev environment on a VPS",
+      "card_tag": "Infrastructure · DevOps",
+      "card_descr": "A shared VPS for a distributed SEO team: secure SSH access, a single workspace, and automated SEO pipelines.",
+    },
+  },
+}
+
+def build_cases_hub(lang):
+    S = STRINGS[lang]
+    noindex = '<meta name="robots" content="noindex,nofollow">' if NOINDEX else ''
+    bc = f'<nav class="breadcrumbs" aria-label="{esc(S["breadcrumbs"])}"><a href="{u("/")}">{esc(S["home"])}</a><span>/</span><span aria-current="page">{esc(S["cases_h1"])}</span></nav>'
+    cards = []
+    for slug in CASES:
+        m = CASE_META[slug]; c = m[lang]
+        cards.append(f'''<a class="case-card" href="{u(m['url'])}">
+          <div class="case-card__tag">{esc(c['card_tag'])}</div>
+          <h2 class="case-card__title">{esc(c['card_title'])}</h2>
+          <p class="case-card__descr">{esc(c['card_descr'])}</p>
+          <span class="case-card__more">{esc(S['cases_read'])} →</span>
+        </a>''')
+    items_ld = ",".join(
+        f'{{"@type":"ListItem","position":{i+1},"url":"{SITE}{CASE_META[slug]["url"]}","name":{json.dumps(CASE_META[slug][lang]["card_title"], ensure_ascii=False)}}}'
+        for i, slug in enumerate(CASES))
+    doc = f'''<!DOCTYPE html>
+<html lang="{lang}"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {head_common()}
+<title>{esc(S["cases_title"])}</title><meta name="description" content="{esc(S["cases_desc"])}">
+<meta http-equiv="content-language" content="{lang}">{noindex}
+<link rel="canonical" href="{SITE}/kejsy/">
+<meta property="og:title" content="{esc(S["cases_title"])}"><meta property="og:type" content="website"><meta property="og:url" content="{SITE}/kejsy/"><meta property="og:image" content="{SITE}/assets/ui/og-cover.png">
+<script type="application/ld+json">{{"@context":"https://schema.org","@graph":[{{"@type":"CollectionPage","@id":"{SITE}/kejsy/","url":"{SITE}/kejsy/","name":{json.dumps(S["cases_title"], ensure_ascii=False)},"inLanguage":"{lang}"}},{{"@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":{json.dumps(S["home"], ensure_ascii=False)},"item":"{SITE}/"}},{{"@type":"ListItem","position":2,"name":{json.dumps(S["cases_h1"], ensure_ascii=False)},"item":"{SITE}/kejsy/"}}]}},{{"@type":"ItemList","itemListElement":[{items_ld}]}}]}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{u('/css/styles.css')}?v=10"><link rel="stylesheet" href="{u('/css/pages.css')}?v=10"></head>
+<body class="inner-page">{header_html(lang)}
+<main class="page-main page-article">
+<section class="page-hero"><div class="container">{bc}
+<h1 class="heading1 page-hero__title">{esc(S["cases_h1"])}</h1>
+<div class="page-hero__lead"><p>{esc(S["cases_lead"])}</p></div></div></section>
+<div class="container page-content"><div class="case-grid">{''.join(cards)}</div></div>
+</main>{footer_html(lang)}<script src="{u('/js/main.js')}?v=10"></script></body></html>'''
+    d = os.path.join(ROOT, 'kejsy')
+    os.makedirs(d, exist_ok=True)
+    open(os.path.join(d, out_html_name(lang)), 'w', encoding='utf-8').write(doc)
+
+
+def build_case_vps(lang):
+    S = STRINGS[lang]
+    noindex = '<meta name="robots" content="noindex,nofollow">' if NOINDEX else ''
+    sfx = "" if lang == "ru" else "-en"
+    def img(n, alt): return f'<figure class="page-figure"><img src="{u("/assets/img/case-vps-"+n+sfx+".jpg")}" alt="{esc(alt)}" loading="lazy" width="1600" height="1066"></figure>'
+    url = "/kejsy/claude-vps-sreda/"
+    if lang == "ru":
+        title = "Кейс: изолированная среда командной разработки на VPS | Skill Dev"
+        desc = "Развернули общий VPS для распределённой SEO-команды: безопасный SSH-доступ, единый workspace, автоматизация SEO-пайплайнов. Три оператора работают одновременно."
+        h1 = "Изолированная среда командной разработки на VPS"
+        lead = "SEO-команде нужен был стабильный и безопасный доступ нескольких операторов к общей рабочей среде с ИИ-инструментами. Мы собрали такую среду на выделенном VPS и передали её в эксплуатацию."
+        body = f'''
+<div class="case-meta"><span class="case-card__tag">Инфраструктура · DevOps</span><span class="case-meta__item">Ubuntu 22.04/24.04 LTS</span><span class="case-meta__item">3 оператора одновременно</span></div>
+{img("hero", "Рабочие места распределённой команды разработки")}
+<h2>Задача</h2>
+<p>Команда SEO-специалистов работала распределённо, из разных точек, но над общими проектами. Каждый оператор держал свой набор инструментов на своём компьютере, конфигурации расходились, а общий контекст работы терялся между людьми.</p>
+<p>Нужна была одна стабильная и безопасная среда, где несколько операторов работают одновременно: с общими проектами, единым Git, общей историей и одинаковым набором инструментов у всех.</p>
+<h2>Что мы развернули</h2>
+<p>На выделенном VPS (Ubuntu 22.04/24.04 LTS) собрали изолированную рабочую среду и настроили удалённую разработку через Remote-SSH в VS Code. Операторы подключаются к одному серверу и работают в общем пространстве проектов.</p>
+<ul>
+<li>Единый workspace с общими проектами сайтов, Git-репозиториями и историей работы.</li>
+<li>Три одновременных SSH-подключения: два с рабочих машин заказчика и одно с ПК руководителя.</li>
+<li>Общий набор инструментов и окружение, одинаковое у всех операторов.</li>
+</ul>
+<h2>Архитектура</h2>
+{img("arch", "Схема: рабочие места подключаются к общему VPS")}
+<p>В центре схемы выделенный VPS, к которому по защищённым SSH-каналам подключаются рабочие места команды из разных локаций. Все работают в едином user-пространстве сервера, поэтому проекты, репозитории и история остаются общими, а не разъезжаются по личным компьютерам.</p>
+<h2>Безопасность</h2>
+<p>Доступ к серверу закрыт по-взрослому, без паролей и лишних открытых дверей:</p>
+<ul>
+<li>Вход только по SSH-ключам (ed25519), парольная аутентификация отключена.</li>
+<li>Файрвол UFW и fail2ban против перебора и подозрительной активности.</li>
+<li>Автоматические обновления системы и безопасности.</li>
+<li>Открыт только нужный минимум портов, всё остальное закрыто.</li>
+</ul>
+<h2>Стабильность подключений</h2>
+<p>Чтобы длинные рабочие сессии не рвались, настроили autossh для автоматического восстановления соединений и tmux/screen для долгоживущих сессий. Оператор может отключиться и вернуться к работе ровно там, где остановился, а фоновые задачи продолжают идти.</p>
+{img("rack", "Серверная инфраструктура проекта")}
+<h2>Производительность</h2>
+<p>Под параллельную работу нескольких операторов и инструменты с длинным контекстом выделили ресурсы с запасом: 8–16 vCPU, 32+ ГБ RAM, SSD. Среда не тормозит, даже когда несколько человек работают одновременно и гоняют тяжёлые задачи.</p>
+<h2>Автоматизация SEO-работ</h2>
+{img("work", "Рабочее место оператора с несколькими мониторами")}
+<p>Поверх среды собрали рабочие пайплайны под задачи команды и связали их с привычными инструментами:</p>
+<ul>
+<li>Интеграция с Git и локальными базами семантики.</li>
+<li>Подключение SEO-инструментов: выгрузки Screaming Frog, Ahrefs API, Google Search Console.</li>
+<li>Пайплайны генерации контента с проверкой уникальности и последующим SEO-структурированием.</li>
+</ul>
+<h2>Результат</h2>
+<p>Заказчик получил рабочий и масштабируемый инструмент. Три оператора работают в единой среде одновременно, без расхождения конфигураций и потери контекста между людьми. Скорость и предсказуемость SEO-работ заметно выросли: генерация и оптимизация страниц, техническая проработка, кластеризация запросов идут в общем конвейере.</p>
+<h2>Наша роль</h2>
+<p>Полный цикл: архитектура, развёртывание инфраструктуры, настройка безопасных подключений, тестирование под нагрузкой и передача инструкций по поддержке и масштабированию. Проект запущен в продакшен и работает.</p>
+<div class="cta-horizontal step-up"><div class="cta-horizontal__text"><p class="cta-horizontal__title">Нужна похожая среда или своя инфраструктура под команду?</p></div><a href="{u('/kontakty/')}" class="btn btn--primary">{esc(S['cta_apply'])}</a></div>
+'''
+    else:
+        title = "Case: isolated team dev environment on a VPS | Skill Dev"
+        desc = "We built a shared VPS for a distributed SEO team: secure SSH access, a single workspace, and automated SEO pipelines. Three operators work at the same time."
+        h1 = "Isolated team dev environment on a VPS"
+        lead = "An SEO team needed stable, secure, simultaneous access for several operators to one shared working environment with AI tooling. We built that environment on a dedicated VPS and handed it over to production."
+        body = f'''
+<div class="case-meta"><span class="case-card__tag">Infrastructure · DevOps</span><span class="case-meta__item">Ubuntu 22.04/24.04 LTS</span><span class="case-meta__item">3 operators at once</span></div>
+{img("hero", "Distributed development team workstations")}
+<h2>The task</h2>
+<p>A team of SEO specialists worked remotely, from different places, but on shared projects. Every operator kept their own toolset on their own machine, configs drifted apart, and the shared context of the work got lost between people.</p>
+<p>They needed one stable, secure environment where several operators work at the same time: shared projects, a single Git, shared history, and the same toolset for everyone.</p>
+<h2>What we deployed</h2>
+<p>On a dedicated VPS (Ubuntu 22.04/24.04 LTS) we built an isolated working environment and set up remote development through Remote-SSH in VS Code. Operators connect to one server and work in a shared project space.</p>
+<ul>
+<li>A single workspace with shared site projects, Git repositories, and work history.</li>
+<li>Three simultaneous SSH connections: two from the client's work machines and one from the lead's PC.</li>
+<li>One shared toolset and environment, identical for every operator.</li>
+</ul>
+<h2>Architecture</h2>
+{img("arch", "Diagram: workstations connect to a shared VPS")}
+<p>At the center is a dedicated VPS, and the team's workstations from different locations connect to it over secured SSH channels. Everyone works in one user space on the server, so projects, repositories, and history stay shared instead of scattering across personal computers.</p>
+<h2>Security</h2>
+<p>Access to the server is locked down properly, no passwords and no extra open doors:</p>
+<ul>
+<li>SSH keys only (ed25519); password authentication disabled.</li>
+<li>UFW firewall and fail2ban against brute force and suspicious activity.</li>
+<li>Automatic system and security updates.</li>
+<li>Only the minimum required ports are open; everything else is closed.</li>
+</ul>
+<h2>Connection stability</h2>
+<p>So long working sessions don't drop, we set up autossh to restore connections automatically and tmux/screen for long-lived sessions. An operator can disconnect and come back exactly where they left off, while background tasks keep running.</p>
+{img("rack", "Project server infrastructure")}
+<h2>Performance</h2>
+<p>For several operators working in parallel and tools with long context, we provisioned resources with headroom: 8–16 vCPU, 32+ GB RAM, SSD. The environment stays responsive even when several people work at once and run heavy jobs.</p>
+<h2>SEO automation</h2>
+{img("work", "Operator workstation with multiple monitors")}
+<p>On top of the environment we built working pipelines for the team's tasks and wired them into familiar tools:</p>
+<ul>
+<li>Integration with Git and local semantic-core databases.</li>
+<li>SEO tools connected: Screaming Frog exports, Ahrefs API, Google Search Console.</li>
+<li>Content generation pipelines with uniqueness checks and downstream SEO structuring.</li>
+</ul>
+<h2>The outcome</h2>
+<p>The client got a working, scalable tool. Three operators work in one environment at the same time, without config drift or lost context between people. The speed and predictability of SEO work grew noticeably: page generation and optimization, technical work, and query clustering all run through a shared pipeline.</p>
+<h2>Our role</h2>
+<p>The full cycle: architecture, infrastructure deployment, secure connection setup, load testing, and handover with support and scaling instructions. The project is in production and running.</p>
+<div class="cta-horizontal step-up"><div class="cta-horizontal__text"><p class="cta-horizontal__title">Need a similar environment or your own team infrastructure?</p></div><a href="{u('/kontakty/')}" class="btn btn--primary">{esc(S['cta_apply'])}</a></div>
+'''
+    bc = f'<nav class="breadcrumbs" aria-label="{esc(S["breadcrumbs"])}"><a href="{u("/")}">{esc(S["home"])}</a><span>/</span><a href="{u("/kejsy/")}">{esc(S["cases_h1"])}</a><span>/</span><span aria-current="page">{esc(h1)}</span></nav>'
+    ld = json.dumps({"@context":"https://schema.org","@type":"Article","headline":h1,"inLanguage":lang,"image":SITE+"/assets/ui/og-cover.png","author":{"@type":"Organization","name":"Skill Dev"},"publisher":{"@type":"Organization","name":"Skill Dev"},"mainEntityOfPage":SITE+url}, ensure_ascii=False)
+    doc = f'''<!DOCTYPE html>
+<html lang="{lang}"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {head_common()}
+<title>{esc(title)}</title><meta name="description" content="{esc(desc)}">
+<meta http-equiv="content-language" content="{lang}">{noindex}
+<link rel="canonical" href="{SITE}{url}">
+<meta property="og:title" content="{esc(h1)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:type" content="article"><meta property="og:url" content="{SITE}{url}"><meta property="og:image" content="{SITE}/assets/img/case-vps-hero{sfx}.jpg"><meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{ld}</script>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{u('/css/styles.css')}?v=10"><link rel="stylesheet" href="{u('/css/pages.css')}?v=10"></head>
+<body class="inner-page">{header_html(lang)}
+<main class="page-main page-article">
+<section class="page-hero"><div class="container">{bc}
+<h1 class="heading1 page-hero__title">{esc(h1)}</h1>
+<div class="page-hero__lead"><p>{esc(lead)}</p></div></div></section>
+<div class="container page-content">{body}</div>
+</main>{footer_html(lang)}<script src="{u('/js/main.js')}?v=10"></script></body></html>'''
+    d = os.path.join(ROOT, 'kejsy', 'claude-vps-sreda')
+    os.makedirs(d, exist_ok=True)
+    open(os.path.join(d, out_html_name(lang)), 'w', encoding='utf-8').write(doc)
+
 
 def build_sitemap(urls):
     import datetime
@@ -587,17 +785,19 @@ def patch_home(lang="ru"):
         h = re.sub(r'content-language" content="[^"]*"', f'content-language" content="{lang}"', h, count=1)
     h = re.sub(r'<header class="header[^"]*" id="siteHeader">.*?</header>', header_html(lang), h, count=1, flags=re.S)
     h = re.sub(r'<footer class="footer">.*?</footer>', footer_html(lang), h, count=1, flags=re.S)
-    h = re.sub(r'href="[^"]*css/(styles|pages)\.css[^"]*"', lambda m: f'href="{u("/css/"+m.group(1)+".css")}?v=9"', h)
-    h = re.sub(r'src="[^"]*/js/main\.js[^"]*"', f'src="{u("/js/main.js")}?v=9"', h)
+    h = re.sub(r'href="[^"]*css/(styles|pages)\.css[^"]*"', lambda m: f'href="{u("/css/"+m.group(1)+".css")}?v=10"', h)
+    h = re.sub(r'src="[^"]*/js/main\.js[^"]*"', f'src="{u("/js/main.js")}?v=10"', h)
     open(p, 'w', encoding='utf-8').write(h)
     print(f'patched {name} (header/footer unified, lang={lang})')
 
 if __name__ == '__main__':
-    urls = ['/uslugi/', '/kontakty/']
+    urls = ['/uslugi/', '/kontakty/', '/kejsy/', '/kejsy/claude-vps-sreda/']
     for lang in ("ru", "en"):
         patch_home(lang)
         build_uslugi_catalog(lang)
         build_kontakty(lang)
+        build_cases_hub(lang)
+        build_case_vps(lang)
         for slug in PAGES:
             built = build_page(slug, lang)
             if built and lang == "ru":
