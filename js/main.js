@@ -11,60 +11,6 @@
     localStorage.removeItem('sd_lang_explicit');
   } catch (_) { /* ignore */ }
 
-  function siteBase() {
-    const href = document.querySelector('link[href*="css/styles.css"]')?.getAttribute('href') || '';
-    return href.replace(/\/css\/styles\.css.*$/, '') || '';
-  }
-
-  function logicalPathFromLocation() {
-    const base = siteBase();
-    let path = window.location.pathname || '/';
-    if (base && path.startsWith(base)) {
-      path = path.slice(base.length) || '/';
-    }
-    if (path === '/ru' || path.startsWith('/ru/')) {
-      path = path.slice(3) || '/';
-    }
-    if (!path.endsWith('/') && !/\.[a-z0-9]+$/i.test(path)) {
-      path += '/';
-    }
-    return path || '/';
-  }
-
-  function ruEquivalentHref() {
-    const base = siteBase();
-    const logical = logicalPathFromLocation();
-    const ruPath = logical === '/' ? '/ru/' : '/ru' + logical;
-    return base + ruPath + window.location.search + window.location.hash;
-  }
-
-  function browserPrefersRu() {
-    const list = [navigator.language].concat(navigator.languages || []);
-    return list.some((raw) => String(raw || '').toLowerCase().startsWith('ru'));
-  }
-
-  // Soft banner on EN pages for RU-preferring browsers (no forced redirect).
-  (function initRuBanner() {
-    if (pageLang !== 'en' || !browserPrefersRu()) return;
-    try {
-      if (sessionStorage.getItem('sd_ru_banner_dismissed') === '1') return;
-    } catch (_) { /* ignore */ }
-    const bar = document.createElement('div');
-    bar.className = 'locale-banner';
-    bar.setAttribute('role', 'region');
-    bar.setAttribute('aria-label', 'Language suggestion');
-    bar.innerHTML =
-      '<div class="locale-banner__inner">' +
-      '<a class="locale-banner__link" href="' + ruEquivalentHref() + '">Читать на русском →</a>' +
-      '<button type="button" class="locale-banner__close" aria-label="Close">×</button>' +
-      '</div>';
-    document.body.prepend(bar);
-    bar.querySelector('.locale-banner__close')?.addEventListener('click', () => {
-      try { sessionStorage.setItem('sd_ru_banner_dismissed', '1'); } catch (_) { /* ignore */ }
-      bar.remove();
-    });
-  })();
-
   const ASSETS = (() => {
     const base = document.querySelector('link[href*="css/styles.css"]')?.getAttribute('href') || '';
     const root = base.replace(/\/css\/styles\.css.*$/, '') || '';
