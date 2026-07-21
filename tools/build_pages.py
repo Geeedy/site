@@ -83,6 +83,14 @@ STRINGS = {
     "kontakty_h1": "Контакты",
     "kontakty_lead": "Опишите задачу своими словами, и мы вернёмся с расчётом за 2 дня. Сроки и цены обсуждаем индивидуально, с вами будет работать персональный менеджер.",
     "cases_nav": "Кейсы",
+    "sitemap_nav": "Карта сайта",
+    "sitemap_title": "Карта сайта Skill Dev: все страницы",
+    "sitemap_desc": "Полная карта сайта Skill Dev: услуги, кейсы, компания, контакты. Все разделы одним списком.",
+    "sitemap_h1": "Карта сайта",
+    "sitemap_lead": "Все разделы сайта одним списком, для людей и поисковых систем.",
+    "sitemap_sec_services": "Услуги",
+    "sitemap_sec_cases": "Кейсы",
+    "sitemap_sec_company": "Компания",
     "cases_title": "Кейсы Skill Dev: выполненные проекты",
     "cases_desc": "Реальные проекты команды Skill Dev: инфраструктура, автоматизация, разработка. Каждый кейс с задачей, решением и результатом.",
     "cases_h1": "Кейсы",
@@ -124,6 +132,14 @@ STRINGS = {
     "kontakty_h1": "Contact",
     "kontakty_lead": "Describe your project in your own words — we'll return with an estimate in 2 days. Timelines and pricing are tailored; you'll work with a dedicated manager.",
     "cases_nav": "Cases",
+    "sitemap_nav": "Sitemap",
+    "sitemap_title": "Skill Dev Sitemap: all pages",
+    "sitemap_desc": "Full Skill Dev sitemap: services, cases, company, contact. Every section in one list.",
+    "sitemap_h1": "Sitemap",
+    "sitemap_lead": "Every section of the site in one list, for people and search engines.",
+    "sitemap_sec_services": "Services",
+    "sitemap_sec_cases": "Cases",
+    "sitemap_sec_company": "Company",
     "cases_title": "Skill Dev Cases: Delivered Projects",
     "cases_desc": "Real projects by the Skill Dev team: infrastructure, automation, development. Every case has the task, the solution, and the outcome.",
     "cases_h1": "Cases",
@@ -306,7 +322,9 @@ def schema(slug, meta, faq, bc_ld, lang):
     area = "Worldwide" if lang == "en" else "RU"
     g = [
       {"@type":"Organization","@id":SITE+"/#org","name":"Skill Dev","url":SITE+"/",
-       "logo":SITE+"/assets/ui/logo-full.png"},
+       "logo":SITE+"/assets/ui/logo-full.png","email":"hello@skill-dev.ai","areaServed":area,
+       "description":("Agency for AI implementation, development, CRM and SEO." if lang=="en" else "Агентство: внедрение ИИ, разработка, CRM и SEO."),
+       "contactPoint":{"@type":"ContactPoint","email":"hello@skill-dev.ai","contactType":"sales","availableLanguage":["ru","en"]}},
       {"@type":"WebPage","@id":SITE+url,"url":SITE+url,"name":meta.get("title",title),
        "description":meta.get("description",""),"inLanguage":lang,"isPartOf":{"@id":SITE+"/#org"}},
       {"@type":"BreadcrumbList","itemListElement":bc_ld},
@@ -421,7 +439,7 @@ def footer_html(lang="ru"):
       <div class="footer__contacts"><p><strong>{esc(S["contacts_label"])}</strong></p><p>hello@skill-dev.ai</p><p>{esc(S["worldwide"])}</p></div>
     </div>
     <div class="footer__grid footer__grid--silo">{''.join(cols)}
-      <div><div class="footer__h">{esc(S["company"])}</div><ul><li><a href="{u('/o-kompanii/')}">{esc(S["about_us"])}</a></li><li><a href="{u('/kejsy/')}">{esc(S["cases_nav"])}</a></li><li><a href="{u('/kontakty/')}">{esc(S["contacts"])}</a></li><li><a href="{u('/uslugi/')}">{esc(S["all_services"])}</a></li></ul></div>
+      <div><div class="footer__h">{esc(S["company"])}</div><ul><li><a href="{u('/o-kompanii/')}">{esc(S["about_us"])}</a></li><li><a href="{u('/kejsy/')}">{esc(S["cases_nav"])}</a></li><li><a href="{u('/kontakty/')}">{esc(S["contacts"])}</a></li><li><a href="{u('/uslugi/')}">{esc(S["all_services"])}</a></li><li><a href="{u('/karta-sajta/')}">{esc(S["sitemap_nav"])}</a></li></ul></div>
     </div>
     <div class="footer__bottom"><span>{esc(S["rights"])}</span><span>hello@skill-dev.ai</span></div>
   </div></footer>'''
@@ -772,15 +790,111 @@ def build_case_vps(lang):
     open(os.path.join(d, out_html_name(lang)), 'w', encoding='utf-8').write(doc)
 
 
+def _sitemap_priority(path):
+    depth = path.strip('/').count('/')
+    if path == '/': return '1.0', 'weekly'
+    if path in ('/uslugi/', '/kejsy/'): return '0.9', 'weekly'
+    if depth == 1: return '0.8', 'monthly'          # хабы услуг, служебные
+    return '0.7', 'monthly'                           # дети/кейсы
+
+def _hero_image(path):
+    # hero-картинка страницы для image-sitemap (если есть в assets/img)
+    slug = path.strip('/').split('/')[-1] or 'home'
+    for cand in (slug + '-hero.jpg', 'case-vps-hero.jpg' if 'kejsy' in path and path != '/kejsy/' else None):
+        if cand and os.path.isfile(os.path.join(ROOT, 'assets', 'img', cand)):
+            return SITE + '/assets/img/' + cand
+    return None
+
+
+def build_html_sitemap(lang):
+    S = STRINGS[lang]
+    noindex = '<meta name="robots" content="noindex,nofollow">' if NOINDEX else ''
+    bc = f'<nav class="breadcrumbs" aria-label="{esc(S["breadcrumbs"])}"><a href="{u("/")}">{esc(S["home"])}</a><span>/</span><span aria-current="page">{esc(S["sitemap_h1"])}</span></nav>'
+    def li(url, label): return f'<li><a href="{u(url)}">{esc(label)}</a></li>'
+    # услуги: хабы + дети
+    svc = []
+    for h in HUBS:
+        kids = ''.join(li(PAGES[k][0], page_title(k, lang)) for k in KIDS[h])
+        svc.append(f'<li><a href="{u(PAGES[h][0])}">{esc(page_title(h, lang))}</a>' + (f'<ul>{kids}</ul>' if kids else '') + '</li>')
+    cases = li('/kejsy/', S["cases_h1"]) + ''.join(li(CASE_META[c]["url"], CASE_META[c][lang]["card_title"]) for c in CASES)
+    company = li('/o-kompanii/', S["about"]) + li('/kontakty/', S["contacts"]) + li('/uslugi/', S["all_services"])
+    body = f'''<div class="sitemap-cols">
+<section><h2>{esc(S["sitemap_sec_services"])}</h2><ul class="sitemap-tree">{''.join(svc)}</ul></section>
+<section><h2>{esc(S["sitemap_sec_cases"])}</h2><ul class="sitemap-tree">{cases}</ul></section>
+<section><h2>{esc(S["sitemap_sec_company"])}</h2><ul class="sitemap-tree">{company}</ul></section>
+</div>'''
+    doc = f'''<!DOCTYPE html>
+<html lang="{lang}"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {head_common()}
+<title>{esc(S["sitemap_title"])}</title><meta name="description" content="{esc(S["sitemap_desc"])}">
+<meta http-equiv="content-language" content="{lang}">{noindex}
+<link rel="canonical" href="{SITE}/karta-sajta/">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{u('/css/styles.css')}?v=11"><link rel="stylesheet" href="{u('/css/pages.css')}?v=11"></head>
+<body class="inner-page">{header_html(lang)}
+<main class="page-main page-article">
+<section class="page-hero"><div class="container">{bc}
+<h1 class="heading1 page-hero__title">{esc(S["sitemap_h1"])}</h1>
+<div class="page-hero__lead"><p>{esc(S["sitemap_lead"])}</p></div></div></section>
+<div class="container page-content">{body}</div>
+</main>{footer_html(lang)}<script src="{u('/js/main.js')}?v=11"></script></body></html>'''
+    d = os.path.join(ROOT, 'karta-sajta')
+    os.makedirs(d, exist_ok=True)
+    open(os.path.join(d, out_html_name(lang)), 'w', encoding='utf-8').write(doc)
+
+
+def build_llms_txt():
+    """llms.txt — файл-навигатор для AI-краулеров (практика сообщества)."""
+    lines = [
+        "# Skill Dev",
+        "",
+        "> Agency for AI implementation, AI agents, chatbots, website development, CRM and SEO. We cut business costs with technology and measure before/after.",
+        "",
+        "## Services",
+    ]
+    for h in HUBS:
+        lines.append(f"- [{page_title(h,'en')}]({SITE}{PAGES[h][0]})")
+        for k in KIDS[h]:
+            lines.append(f"  - [{page_title(k,'en')}]({SITE}{PAGES[k][0]})")
+    lines += ["", "## Cases"]
+    for c in CASES:
+        lines.append(f"- [{CASE_META[c]['en']['card_title']}]({SITE}{CASE_META[c]['url']})")
+    lines += ["", "## Company",
+              f"- [About]({SITE}/o-kompanii/)",
+              f"- [Contact]({SITE}/kontakty/)",
+              f"- [Sitemap]({SITE}/karta-sajta/)",
+              "", "Contact: hello@skill-dev.ai", ""]
+    open(os.path.join(ROOT, 'llms.txt'), 'w', encoding='utf-8').write("\n".join(lines))
+
+
 def build_sitemap(urls):
     import datetime
     today = datetime.date.today().isoformat()
-    items = ''.join(f'<url><loc>{SITE}{p}</loc><lastmod>{today}</lastmod></url>' for p in urls)
+    all_urls = ['/'] + [u for u in urls if u != '/']
+    parts = []
+    for path in all_urls:
+        pr, cf = _sitemap_priority(path)
+        img = _hero_image(path)
+        img_xml = f'<image:image><image:loc>{img}</image:loc></image:image>' if img else ''
+        parts.append(f'<url><loc>{SITE}{path}</loc><lastmod>{today}</lastmod><changefreq>{cf}</changefreq><priority>{pr}</priority>{img_xml}</url>')
     open(os.path.join(ROOT, 'sitemap.xml'), 'w').write(
-        '<?xml version="1.0" encoding="UTF-8"?>'
-        f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>{SITE}/</loc><lastmod>{today}</lastmod></url>{items}</urlset>')
-    open(os.path.join(ROOT, 'robots.txt'), 'w').write(
-        f"User-agent: *\n{'Disallow: /' if NOINDEX else 'Allow: /'}\nSitemap: {SITE}/sitemap.xml\n")
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">'
+        + ''.join(parts) + '</urlset>')
+    # robots: query-URL закрыты; AI/поисковым ботам явный доступ (GEO); тест-домен закрыт целиком
+    if NOINDEX:
+        robots = "User-agent: *\nDisallow: /\n"
+    else:
+        ai_bots = "GPTBot OAI-SearchBot ChatGPT-User ClaudeBot Claude-Web anthropic-ai PerplexityBot Google-Extended Applebot-Extended YandexAdditional CCBot".split()
+        allow_ai = "".join(f"\nUser-agent: {b}\nAllow: /" for b in ai_bots)
+        robots = (
+            "User-agent: *\n"
+            "Allow: /\n"
+            "Disallow: /*?\n"          # URL с query-параметрами (дубли, фильтры)
+            + allow_ai + "\n"
+        )
+    robots += f"\nSitemap: {SITE}/sitemap.xml\n"
+    open(os.path.join(ROOT, 'robots.txt'), 'w').write(robots)
 
 def patch_home(lang="ru"):
     """Единые header/footer на главной. Для EN читает index.en.html если есть, иначе копирует RU."""
@@ -833,13 +947,14 @@ def patch_home(lang="ru"):
     print(f'patched {name} (header/footer unified, lang={lang})')
 
 if __name__ == '__main__':
-    urls = ['/uslugi/', '/kontakty/', '/kejsy/', '/kejsy/claude-vps-sreda/']
+    urls = ['/uslugi/', '/kontakty/', '/kejsy/', '/kejsy/claude-vps-sreda/', '/karta-sajta/']
     for lang in ("ru", "en"):
         patch_home(lang)
         build_uslugi_catalog(lang)
         build_kontakty(lang)
         build_cases_hub(lang)
         build_case_vps(lang)
+        build_html_sitemap(lang)
         for slug in PAGES:
             built = build_page(slug, lang)
             if built and lang == "ru":
@@ -853,5 +968,6 @@ if __name__ == '__main__':
         if p not in seen:
             seen.add(p); uniq.append(p)
     build_404()
+    build_llms_txt()
     build_sitemap(uniq)
     print(f'\nDONE: {len(uniq)} URLs · BASE={BASE!r} · NOINDEX={NOINDEX}')

@@ -95,7 +95,22 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             self.send_header("Location", f"{BASE}/")
             self.end_headers()
             return
+        slash = self._dir_needs_slash(path)
+        if slash:
+            self.send_response(301); self.send_header("Location", slash); self.end_headers(); return
         super().do_HEAD()
+
+    def _dir_needs_slash(self, path):
+        """Путь-каталог без завершающего слэша (и не файл) → нужен 301 на path+'/'."""
+        if path.endswith('/') or '.' in path.rsplit('/', 1)[-1]:
+            return None
+        rel = path
+        if BASE and rel.startswith(BASE):
+            rel = rel[len(BASE):] or '/'
+        fs = Path(ROOT) / rel.lstrip('/')
+        if fs.is_dir():
+            return path + '/'
+        return None
 
     def do_GET(self):
         path = urllib.parse.urlsplit(self.path).path
@@ -104,6 +119,11 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                 return self._redirect(f"{BASE}/")
             if path == BASE:
                 return self._redirect(f"{BASE}/")
+        slash = self._dir_needs_slash(path)
+        if slash:
+            q = urllib.parse.urlsplit(self.path).query
+            loc = slash + (("?" + q) if q else "")
+            self.send_response(301); self.send_header("Location", loc); self.end_headers(); return
         super().do_GET()
 
     def translate_path(self, path: str) -> str:
