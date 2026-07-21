@@ -822,6 +822,8 @@ def patch_home(lang="ru"):
     h = re.sub(r'\s*<!-- Yandex\.Metrika counter -->.*?<!-- /Yandex\.Metrika counter -->\s*', '\n', h, flags=re.S)
     if '110912791' not in h:
         h = h.replace('</head>', '\n' + yandex_metrika_html() + '\n</head>')
+    # Домен: захардкоженный тестовый geeedy.github.io/site → фактический SITE (canonical, og, JSON-LD)
+    h = h.replace("https://geeedy.github.io/site", SITE)
     open(p, 'w', encoding='utf-8').write(h)
     print(f'patched {name} (header/footer unified, lang={lang})')
 
