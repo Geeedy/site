@@ -453,8 +453,8 @@ def page_shell(slug, meta, hero_html, body_html, faq, bc_ld, lang):
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{u('/css/styles.css')}?v=10">
-  <link rel="stylesheet" href="{u('/css/pages.css')}?v=10">
+  <link rel="stylesheet" href="{u('/css/styles.css')}?v=11">
+  <link rel="stylesheet" href="{u('/css/pages.css')}?v=11">
   {schema(slug, meta, faq, bc_ld, lang)}
 </head>
 <body class="inner-page">
@@ -466,7 +466,7 @@ def page_shell(slug, meta, hero_html, body_html, faq, bc_ld, lang):
   </div>
 </main>
 {footer_html(lang)}
-<script src="{u('/js/main.js')}?v=10"></script>
+<script src="{u('/js/main.js')}?v=11"></script>
 </body>
 </html>'''
 
@@ -524,7 +524,7 @@ def build_uslugi_catalog(lang):
 <link rel="canonical" href="{SITE}/uslugi/">
 <script type="application/ld+json">{{"@context":"https://schema.org","@graph":[{{"@type":"CollectionPage","@id":"{SITE}/uslugi/","url":"{SITE}/uslugi/","name":{json.dumps(S["catalog_title"], ensure_ascii=False)},"inLanguage":"{lang}"}},{{"@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":{json.dumps(S["home"], ensure_ascii=False)},"item":"{SITE}/"}},{{"@type":"ListItem","position":2,"name":{json.dumps(S["services"], ensure_ascii=False)},"item":"{SITE}/uslugi/"}}]}},{{"@type":"ItemList","itemListElement":[{itemlist}]}}]}}</script>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{u('/css/styles.css')}?v=10"><link rel="stylesheet" href="{u('/css/pages.css')}?v=10"></head>
+<link rel="stylesheet" href="{u('/css/styles.css')}?v=11"><link rel="stylesheet" href="{u('/css/pages.css')}?v=11"></head>
 <body class="inner-page">{header_html(lang)}
 <main class="page-main page-article">
 <section class="page-hero"><div class="container">{bc}
@@ -532,7 +532,7 @@ def build_uslugi_catalog(lang):
 <div class="page-hero__lead"><p>{esc(S["catalog_lead"])}</p></div>
 </div></section>
 <div class="container page-content"><div class="catalog-grid">{''.join(cards)}</div></div>
-</main>{footer_html(lang)}<script src="{u('/js/main.js')}?v=10"></script></body></html>'''
+</main>{footer_html(lang)}<script src="{u('/js/main.js')}?v=11"></script></body></html>'''
     d = os.path.join(ROOT, 'uslugi')
     os.makedirs(d, exist_ok=True)
     open(os.path.join(d, out_html_name(lang)), 'w', encoding='utf-8').write(doc)
@@ -548,7 +548,7 @@ def build_kontakty(lang):
 <meta http-equiv="content-language" content="{lang}">{noindex}
 <link rel="canonical" href="{SITE}/kontakty/">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{u('/css/styles.css')}?v=10"><link rel="stylesheet" href="{u('/css/pages.css')}?v=10"></head>
+<link rel="stylesheet" href="{u('/css/styles.css')}?v=11"><link rel="stylesheet" href="{u('/css/pages.css')}?v=11"></head>
 <body class="inner-page">{header_html(lang)}
 <main class="page-main page-article">
 <section class="page-hero"><div class="container">{bc}
@@ -562,7 +562,7 @@ def build_kontakty(lang):
 <div class="form-group"><label>{esc(S["form_contact"])}</label><input type="text" required></div></div>
 <button type="submit" class="btn btn--primary" style="width:100%">{esc(S["form_send"])}</button></form>
 </div></div></section>
-</main>{footer_html(lang)}<script src="{u('/js/main.js')}?v=10"></script></body></html>'''
+</main>{footer_html(lang)}<script src="{u('/js/main.js')}?v=11"></script></body></html>'''
     d = os.path.join(ROOT, 'kontakty')
     os.makedirs(d, exist_ok=True)
     open(os.path.join(d, out_html_name(lang)), 'w', encoding='utf-8').write(doc)
@@ -575,7 +575,7 @@ def build_404():
   {head_common()}
 <title>Страница не найдена | Skill Dev</title>
 <meta name="robots" content="noindex">
-<link rel="stylesheet" href="{u('/css/styles.css')}?v=10"><link rel="stylesheet" href="{u('/css/pages.css')}?v=10"></head>
+<link rel="stylesheet" href="{u('/css/styles.css')}?v=11"><link rel="stylesheet" href="{u('/css/pages.css')}?v=11"></head>
 <body class="inner-page">{header_html("ru")}
 <main class="page-main page-article">
 <section class="page-hero"><div class="container">
@@ -583,7 +583,7 @@ def build_404():
 <div class="page-hero__lead"><p>Такого адреса нет или страница переехала. Вот куда можно пойти отсюда.</p></div>
 <div class="page-hero__actions"><a class="btn btn--primary" href="{u('/')}">На главную</a> <a class="btn btn--outline" href="{u('/uslugi/')}">Все услуги</a></div>
 </div></section>
-</main>{footer_html("ru")}<script src="{u('/js/main.js')}?v=10"></script></body></html>'''
+</main>{footer_html("ru")}<script src="{u('/js/main.js')}?v=11"></script></body></html>'''
     open(os.path.join(ROOT, '404.html'), 'w', encoding='utf-8').write(doc)
 
 # ==================== КЕЙСЫ ====================
@@ -630,14 +630,14 @@ def build_cases_hub(lang):
 <meta property="og:title" content="{esc(S["cases_title"])}"><meta property="og:type" content="website"><meta property="og:url" content="{SITE}/kejsy/"><meta property="og:image" content="{SITE}/assets/ui/og-cover.png">
 <script type="application/ld+json">{{"@context":"https://schema.org","@graph":[{{"@type":"CollectionPage","@id":"{SITE}/kejsy/","url":"{SITE}/kejsy/","name":{json.dumps(S["cases_title"], ensure_ascii=False)},"inLanguage":"{lang}"}},{{"@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":{json.dumps(S["home"], ensure_ascii=False)},"item":"{SITE}/"}},{{"@type":"ListItem","position":2,"name":{json.dumps(S["cases_h1"], ensure_ascii=False)},"item":"{SITE}/kejsy/"}}]}},{{"@type":"ItemList","itemListElement":[{items_ld}]}}]}}</script>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{u('/css/styles.css')}?v=10"><link rel="stylesheet" href="{u('/css/pages.css')}?v=10"></head>
+<link rel="stylesheet" href="{u('/css/styles.css')}?v=11"><link rel="stylesheet" href="{u('/css/pages.css')}?v=11"></head>
 <body class="inner-page">{header_html(lang)}
 <main class="page-main page-article">
 <section class="page-hero"><div class="container">{bc}
 <h1 class="heading1 page-hero__title">{esc(S["cases_h1"])}</h1>
 <div class="page-hero__lead"><p>{esc(S["cases_lead"])}</p></div></div></section>
 <div class="container page-content"><div class="case-grid">{''.join(cards)}</div></div>
-</main>{footer_html(lang)}<script src="{u('/js/main.js')}?v=10"></script></body></html>'''
+</main>{footer_html(lang)}<script src="{u('/js/main.js')}?v=11"></script></body></html>'''
     d = os.path.join(ROOT, 'kejsy')
     os.makedirs(d, exist_ok=True)
     open(os.path.join(d, out_html_name(lang)), 'w', encoding='utf-8').write(doc)
@@ -648,6 +648,7 @@ def build_case_vps(lang):
     noindex = '<meta name="robots" content="noindex,nofollow">' if NOINDEX else ''
     sfx = "" if lang == "ru" else "-en"
     def img(n, alt): return f'<figure class="page-figure"><img src="{u("/assets/img/case-vps-"+n+sfx+".jpg")}" alt="{esc(alt)}" loading="lazy" width="1600" height="1066"></figure>'
+    def svg(n, cap): return f'<figure class="page-figure page-figure--chart"><img src="{u("/assets/infographics/case-vps-"+n+sfx+".svg")}" alt="{esc(cap)}" loading="lazy"></figure>'
     url = "/kejsy/claude-vps-sreda/"
     if lang == "ru":
         title = "Кейс: изолированная среда командной разработки на VPS | Skill Dev"
@@ -685,16 +686,17 @@ def build_case_vps(lang):
 <p>Под параллельную работу нескольких операторов и инструменты с длинным контекстом выделили ресурсы с запасом: 8–16 vCPU, 32+ ГБ RAM, SSD. Среда не тормозит, даже когда несколько человек работают одновременно и гоняют тяжёлые задачи.</p>
 <h2>Автоматизация SEO-работ</h2>
 {img("work", "Рабочее место оператора с несколькими мониторами")}
-<p>Поверх среды собрали рабочие пайплайны под задачи команды и связали их с привычными инструментами:</p>
-<ul>
-<li>Интеграция с Git и локальными базами семантики.</li>
-<li>Подключение SEO-инструментов: выгрузки Screaming Frog, Ahrefs API, Google Search Console.</li>
-<li>Пайплайны генерации контента с проверкой уникальности и последующим SEO-структурированием.</li>
-</ul>
+<p>Поверх среды собрали рабочие пайплайны под задачи команды: от сбора семантики до готовых страниц, всё в общем конвейере.</p>
+{svg("pipeline", "SEO-конвейер: семантика и Git, генерация, проверка уникальности, SEO-структурирование, публикация")}
+<p>Пайплайны связаны с привычными инструментами команды: общие Git-репозитории и базы семантики, выгрузки Screaming Frog, данные Ahrefs API и Google Search Console.</p>
+{svg("stack", "Инструменты в конвейере: Git, Ahrefs API, Search Console, Screaming Frog")}
 <h2>Результат</h2>
-<p>Заказчик получил рабочий и масштабируемый инструмент. Три оператора работают в единой среде одновременно, без расхождения конфигураций и потери контекста между людьми. Скорость и предсказуемость SEO-работ заметно выросли: генерация и оптимизация страниц, техническая проработка, кластеризация запросов идут в общем конвейере.</p>
+<p>Заказчик получил рабочий и масштабируемый инструмент. Три оператора работают в единой среде одновременно, без расхождения конфигураций и потери контекста между людьми.</p>
+{svg("result", "Результат: 3 оператора одновременно, ноль расхождений конфигураций, выше скорость и предсказуемость")}
+<p>Скорость и предсказуемость SEO-работ заметно выросли: генерация и оптимизация страниц, техническая проработка, кластеризация запросов идут в общем конвейере.</p>
 <h2>Наша роль</h2>
-<p>Полный цикл: архитектура, развёртывание инфраструктуры, настройка безопасных подключений, тестирование под нагрузкой и передача инструкций по поддержке и масштабированию. Проект запущен в продакшен и работает.</p>
+<p>Полный цикл: от архитектуры до передачи в поддержку. Проект запущен в продакшен и работает.</p>
+{svg("role", "Пять этапов нашей роли: архитектура, развёртывание, безопасные подключения, тестирование под нагрузкой, передача и поддержка")}
 <div class="cta-horizontal step-up"><div class="cta-horizontal__text"><p class="cta-horizontal__title">Нужна похожая среда или своя инфраструктура под команду?</p></div><a href="{u('/kontakty/')}" class="btn btn--primary">{esc(S['cta_apply'])}</a></div>
 '''
     else:
@@ -733,16 +735,17 @@ def build_case_vps(lang):
 <p>For several operators working in parallel and tools with long context, we provisioned resources with headroom: 8–16 vCPU, 32+ GB RAM, SSD. The environment stays responsive even when several people work at once and run heavy jobs.</p>
 <h2>SEO automation</h2>
 {img("work", "Operator workstation with multiple monitors")}
-<p>On top of the environment we built working pipelines for the team's tasks and wired them into familiar tools:</p>
-<ul>
-<li>Integration with Git and local semantic-core databases.</li>
-<li>SEO tools connected: Screaming Frog exports, Ahrefs API, Google Search Console.</li>
-<li>Content generation pipelines with uniqueness checks and downstream SEO structuring.</li>
-</ul>
+<p>On top of the environment we built working pipelines for the team's tasks: from semantics collection to ready pages, all in one shared pipeline.</p>
+{svg("pipeline", "SEO pipeline: semantics and Git, generation, uniqueness check, SEO structuring, publish")}
+<p>The pipelines are wired into the team's familiar tools: shared Git repositories and semantic bases, Screaming Frog exports, Ahrefs API and Google Search Console data.</p>
+{svg("stack", "Tools in the pipeline: Git, Ahrefs API, Search Console, Screaming Frog")}
 <h2>The outcome</h2>
-<p>The client got a working, scalable tool. Three operators work in one environment at the same time, without config drift or lost context between people. The speed and predictability of SEO work grew noticeably: page generation and optimization, technical work, and query clustering all run through a shared pipeline.</p>
+<p>The client got a working, scalable tool. Three operators work in one environment at the same time, without config drift or lost context between people.</p>
+{svg("result", "Outcome: 3 operators at once, zero config drift, more speed and predictability")}
+<p>The speed and predictability of SEO work grew noticeably: page generation and optimization, technical work, and query clustering all run through a shared pipeline.</p>
 <h2>Our role</h2>
-<p>The full cycle: architecture, infrastructure deployment, secure connection setup, load testing, and handover with support and scaling instructions. The project is in production and running.</p>
+<p>The full cycle: from architecture to handover and support. The project is in production and running.</p>
+{svg("role", "Five stages of our role: architecture, deployment, secure connections, load testing, handover and support")}
 <div class="cta-horizontal step-up"><div class="cta-horizontal__text"><p class="cta-horizontal__title">Need a similar environment or your own team infrastructure?</p></div><a href="{u('/kontakty/')}" class="btn btn--primary">{esc(S['cta_apply'])}</a></div>
 '''
     bc = f'<nav class="breadcrumbs" aria-label="{esc(S["breadcrumbs"])}"><a href="{u("/")}">{esc(S["home"])}</a><span>/</span><a href="{u("/kejsy/")}">{esc(S["cases_h1"])}</a><span>/</span><span aria-current="page">{esc(h1)}</span></nav>'
@@ -756,14 +759,14 @@ def build_case_vps(lang):
 <meta property="og:title" content="{esc(h1)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:type" content="article"><meta property="og:url" content="{SITE}{url}"><meta property="og:image" content="{SITE}/assets/img/case-vps-hero{sfx}.jpg"><meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{ld}</script>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{u('/css/styles.css')}?v=10"><link rel="stylesheet" href="{u('/css/pages.css')}?v=10"></head>
+<link rel="stylesheet" href="{u('/css/styles.css')}?v=11"><link rel="stylesheet" href="{u('/css/pages.css')}?v=11"></head>
 <body class="inner-page">{header_html(lang)}
 <main class="page-main page-article">
 <section class="page-hero"><div class="container">{bc}
 <h1 class="heading1 page-hero__title">{esc(h1)}</h1>
 <div class="page-hero__lead"><p>{esc(lead)}</p></div></div></section>
 <div class="container page-content">{body}</div>
-</main>{footer_html(lang)}<script src="{u('/js/main.js')}?v=10"></script></body></html>'''
+</main>{footer_html(lang)}<script src="{u('/js/main.js')}?v=11"></script></body></html>'''
     d = os.path.join(ROOT, 'kejsy', 'claude-vps-sreda')
     os.makedirs(d, exist_ok=True)
     open(os.path.join(d, out_html_name(lang)), 'w', encoding='utf-8').write(doc)
@@ -810,8 +813,8 @@ def patch_home(lang="ru"):
         h = re.sub(r'content-language" content="[^"]*"', f'content-language" content="{lang}"', h, count=1)
     h = re.sub(r'<header class="header[^"]*" id="siteHeader">.*?</header>', header_html(lang), h, count=1, flags=re.S)
     h = re.sub(r'<footer class="footer">.*?</footer>', footer_html(lang), h, count=1, flags=re.S)
-    h = re.sub(r'href="[^"]*css/(styles|pages)\.css[^"]*"', lambda m: f'href="{u("/css/"+m.group(1)+".css")}?v=10"', h)
-    h = re.sub(r'src="[^"]*/js/main\.js[^"]*"', f'src="{u("/js/main.js")}?v=10"', h)
+    h = re.sub(r'href="[^"]*css/(styles|pages)\.css[^"]*"', lambda m: f'href="{u("/css/"+m.group(1)+".css")}?v=11"', h)
+    h = re.sub(r'src="[^"]*/js/main\.js[^"]*"', f'src="{u("/js/main.js")}?v=11"', h)
     h = re.sub(
         r'  <link rel="icon" href="[^"]*" sizes="48x48">\n'
         r'  <link rel="icon" type="image/png" sizes="32x32" href="[^"]*">\n'

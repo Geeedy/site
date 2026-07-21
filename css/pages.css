@@ -85,3 +85,7 @@ mark.tbd { background: #fff3bf; color: #7a5a00; padding: 0 6px; border-radius: 4
 .case-meta__item { font-size: 13px; color: var(--gray-600, #5a6478); position: relative; padding-left: 16px; }
 .case-meta__item::before { content: ""; position: absolute; left: 4px; top: 50%; width: 4px; height: 4px; border-radius: 50%; background: var(--blue, #0b3d91); transform: translateY(-50%); }
 @media (max-width: 700px) { .case-grid { grid-template-columns: 1fr; } }
+
+/* v11: инфографики в кейсе — на всю ширину контента, светлый фон */
+.page-figure--chart { margin: 22px 0; }
+.page-figure--chart img { width: 100%; height: auto; border: 1px solid var(--border, #e2e7f0); border-radius: 12px; background: #fff; }
