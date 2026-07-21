@@ -913,6 +913,46 @@ def build_llms_txt():
     open(os.path.join(ROOT, 'llms.txt'), 'w', encoding='utf-8').write("\n".join(lines))
 
 
+def build_sitemap_xsl():
+    """XSL-стиль: браузер показывает sitemap.xml как аккуратную таблицу."""
+    xsl = '''<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:s="http://www.sitemaps.org/schemas/sitemap/0.9">
+<xsl:output method="html" encoding="UTF-8" indent="yes"/>
+<xsl:template match="/">
+<html lang="en"><head><meta charset="UTF-8"/><title>Sitemap · Skill Dev</title>
+<style>
+body{font:14px/1.5 -apple-system,Segoe UI,Roboto,sans-serif;color:#1a2233;margin:0;background:#f6f8fc}
+.wrap{max-width:1100px;margin:0 auto;padding:32px 20px}
+h1{color:#0b3d91;font-size:22px;margin:0 0 4px}
+.sub{color:#5a6478;margin:0 0 20px}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 4px rgba(11,61,145,.08)}
+th{background:#0b3d91;color:#fff;text-align:left;padding:10px 12px;font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+td{border-top:1px solid #e2e7f0;padding:9px 12px;font-size:13px;vertical-align:top}
+td a{color:#0b3d91;text-decoration:none}
+td a:hover{text-decoration:underline}
+tr:nth-child(even) td{background:#f9fbfe}
+.pri{font-variant-numeric:tabular-nums;color:#5a6478}
+</style></head><body><div class="wrap">
+<h1>Skill Dev — Sitemap</h1>
+<p class="sub">Total URLs: <xsl:value-of select="count(s:urlset/s:url)"/></p>
+<table><thead><tr><th>URL</th><th>Last modified</th><th>Change freq.</th><th>Priority</th></tr></thead>
+<tbody>
+<xsl:for-each select="s:urlset/s:url">
+<tr>
+<td><a href="{s:loc}"><xsl:value-of select="s:loc"/></a></td>
+<td><xsl:value-of select="s:lastmod"/></td>
+<td><xsl:value-of select="s:changefreq"/></td>
+<td class="pri"><xsl:value-of select="s:priority"/></td>
+</tr>
+</xsl:for-each>
+</tbody></table>
+</div></body></html>
+</xsl:template>
+</xsl:stylesheet>'''
+    open(os.path.join(ROOT, 'sitemap.xsl'), 'w', encoding='utf-8').write(xsl)
+
 def build_sitemap(paths):
     """paths — логические URL без локали (включая '/'). Пишет EN + /ru/ с xhtml:alternate."""
     import datetime
@@ -921,23 +961,31 @@ def build_sitemap(paths):
     for path in paths:
         pr, cf = _sitemap_priority(path)
         img = _hero_image(path)
-        img_xml = f'<image:image><image:loc>{img}</image:loc></image:image>' if img else ''
+        en, ru = abs_url(path, "en"), abs_url(path, "ru")
         for lang in ("en", "ru"):
             loc = abs_url(path, lang)
-            en, ru = abs_url(path, "en"), abs_url(path, "ru")
-            parts.append(
-                f'<url><loc>{loc}</loc>'
-                f'<xhtml:link rel="alternate" hreflang="en" href="{en}"/>'
-                f'<xhtml:link rel="alternate" hreflang="ru" href="{ru}"/>'
-                f'<xhtml:link rel="alternate" hreflang="x-default" href="{en}"/>'
-                f'<lastmod>{today}</lastmod><changefreq>{cf}</changefreq><priority>{pr}</priority>{img_xml}</url>'
-            )
+            lines = [
+                "  <url>",
+                f"    <loc>{loc}</loc>",
+                f'    <xhtml:link rel="alternate" hreflang="en" href="{en}"/>',
+                f'    <xhtml:link rel="alternate" hreflang="ru" href="{ru}"/>',
+                f'    <xhtml:link rel="alternate" hreflang="x-default" href="{en}"/>',
+                f"    <lastmod>{today}</lastmod>",
+                f"    <changefreq>{cf}</changefreq>",
+                f"    <priority>{pr}</priority>",
+            ]
+            if img:
+                lines += ["    <image:image>", f"      <image:loc>{img}</image:loc>", "    </image:image>"]
+            lines.append("  </url>")
+            parts.append("\n".join(lines))
+    build_sitemap_xsl()
     open(os.path.join(ROOT, 'sitemap.xml'), 'w').write(
         '<?xml version="1.0" encoding="UTF-8"?>\n'
-        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
-        'xmlns:xhtml="http://www.w3.org/1999/xhtml" '
-        'xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">'
-        + ''.join(parts) + '</urlset>')
+        f'<?xml-stylesheet type="text/xsl" href="{u("/sitemap.xsl")}"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n'
+        '        xmlns:xhtml="http://www.w3.org/1999/xhtml"\n'
+        '        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'
+        + "\n".join(parts) + "\n</urlset>\n")
     # robots: query-URL закрыты; AI/поисковым ботам явный доступ (GEO); тест-домен закрыт целиком
     if NOINDEX:
         robots = "User-agent: *\nDisallow: /\n"
