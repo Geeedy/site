@@ -332,7 +332,9 @@ def lang_switcher(lang):
     )
 
 def yandex_metrika_html():
-    """Yandex.Metrika — один раз в head на все страницы."""
+    """Yandex.Metrika — только на боевом домене (не на тест-зеркале), чтобы не засорять статистику."""
+    if NOINDEX:
+        return ''
     return '''  <!-- Yandex.Metrika counter -->
   <script type="text/javascript">
     (function(m,e,t,r,i,k,a){
