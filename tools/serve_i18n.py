@@ -14,7 +14,6 @@ from __future__ import annotations
 import http.server
 import os
 import re
-import re
 import urllib.parse
 from pathlib import Path
 
@@ -83,6 +82,29 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         if en_f.is_file():
             return en_f
         return None
+
+    def _redirect(self, location: str) -> None:
+        self.send_response(302)
+        self.send_header("Location", location)
+        self.end_headers()
+
+    def do_HEAD(self):
+        path = urllib.parse.urlsplit(self.path).path
+        if BASE and path in ("", "/", BASE):
+            self.send_response(302)
+            self.send_header("Location", f"{BASE}/")
+            self.end_headers()
+            return
+        super().do_HEAD()
+
+    def do_GET(self):
+        path = urllib.parse.urlsplit(self.path).path
+        if BASE:
+            if path in ("", "/"):
+                return self._redirect(f"{BASE}/")
+            if path == BASE:
+                return self._redirect(f"{BASE}/")
+        super().do_GET()
 
     def translate_path(self, path: str) -> str:
         path = urllib.parse.urlsplit(path).path

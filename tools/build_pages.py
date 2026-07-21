@@ -331,14 +331,34 @@ def lang_switcher(lang):
       f'</div>'
     )
 
-def head_common():
-    """Верификации ПС + фавиконки — на все страницы обеих локалей."""
-    return f'''<meta name="yandex-verification" content="bac091f33d55ea2c">
-  <meta name="google-site-verification" content="a6Kww_ZoTqDVduplocAADN3G1dHjxKny1sv1Y1ag_f0">
-  <link rel="icon" href="{u('/favicon.ico')}" sizes="48x48">
+def yandex_metrika_html():
+    """Yandex.Metrika — один раз в head на все страницы."""
+    return '''  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=110912791', 'ym');
+
+    ym(110912791, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/110912791" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->'''
+
+def favicon_links_html():
+    return f'''  <link rel="icon" href="{u('/favicon.ico')}" sizes="48x48">
   <link rel="icon" type="image/png" sizes="32x32" href="{u('/assets/ui/favicon-32.png')}">
   <link rel="icon" type="image/png" sizes="192x192" href="{u('/assets/ui/favicon-192.png')}">
   <link rel="apple-touch-icon" href="{u('/assets/ui/apple-touch-icon.png')}">'''
+
+def head_common():
+    """Верификации ПС + фавиконки + Metrika — на все страницы обеих локалей."""
+    return f'''<meta name="yandex-verification" content="bac091f33d55ea2c">
+  <meta name="google-site-verification" content="a6Kww_ZoTqDVduplocAADN3G1dHjxKny1sv1Y1ag_f0">
+{favicon_links_html()}
+{yandex_metrika_html()}'''
 
 def header_html(lang="ru"):
     S = STRINGS[lang]
@@ -790,8 +810,18 @@ def patch_home(lang="ru"):
     h = re.sub(r'<footer class="footer">.*?</footer>', footer_html(lang), h, count=1, flags=re.S)
     h = re.sub(r'href="[^"]*css/(styles|pages)\.css[^"]*"', lambda m: f'href="{u("/css/"+m.group(1)+".css")}?v=10"', h)
     h = re.sub(r'src="[^"]*/js/main\.js[^"]*"', f'src="{u("/js/main.js")}?v=10"', h)
-    # Домен: захардкоженный тестовый geeedy.github.io/site → фактический SITE (canonical, og, JSON-LD)
-    h = h.replace("https://geeedy.github.io/site", SITE)
+    h = re.sub(
+        r'  <link rel="icon" href="[^"]*" sizes="48x48">\n'
+        r'  <link rel="icon" type="image/png" sizes="32x32" href="[^"]*">\n'
+        r'  <link rel="icon" type="image/png" sizes="192x192" href="[^"]*">\n'
+        r'  <link rel="apple-touch-icon" href="[^"]*">',
+        favicon_links_html().rstrip(),
+        h,
+        count=1,
+    )
+    h = re.sub(r'\s*<!-- Yandex\.Metrika counter -->.*?<!-- /Yandex\.Metrika counter -->\s*', '\n', h, flags=re.S)
+    if '110912791' not in h:
+        h = h.replace('</head>', '\n' + yandex_metrika_html() + '\n</head>')
     open(p, 'w', encoding='utf-8').write(h)
     print(f'patched {name} (header/footer unified, lang={lang})')
 
