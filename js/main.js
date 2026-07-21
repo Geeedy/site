@@ -106,8 +106,6 @@
   const ASSETS = (() => {
     const base = document.querySelector('link[href*="css/styles.css"]')?.getAttribute('href') || '';
     const root = base.replace(/\/css\/styles\.css.*$/, '') || '';
-    // On home, hero assets are relative; on inner pages use absolute base
-    if (document.body.classList.contains('home-page')) return 'assets/hero';
     return `${root}/assets/hero`;
   })();
 
