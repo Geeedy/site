@@ -1,107 +1,69 @@
 (function () {
   'use strict';
 
-  const LANG_COOKIE = 'sd_lang';
-  const LANG_KEY = 'sd_lang';
-  const LANG_EXPLICIT = 'sd_lang_explicit';
-  const pageLang = (document.documentElement.lang || 'ru').slice(0, 2).toLowerCase() === 'en' ? 'en' : 'ru';
+  const pageLang = (document.documentElement.lang || 'en').slice(0, 2).toLowerCase() === 'en' ? 'en' : 'ru';
 
-  function readCookieLang() {
-    const m = document.cookie.match(/(?:^|;\s*)sd_lang=(ru|en)/);
-    return m ? m[1] : null;
+  // Drop legacy same-URL language cookies (no longer used).
+  try {
+    document.cookie = 'sd_lang=;path=/;max-age=0;SameSite=Lax';
+    document.cookie = 'sd_lang=;path=/site;max-age=0;SameSite=Lax';
+    localStorage.removeItem('sd_lang');
+    localStorage.removeItem('sd_lang_explicit');
+  } catch (_) { /* ignore */ }
+
+  function siteBase() {
+    const href = document.querySelector('link[href*="css/styles.css"]')?.getAttribute('href') || '';
+    return href.replace(/\/css\/styles\.css.*$/, '') || '';
   }
 
-  /** Explicit choice via RU/EN switcher only (survives sessions). */
-  function getExplicitLang() {
+  function logicalPathFromLocation() {
+    const base = siteBase();
+    let path = window.location.pathname || '/';
+    if (base && path.startsWith(base)) {
+      path = path.slice(base.length) || '/';
+    }
+    if (path === '/ru' || path.startsWith('/ru/')) {
+      path = path.slice(3) || '/';
+    }
+    if (!path.endsWith('/') && !/\.[a-z0-9]+$/i.test(path)) {
+      path += '/';
+    }
+    return path || '/';
+  }
+
+  function ruEquivalentHref() {
+    const base = siteBase();
+    const logical = logicalPathFromLocation();
+    const ruPath = logical === '/' ? '/ru/' : '/ru' + logical;
+    return base + ruPath + window.location.search + window.location.hash;
+  }
+
+  function browserPrefersRu() {
+    const list = [navigator.language].concat(navigator.languages || []);
+    return list.some((raw) => String(raw || '').toLowerCase().startsWith('ru'));
+  }
+
+  // Soft banner on EN pages for RU-preferring browsers (no forced redirect).
+  (function initRuBanner() {
+    if (pageLang !== 'en' || !browserPrefersRu()) return;
     try {
-      if (localStorage.getItem(LANG_EXPLICIT) !== '1') return null;
-      const fromLs = localStorage.getItem(LANG_KEY);
-      if (fromLs === 'ru' || fromLs === 'en') return fromLs;
+      if (sessionStorage.getItem('sd_ru_banner_dismissed') === '1') return;
     } catch (_) { /* ignore */ }
-    return null;
-  }
-
-  function clearLangCookie() {
-    document.cookie = `${LANG_COOKIE}=;path=/;max-age=0;SameSite=Lax`;
-    document.cookie = `${LANG_COOKIE}=;path=/site;max-age=0;SameSite=Lax`;
-  }
-
-  function setLangPreference(lang, explicit) {
-    clearLangCookie();
-    if (explicit) {
-      const maxAge = 60 * 60 * 24 * 365;
-      document.cookie = `${LANG_COOKIE}=${lang};path=/;max-age=${maxAge};SameSite=Lax`;
-      try {
-        localStorage.setItem(LANG_EXPLICIT, '1');
-        localStorage.setItem(LANG_KEY, lang);
-      } catch (_) { /* ignore */ }
-    } else {
-      // Session cookie for server negotiation; do not lock language forever
-      document.cookie = `${LANG_COOKIE}=${lang};path=/;SameSite=Lax`;
-    }
-  }
-
-  function detectBrowserLang() {
-    const primary = String(navigator.language || '').toLowerCase();
-    if (primary.startsWith('ru')) return 'ru';
-    if (primary.startsWith('en')) return 'en';
-    const list = navigator.languages || [];
-    for (const raw of list) {
-      if (String(raw || '').toLowerCase().startsWith('ru')) return 'ru';
-    }
-    for (const raw of list) {
-      if (String(raw || '').toLowerCase().startsWith('en')) return 'en';
-    }
-    return 'ru';
-  }
-
-  function reloadForLang() {
-    try { sessionStorage.removeItem('sd_lang_redirected'); } catch (_) { /* ignore */ }
-    // Bypass cached HTML for the same URL (cookie alone is not part of the cache key)
-    const url = new URL(window.location.href);
-    url.searchParams.set('_l', String(Date.now()));
-    window.location.replace(url.pathname + url.search + url.hash);
-  }
-
-  // Auto-detect unless user explicitly chose a language via the switcher.
-  (function initLangPreference() {
-    let preferred = getExplicitLang();
-    if (!preferred) {
-      preferred = detectBrowserLang();
-      setLangPreference(preferred, false);
-    } else {
-      setLangPreference(preferred, true);
-    }
-    if (preferred !== pageLang) {
-      const flag = 'sd_lang_redirected';
-      if (!sessionStorage.getItem(flag)) {
-        sessionStorage.setItem(flag, '1');
-        reloadForLang();
-        return;
-      }
-    } else {
-      try { sessionStorage.removeItem('sd_lang_redirected'); } catch (_) { /* ignore */ }
-      // Drop cache-buster query from the address bar once language matches
-      try {
-        const url = new URL(window.location.href);
-        if (url.searchParams.has('_l')) {
-          url.searchParams.delete('_l');
-          const clean = url.pathname + (url.searchParams.toString() ? '?' + url.searchParams.toString() : '') + url.hash;
-          window.history.replaceState(null, '', clean);
-        }
-      } catch (_) { /* ignore */ }
-    }
-  })();
-
-  document.querySelectorAll('.lang-switch__btn').forEach((btn) => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const lang = btn.getAttribute('data-lang');
-      if (lang !== 'ru' && lang !== 'en') return;
-      setLangPreference(lang, true);
-      if (lang !== pageLang) reloadForLang();
+    const bar = document.createElement('div');
+    bar.className = 'locale-banner';
+    bar.setAttribute('role', 'region');
+    bar.setAttribute('aria-label', 'Language suggestion');
+    bar.innerHTML =
+      '<div class="locale-banner__inner">' +
+      '<a class="locale-banner__link" href="' + ruEquivalentHref() + '">Читать на русском →</a>' +
+      '<button type="button" class="locale-banner__close" aria-label="Close">×</button>' +
+      '</div>';
+    document.body.prepend(bar);
+    bar.querySelector('.locale-banner__close')?.addEventListener('click', () => {
+      try { sessionStorage.setItem('sd_ru_banner_dismissed', '1'); } catch (_) { /* ignore */ }
+      bar.remove();
     });
-  });
+  })();
 
   const ASSETS = (() => {
     const base = document.querySelector('link[href*="css/styles.css"]')?.getAttribute('href') || '';

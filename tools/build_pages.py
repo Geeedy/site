@@ -5,9 +5,10 @@
   python3 tools/build_pages.py                     # тестовая (BASE=/site, noindex)
   BASE="" NOINDEX=0 SITE=https://skill-dev.ai python3 tools/build_pages.py
 
-Для каждого URL пишет index.html (RU) и index.en.html (EN). Язык не меняет путь.
+EN — на корневых путях (…/index.html). RU — зеркало под /ru/ (…/ru/…/index.html).
+Язык определяется путём, не cookie.
 """
-import os, re, sys, html, json
+import os, re, sys, html, json, shutil
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = os.environ.get("BASE", "/site")
@@ -16,6 +17,7 @@ SITE = os.environ.get("SITE", "https://geeedy.github.io/site")
 # Явный NOINDEX=1/0 всегда перекрывает автоопределение.
 _is_test = ("geeedy.github.io" in SITE) or ("localhost" in SITE) or ("127.0.0.1" in SITE) or (BASE == "/site")
 NOINDEX = os.environ.get("NOINDEX", "1" if _is_test else "0") == "1"
+ASSET_PREFIXES = ("/css/", "/js/", "/assets/", "/favicon")
 
 # ---------- реестр: url, titles{ru,en}, parent ----------
 PAGES = {
@@ -156,8 +158,34 @@ STRINGS = {
 def page_title(slug, lang):
     return PAGES[slug][1][lang]
 
-def u(path):
-    return BASE + path
+def is_asset_path(path):
+    return path.startswith(ASSET_PREFIXES) or path == "/favicon.ico"
+
+def locale_prefix(lang):
+    return "/ru" if lang == "ru" else ""
+
+def strip_locale(path):
+    if not path: return "/"
+    if path == "/ru" or path == "/ru/": return "/"
+    if path.startswith("/ru/"): return path[3:] or "/"
+    return path
+
+def loc_path(path, lang):
+    if not path: path = "/"
+    if not path.startswith("/"): path = "/" + path
+    if is_asset_path(path): return path
+    path = strip_locale(path)
+    prefix = locale_prefix(lang)
+    if path == "/": return (prefix + "/") if prefix else "/"
+    return prefix + path
+
+def u(path, lang=None):
+    if lang is None or is_asset_path(path):
+        return BASE + path
+    return BASE + loc_path(path, lang)
+
+def abs_url(path, lang):
+    return SITE + loc_path(path, lang)
 
 def esc(s):
     return html.escape(s, quote=True)
@@ -167,12 +195,35 @@ def content_path(slug, lang):
         return os.path.join(ROOT, "content", "en", slug + ".md")
     return os.path.join(ROOT, "content", slug + ".md")
 
-def out_html_name(lang):
-    return "index.en.html" if lang == "en" else "index.html"
-
-def page_dir(url):
-    rel = url.strip("/").replace("/", os.sep)
+def page_dir(url, lang):
+    loc = loc_path(url, lang)
+    rel = loc.strip("/").replace("/", os.sep)
     return os.path.join(ROOT, rel) if rel else ROOT
+
+def write_page(url, lang, html_doc):
+    d = page_dir(url, lang)
+    os.makedirs(d, exist_ok=True)
+    open(os.path.join(d, "index.html"), "w", encoding="utf-8").write(html_doc)
+
+def hreflang_links(path):
+    en, ru = abs_url(path, "en"), abs_url(path, "ru")
+    return (
+        f'<link rel="alternate" hreflang="en" href="{en}">\n'
+        f'  <link rel="alternate" hreflang="ru" href="{ru}">\n'
+        f'  <link rel="alternate" hreflang="x-default" href="{en}">'
+    )
+
+def seo_link_tags(path, lang, include_og_url=True):
+    self_url = abs_url(path, lang)
+    og_locale = "en_US" if lang == "en" else "ru_RU"
+    parts = [
+        f'<link rel="canonical" href="{self_url}">',
+        f'  {hreflang_links(path)}',
+        f'  <meta property="og:locale" content="{og_locale}">',
+    ]
+    if include_og_url:
+        parts.insert(2, f'  <meta property="og:url" content="{self_url}">')
+    return "\n".join(parts)
 
 # ---------- markdown ----------
 def inline(md, lang="ru"):
@@ -182,7 +233,7 @@ def inline(md, lang="ru"):
     def link(m):
         text, url = m.group(1), m.group(2)
         if url.startswith('/'):
-            return f'<a href="{u(url)}">{text}</a>'
+            return f'<a href="{u(url, lang)}">{text}</a>'
         return f'<a href="{url}" target="_blank" rel="noopener">{text}</a>'
     md = re.sub(r'\[([^\]]+)\]\(([^)\s]+)\)', link, md)
     md = re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', md)
@@ -243,7 +294,7 @@ def render_cta(kind, payload, lang):
     for j, p in enumerate(parts):
         p = re.sub(r'\s*→\s*(форма|сессия.*|демо|form|session.*|demo)$', '', p, flags=re.I).strip()
         m = re.search(r'(.*?):?\s*→\s*(/\S+)$', p)
-        href, label = (u(m.group(2)), m.group(1)) if m else (u('/kontakty/'), p)
+        href, label = (u(m.group(2), lang), m.group(1)) if m else (u('/kontakty/', lang), p)
         if kind == 'cta_hero' and len(label) > 38:
             short = label.split(':')[0].strip()
             label = short if len(short) <= 38 else S["cta_apply"]
@@ -254,7 +305,7 @@ def render_cta(kind, payload, lang):
     text = parts[0]
     return (f'<div class="cta-horizontal step-up"><div class="cta-horizontal__text">'
             f'<p class="cta-horizontal__title">{inline(text, lang)}</p></div>'
-            f'<a href="{u("/kontakty/")}" class="btn btn--primary">{esc(S["cta_apply"])}</a></div>')
+            f'<a href="{u("/kontakty/", lang)}" class="btn btn--primary">{esc(S["cta_apply"])}</a></div>')
 
 def render_blocks(blocks, slug, lang):
     out, faq, in_faq = [], [], False
@@ -310,9 +361,9 @@ def crumbs(slug, lang):
     trail = [(S["home"], "/")]
     if url.startswith('/uslugi/'): trail.append((S["services"], "/uslugi/"))
     if parent: trail.append((PAGES[parent][1][lang], PAGES[parent][0]))
-    items_html = ''.join(f'<a href="{u(p)}">{esc(n)}</a><span>/</span>' for n, p in trail)
-    ld = [{"@type":"ListItem","position":k+1,"name":n,"item":SITE + p} for k,(n,p) in enumerate(trail)]
-    ld.append({"@type":"ListItem","position":len(trail)+1,"name":title,"item":SITE + url})
+    items_html = ''.join(f'<a href="{u(p, lang)}">{esc(n)}</a><span>/</span>' for n, p in trail)
+    ld = [{"@type":"ListItem","position":k+1,"name":n,"item":abs_url(p, lang)} for k,(n,p) in enumerate(trail)]
+    ld.append({"@type":"ListItem","position":len(trail)+1,"name":title,"item":abs_url(url, lang)})
     return f'<nav class="breadcrumbs" aria-label="{esc(S["breadcrumbs"])}">{items_html}<span aria-current="page">{esc(title)}</span></nav>', ld
 
 def schema(slug, meta, faq, bc_ld, lang):
@@ -320,32 +371,35 @@ def schema(slug, meta, faq, bc_ld, lang):
     title = titles[lang]
     tbd = STRINGS[lang]["tbd"]
     area = "Worldwide" if lang == "en" else "RU"
+    page_abs = abs_url(url, lang)
     g = [
       {"@type":"Organization","@id":SITE+"/#org","name":"Skill Dev","url":SITE+"/",
        "logo":SITE+"/assets/ui/logo-full.png","email":"hello@skill-dev.ai","areaServed":area,
        "description":("Agency for AI implementation, development, CRM and SEO." if lang=="en" else "Агентство: внедрение ИИ, разработка, CRM и SEO."),
        "contactPoint":{"@type":"ContactPoint","email":"hello@skill-dev.ai","contactType":"sales","availableLanguage":["ru","en"]}},
-      {"@type":"WebPage","@id":SITE+url,"url":SITE+url,"name":meta.get("title",title),
+      {"@type":"WebPage","@id":page_abs,"url":page_abs,"name":meta.get("title",title),
        "description":meta.get("description",""),"inLanguage":lang,"isPartOf":{"@id":SITE+"/#org"}},
       {"@type":"BreadcrumbList","itemListElement":bc_ld},
     ]
     if url.startswith('/uslugi/'):
         g.append({"@type":"Service","name":title,"provider":{"@id":SITE+"/#org"},
-                  "areaServed":area,"url":SITE+url})
+                  "areaServed":area,"url":page_abs})
     if faq:
         g.append({"@type":"FAQPage","mainEntity":[
             {"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":re.sub(r'\[\[TBD[^\]]*\]\]', tbd, a)}}
             for q,a in faq]})
     return '<script type="application/ld+json">' + json.dumps({"@context":"https://schema.org","@graph":g}, ensure_ascii=False) + '</script>'
 
-def lang_switcher(lang):
+def lang_switcher(lang, path="/"):
     ru_cls = 'lang-switch__btn is-active' if lang == 'ru' else 'lang-switch__btn'
     en_cls = 'lang-switch__btn is-active' if lang == 'en' else 'lang-switch__btn'
+    ru_cur = ' aria-current="page"' if lang == 'ru' else ''
+    en_cur = ' aria-current="page"' if lang == 'en' else ''
     return (
       f'<div class="lang-switch" role="group" aria-label="Language">'
-      f'<button type="button" class="{ru_cls}" data-lang="ru" aria-pressed="{str(lang=="ru").lower()}">RU</button>'
+      f'<a href="{u(path, "ru")}" class="{ru_cls}" hreflang="ru"{ru_cur}>RU</a>'
       f'<span class="lang-switch__sep" aria-hidden="true">/</span>'
-      f'<button type="button" class="{en_cls}" data-lang="en" aria-pressed="{str(lang=="en").lower()}">EN</button>'
+      f'<a href="{u(path, "en")}" class="{en_cls}" hreflang="en"{en_cur}>EN</a>'
       f'</div>'
     )
 
@@ -380,7 +434,7 @@ def head_common():
 {favicon_links_html()}
 {yandex_metrika_html()}'''
 
-def header_html(lang="ru"):
+def header_html(lang="ru", path="/"):
     S = STRINGS[lang]
     mega_groups = [
         (S["mega_ai"], ["vnedrenie-ii","ii-agenty","chat-boty","golosovye-boty"]),
@@ -389,18 +443,18 @@ def header_html(lang="ru"):
     ]
     cols = ''.join(
         f'<div class="mega__col"><div class="mega__h">{esc(g)}</div><ul>' +
-        ''.join(f'<li><a href="{u(PAGES[k][0])}">{esc(page_title(k, lang))}</a></li>' for k in kids) +
+        ''.join(f'<li><a href="{u(PAGES[k][0], lang)}">{esc(page_title(k, lang))}</a></li>' for k in kids) +
         '</ul></div>'
         for g, kids in mega_groups)
     return f'''<header class="header" id="siteHeader">
     <div class="header-global-line">
       <div class="container header-global-line__inner">
         <div class="header-global-line__sites">
-          <a href="{u(PAGES["vnedrenie-ii"][0])}" class="hgl-link"><span class="hgl-icon hgl-icon--ai"></span>Skill Dev AI</a>
-          <a href="{u(PAGES["razrabotka-saitov"][0])}" class="hgl-link"><span class="hgl-icon hgl-icon--web"></span>Skill Dev Web</a>
+          <a href="{u(PAGES["vnedrenie-ii"][0], lang)}" class="hgl-link"><span class="hgl-icon hgl-icon--ai"></span>Skill Dev AI</a>
+          <a href="{u(PAGES["razrabotka-saitov"][0], lang)}" class="hgl-link"><span class="hgl-icon hgl-icon--web"></span>Skill Dev Web</a>
         </div>
         <div class="header-global-line__right">
-          {lang_switcher(lang)}
+          {lang_switcher(lang, path)}
           <a href="mailto:hello@skill-dev.ai" class="header-global-line__contact">
             <img src="{u('/assets/ui/email-icon.svg')}" alt="" width="18" height="12">hello@skill-dev.ai
           </a>
@@ -408,21 +462,21 @@ def header_html(lang="ru"):
       </div>
     </div>
     <div class="container header__inner">
-      <a href="{u('/')}" class="logo"><img src="{u('/assets/ui/logo-icon.png')}" alt="" class="logo__icon" width="36" height="40"><img src="{u('/assets/ui/logo-word.png')}" alt="skill-dev" class="logo__word" width="106" height="22"></a>
+      <a href="{u('/', lang)}" class="logo"><img src="{u('/assets/ui/logo-icon.png')}" alt="" class="logo__icon" width="36" height="40"><img src="{u('/assets/ui/logo-word.png')}" alt="skill-dev" class="logo__word" width="106" height="22"></a>
       <nav class="nav" id="mainNav">
         <div class="nav__item has-mega">
-          <a class="nav__link" href="{u('/uslugi/')}">{esc(S["services"])}</a>
+          <a class="nav__link" href="{u('/uslugi/', lang)}">{esc(S["services"])}</a>
           <div class="mega mega--wide"><div class="container mega__grid">{cols}
-            <div class="mega__promo"><div class="mega__h">{esc(S["mega_start"])}</div><p>{esc(S["mega_start_p"])}</p><a href="{u('/kontakty/')}" class="btn btn--primary btn--sm">{esc(S["mega_discuss"])}</a></div>
+            <div class="mega__promo"><div class="mega__h">{esc(S["mega_start"])}</div><p>{esc(S["mega_start_p"])}</p><a href="{u('/kontakty/', lang)}" class="btn btn--primary btn--sm">{esc(S["mega_discuss"])}</a></div>
           </div></div>
         </div>
-        <div class="nav__item"><a class="nav__link" href="{u('/o-kompanii/')}">{esc(S["about"])}</a></div>
-        <div class="nav__item"><a class="nav__link" href="{u('/kejsy/')}">{esc(S["cases_nav"])}</a></div>
-        <div class="nav__item"><a class="nav__link" href="{u('/')}#industries">{esc(S["industries"])}</a></div>
-        <div class="nav__item"><a class="nav__link" href="{u('/')}#full-cycle">{esc(S["how_we_work"])}</a></div>
-        <div class="nav__item"><a class="nav__link" href="{u('/kontakty/')}">{esc(S["contacts"])}</a></div>
+        <div class="nav__item"><a class="nav__link" href="{u('/o-kompanii/', lang)}">{esc(S["about"])}</a></div>
+        <div class="nav__item"><a class="nav__link" href="{u('/kejsy/', lang)}">{esc(S["cases_nav"])}</a></div>
+        <div class="nav__item"><a class="nav__link" href="{u('/', lang)}#industries">{esc(S["industries"])}</a></div>
+        <div class="nav__item"><a class="nav__link" href="{u('/', lang)}#full-cycle">{esc(S["how_we_work"])}</a></div>
+        <div class="nav__item"><a class="nav__link" href="{u('/kontakty/', lang)}">{esc(S["contacts"])}</a></div>
       </nav>
-      <div class="nav__actions"><a href="{u(PAGES["seo-audit"][0])}" class="btn btn--accent">{esc(S["free_audit"])}</a></div>
+      <div class="nav__actions"><a href="{u(PAGES["seo-audit"][0], lang)}" class="btn btn--accent">{esc(S["free_audit"])}</a></div>
       <button class="menu-toggle" id="menuToggle" aria-label="{esc(S["menu"])}"><span></span><span></span><span></span></button>
     </div>
   </header>'''
@@ -431,15 +485,15 @@ def footer_html(lang="ru"):
     S = STRINGS[lang]
     cols = []
     for h in HUBS:
-        kid_links = ''.join(f'<li><a href="{u(PAGES[k][0])}">{esc(page_title(k, lang))}</a></li>' for k in KIDS[h])
-        cols.append(f'<div><div class="footer__h"><a href="{u(PAGES[h][0])}">{esc(page_title(h, lang))}</a></div><ul>{kid_links}</ul></div>')
+        kid_links = ''.join(f'<li><a href="{u(PAGES[k][0], lang)}">{esc(page_title(k, lang))}</a></li>' for k in KIDS[h])
+        cols.append(f'<div><div class="footer__h"><a href="{u(PAGES[h][0], lang)}">{esc(page_title(h, lang))}</a></div><ul>{kid_links}</ul></div>')
     return f'''<footer class="footer"><div class="container">
     <div class="footer__top">
       <div class="footer__brand"><div class="footer__logo">Skill Dev</div></div>
       <div class="footer__contacts"><p><strong>{esc(S["contacts_label"])}</strong></p><p>hello@skill-dev.ai</p><p>{esc(S["worldwide"])}</p></div>
     </div>
     <div class="footer__grid footer__grid--silo">{''.join(cols)}
-      <div><div class="footer__h">{esc(S["company"])}</div><ul><li><a href="{u('/o-kompanii/')}">{esc(S["about_us"])}</a></li><li><a href="{u('/kejsy/')}">{esc(S["cases_nav"])}</a></li><li><a href="{u('/kontakty/')}">{esc(S["contacts"])}</a></li><li><a href="{u('/uslugi/')}">{esc(S["all_services"])}</a></li><li><a href="{u('/karta-sajta/')}">{esc(S["sitemap_nav"])}</a></li></ul></div>
+      <div><div class="footer__h">{esc(S["company"])}</div><ul><li><a href="{u('/o-kompanii/', lang)}">{esc(S["about_us"])}</a></li><li><a href="{u('/kejsy/', lang)}">{esc(S["cases_nav"])}</a></li><li><a href="{u('/kontakty/', lang)}">{esc(S["contacts"])}</a></li><li><a href="{u('/uslugi/', lang)}">{esc(S["all_services"])}</a></li><li><a href="{u('/karta-sajta/', lang)}">{esc(S["sitemap_nav"])}</a></li></ul></div>
     </div>
     <div class="footer__bottom"><span>{esc(S["rights"])}</span><span>hello@skill-dev.ai</span></div>
   </div></footer>'''
@@ -458,16 +512,14 @@ def page_shell(slug, meta, hero_html, body_html, faq, bc_ld, lang):
   <meta name="description" content="{esc(meta.get("description",""))}">
   <meta http-equiv="content-language" content="{lang}">
   {noindex}
-  <link rel="canonical" href="{SITE}{url}">
+  {seo_link_tags(url, lang)}
   <meta property="og:title" content="{esc(meta.get("og_title", meta.get("title", title)))}">
   <meta property="og:description" content="{esc(meta.get("og_desc", meta.get("description","")))}">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="{SITE}{url}">
   <meta property="og:image" content="{SITE}/assets/ui/og-cover.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta property="og:locale" content="{"en_US" if lang=="en" else "ru_RU"}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
@@ -476,7 +528,7 @@ def page_shell(slug, meta, hero_html, body_html, faq, bc_ld, lang):
   {schema(slug, meta, faq, bc_ld, lang)}
 </head>
 <body class="inner-page">
-{header_html(lang)}
+{header_html(lang, url)}
 <main class="page-main page-article">
   {hero_html}
   <div class="container page-content">
@@ -512,38 +564,37 @@ def build_page(slug, lang):
     body = (hero_img or '') + '\n'.join(rest)
     html_doc = page_shell(slug, meta, hero, body, faq, bc_ld, lang)
     url = PAGES[slug][0]
-    d = page_dir(url)
-    os.makedirs(d, exist_ok=True)
-    dst = os.path.join(d, out_html_name(lang))
-    open(dst, 'w', encoding='utf-8').write(html_doc)
+    write_page(url, lang, html_doc)
     return url
 
 def build_uslugi_catalog(lang):
     S = STRINGS[lang]
+    path = "/uslugi/"
     cards = []
     for h in HUBS:
-        kid_links = ' · '.join(f'<a href="{u(PAGES[k][0])}">{esc(page_title(k, lang))}</a>' for k in KIDS[h])
+        kid_links = ' · '.join(f'<a href="{u(PAGES[k][0], lang)}">{esc(page_title(k, lang))}</a>' for k in KIDS[h])
         cards.append(f'''<div class="catalog-card">
-          <h2 class="catalog-card__title"><a href="{u(PAGES[h][0])}">{esc(page_title(h, lang))}</a></h2>
+          <h2 class="catalog-card__title"><a href="{u(PAGES[h][0], lang)}">{esc(page_title(h, lang))}</a></h2>
           <p>{esc(S["catalog_descr"][h])}</p>
           <p class="catalog-card__kids">{kid_links if kid_links else ''}</p>
         </div>''')
-    bc = f'<nav class="breadcrumbs" aria-label="{esc(S["breadcrumbs"])}"><a href="{u("/")}">{esc(S["home"])}</a><span>/</span><span aria-current="page">{esc(S["services"])}</span></nav>'
+    bc = f'<nav class="breadcrumbs" aria-label="{esc(S["breadcrumbs"])}"><a href="{u("/", lang)}">{esc(S["home"])}</a><span>/</span><span aria-current="page">{esc(S["services"])}</span></nav>'
     itemlist = ",".join(
-        f'{{"@type":"ListItem","position":{i+1},"name":{json.dumps(page_title(h, lang), ensure_ascii=False)},"url":"{SITE}{PAGES[h][0]}"}}'
+        f'{{"@type":"ListItem","position":{i+1},"name":{json.dumps(page_title(h, lang), ensure_ascii=False)},"url":"{abs_url(PAGES[h][0], lang)}"}}'
         for i, h in enumerate(HUBS))
     noindex = '<meta name="robots" content="noindex,nofollow">' if NOINDEX else ''
+    home_abs, path_abs = abs_url("/", lang), abs_url(path, lang)
     doc = f'''<!DOCTYPE html>
 <html lang="{lang}"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
   {head_common()}
 <title>{esc(S["catalog_title"])}</title>
 <meta name="description" content="{esc(S["catalog_desc"])}">
 <meta http-equiv="content-language" content="{lang}">{noindex}
-<link rel="canonical" href="{SITE}/uslugi/">
-<script type="application/ld+json">{{"@context":"https://schema.org","@graph":[{{"@type":"CollectionPage","@id":"{SITE}/uslugi/","url":"{SITE}/uslugi/","name":{json.dumps(S["catalog_title"], ensure_ascii=False)},"inLanguage":"{lang}"}},{{"@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":{json.dumps(S["home"], ensure_ascii=False)},"item":"{SITE}/"}},{{"@type":"ListItem","position":2,"name":{json.dumps(S["services"], ensure_ascii=False)},"item":"{SITE}/uslugi/"}}]}},{{"@type":"ItemList","itemListElement":[{itemlist}]}}]}}</script>
+{seo_link_tags(path, lang)}
+<script type="application/ld+json">{{"@context":"https://schema.org","@graph":[{{"@type":"CollectionPage","@id":"{path_abs}","url":"{path_abs}","name":{json.dumps(S["catalog_title"], ensure_ascii=False)},"inLanguage":"{lang}"}},{{"@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":{json.dumps(S["home"], ensure_ascii=False)},"item":"{home_abs}"}},{{"@type":"ListItem","position":2,"name":{json.dumps(S["services"], ensure_ascii=False)},"item":"{path_abs}"}}]}},{{"@type":"ItemList","itemListElement":[{itemlist}]}}]}}</script>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{u('/css/styles.css')}?v=11"><link rel="stylesheet" href="{u('/css/pages.css')}?v=11"></head>
-<body class="inner-page">{header_html(lang)}
+<body class="inner-page">{header_html(lang, path)}
 <main class="page-main page-article">
 <section class="page-hero"><div class="container">{bc}
 <h1 class="heading1 page-hero__title">{esc(S["catalog_h1"])}</h1>
@@ -551,23 +602,22 @@ def build_uslugi_catalog(lang):
 </div></section>
 <div class="container page-content"><div class="catalog-grid">{''.join(cards)}</div></div>
 </main>{footer_html(lang)}<script src="{u('/js/main.js')}?v=11"></script></body></html>'''
-    d = os.path.join(ROOT, 'uslugi')
-    os.makedirs(d, exist_ok=True)
-    open(os.path.join(d, out_html_name(lang)), 'w', encoding='utf-8').write(doc)
+    write_page(path, lang, doc)
 
 def build_kontakty(lang):
     S = STRINGS[lang]
+    path = "/kontakty/"
     noindex = '<meta name="robots" content="noindex,nofollow">' if NOINDEX else ''
-    bc = f'<nav class="breadcrumbs" aria-label="{esc(S["breadcrumbs"])}"><a href="{u("/")}">{esc(S["home"])}</a><span>/</span><span aria-current="page">{esc(S["contacts"])}</span></nav>'
+    bc = f'<nav class="breadcrumbs" aria-label="{esc(S["breadcrumbs"])}"><a href="{u("/", lang)}">{esc(S["home"])}</a><span>/</span><span aria-current="page">{esc(S["contacts"])}</span></nav>'
     doc = f'''<!DOCTYPE html>
 <html lang="{lang}"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
   {head_common()}
 <title>{esc(S["kontakty_title"])}</title><meta name="description" content="{esc(S["kontakty_desc"])}">
 <meta http-equiv="content-language" content="{lang}">{noindex}
-<link rel="canonical" href="{SITE}/kontakty/">
+{seo_link_tags(path, lang)}
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{u('/css/styles.css')}?v=11"><link rel="stylesheet" href="{u('/css/pages.css')}?v=11"></head>
-<body class="inner-page">{header_html(lang)}
+<body class="inner-page">{header_html(lang, path)}
 <main class="page-main page-article">
 <section class="page-hero"><div class="container">{bc}
 <h1 class="heading1 page-hero__title">{esc(S["kontakty_h1"])}</h1>
@@ -581,27 +631,25 @@ def build_kontakty(lang):
 <button type="submit" class="btn btn--primary" style="width:100%">{esc(S["form_send"])}</button></form>
 </div></div></section>
 </main>{footer_html(lang)}<script src="{u('/js/main.js')}?v=11"></script></body></html>'''
-    d = os.path.join(ROOT, 'kontakty')
-    os.makedirs(d, exist_ok=True)
-    open(os.path.join(d, out_html_name(lang)), 'w', encoding='utf-8').write(doc)
+    write_page(path, lang, doc)
 
 
 def build_404():
-    """Брендированная страница ошибки (serve_i18n использует её как error page)."""
+    """Брендированная страница ошибки (serve_i18n использует её как error page). EN по умолчанию."""
     doc = f'''<!DOCTYPE html>
-<html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
   {head_common()}
-<title>Страница не найдена | Skill Dev</title>
+<title>Page not found | Skill Dev</title>
 <meta name="robots" content="noindex">
 <link rel="stylesheet" href="{u('/css/styles.css')}?v=11"><link rel="stylesheet" href="{u('/css/pages.css')}?v=11"></head>
-<body class="inner-page">{header_html("ru")}
+<body class="inner-page">{header_html("en", "/")}
 <main class="page-main page-article">
 <section class="page-hero"><div class="container">
-<h1 class="heading1 page-hero__title">Страница не найдена</h1>
-<div class="page-hero__lead"><p>Такого адреса нет или страница переехала. Вот куда можно пойти отсюда.</p></div>
-<div class="page-hero__actions"><a class="btn btn--primary" href="{u('/')}">На главную</a> <a class="btn btn--outline" href="{u('/uslugi/')}">Все услуги</a></div>
+<h1 class="heading1 page-hero__title">Page not found</h1>
+<div class="page-hero__lead"><p>This address does not exist or the page has moved. Here is where you can go from here.</p></div>
+<div class="page-hero__actions"><a class="btn btn--primary" href="{u('/', 'en')}">Home</a> <a class="btn btn--outline" href="{u('/uslugi/', 'en')}">All services</a></div>
 </div></section>
-</main>{footer_html("ru")}<script src="{u('/js/main.js')}?v=11"></script></body></html>'''
+</main>{footer_html("en")}<script src="{u('/js/main.js')}?v=11"></script></body></html>'''
     open(os.path.join(ROOT, '404.html'), 'w', encoding='utf-8').write(doc)
 
 # ==================== КЕЙСЫ ====================
@@ -625,40 +673,40 @@ CASE_META = {
 
 def build_cases_hub(lang):
     S = STRINGS[lang]
+    path = "/kejsy/"
     noindex = '<meta name="robots" content="noindex,nofollow">' if NOINDEX else ''
-    bc = f'<nav class="breadcrumbs" aria-label="{esc(S["breadcrumbs"])}"><a href="{u("/")}">{esc(S["home"])}</a><span>/</span><span aria-current="page">{esc(S["cases_h1"])}</span></nav>'
+    bc = f'<nav class="breadcrumbs" aria-label="{esc(S["breadcrumbs"])}"><a href="{u("/", lang)}">{esc(S["home"])}</a><span>/</span><span aria-current="page">{esc(S["cases_h1"])}</span></nav>'
     cards = []
     for slug in CASES:
         m = CASE_META[slug]; c = m[lang]
-        cards.append(f'''<a class="case-card" href="{u(m['url'])}">
+        cards.append(f'''<a class="case-card" href="{u(m['url'], lang)}">
           <div class="case-card__tag">{esc(c['card_tag'])}</div>
           <h2 class="case-card__title">{esc(c['card_title'])}</h2>
           <p class="case-card__descr">{esc(c['card_descr'])}</p>
           <span class="case-card__more">{esc(S['cases_read'])} →</span>
         </a>''')
     items_ld = ",".join(
-        f'{{"@type":"ListItem","position":{i+1},"url":"{SITE}{CASE_META[slug]["url"]}","name":{json.dumps(CASE_META[slug][lang]["card_title"], ensure_ascii=False)}}}'
+        f'{{"@type":"ListItem","position":{i+1},"url":"{abs_url(CASE_META[slug]["url"], lang)}","name":{json.dumps(CASE_META[slug][lang]["card_title"], ensure_ascii=False)}}}'
         for i, slug in enumerate(CASES))
+    home_abs, path_abs = abs_url("/", lang), abs_url(path, lang)
     doc = f'''<!DOCTYPE html>
 <html lang="{lang}"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
   {head_common()}
 <title>{esc(S["cases_title"])}</title><meta name="description" content="{esc(S["cases_desc"])}">
 <meta http-equiv="content-language" content="{lang}">{noindex}
-<link rel="canonical" href="{SITE}/kejsy/">
-<meta property="og:title" content="{esc(S["cases_title"])}"><meta property="og:type" content="website"><meta property="og:url" content="{SITE}/kejsy/"><meta property="og:image" content="{SITE}/assets/ui/og-cover.png">
-<script type="application/ld+json">{{"@context":"https://schema.org","@graph":[{{"@type":"CollectionPage","@id":"{SITE}/kejsy/","url":"{SITE}/kejsy/","name":{json.dumps(S["cases_title"], ensure_ascii=False)},"inLanguage":"{lang}"}},{{"@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":{json.dumps(S["home"], ensure_ascii=False)},"item":"{SITE}/"}},{{"@type":"ListItem","position":2,"name":{json.dumps(S["cases_h1"], ensure_ascii=False)},"item":"{SITE}/kejsy/"}}]}},{{"@type":"ItemList","itemListElement":[{items_ld}]}}]}}</script>
+{seo_link_tags(path, lang)}
+<meta property="og:title" content="{esc(S["cases_title"])}"><meta property="og:type" content="website"><meta property="og:image" content="{SITE}/assets/ui/og-cover.png">
+<script type="application/ld+json">{{"@context":"https://schema.org","@graph":[{{"@type":"CollectionPage","@id":"{path_abs}","url":"{path_abs}","name":{json.dumps(S["cases_title"], ensure_ascii=False)},"inLanguage":"{lang}"}},{{"@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":{json.dumps(S["home"], ensure_ascii=False)},"item":"{home_abs}"}},{{"@type":"ListItem","position":2,"name":{json.dumps(S["cases_h1"], ensure_ascii=False)},"item":"{path_abs}"}}]}},{{"@type":"ItemList","itemListElement":[{items_ld}]}}]}}</script>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{u('/css/styles.css')}?v=11"><link rel="stylesheet" href="{u('/css/pages.css')}?v=11"></head>
-<body class="inner-page">{header_html(lang)}
+<body class="inner-page">{header_html(lang, path)}
 <main class="page-main page-article">
 <section class="page-hero"><div class="container">{bc}
 <h1 class="heading1 page-hero__title">{esc(S["cases_h1"])}</h1>
 <div class="page-hero__lead"><p>{esc(S["cases_lead"])}</p></div></div></section>
 <div class="container page-content"><div class="case-grid">{''.join(cards)}</div></div>
 </main>{footer_html(lang)}<script src="{u('/js/main.js')}?v=11"></script></body></html>'''
-    d = os.path.join(ROOT, 'kejsy')
-    os.makedirs(d, exist_ok=True)
-    open(os.path.join(d, out_html_name(lang)), 'w', encoding='utf-8').write(doc)
+    write_page(path, lang, doc)
 
 
 def build_case_vps(lang):
@@ -715,7 +763,7 @@ def build_case_vps(lang):
 <h2>Наша роль</h2>
 <p>Полный цикл: от архитектуры до передачи в поддержку. Проект запущен в продакшен и работает.</p>
 {svg("role", "Пять этапов нашей роли: архитектура, развёртывание, безопасные подключения, тестирование под нагрузкой, передача и поддержка")}
-<div class="cta-horizontal step-up"><div class="cta-horizontal__text"><p class="cta-horizontal__title">Нужна похожая среда или своя инфраструктура под команду?</p></div><a href="{u('/kontakty/')}" class="btn btn--primary">{esc(S['cta_apply'])}</a></div>
+<div class="cta-horizontal step-up"><div class="cta-horizontal__text"><p class="cta-horizontal__title">Нужна похожая среда или своя инфраструктура под команду?</p></div><a href="{u('/kontakty/', lang)}" class="btn btn--primary">{esc(S['cta_apply'])}</a></div>
 '''
     else:
         title = "Case: isolated team dev environment on a VPS | Skill Dev"
@@ -764,30 +812,29 @@ def build_case_vps(lang):
 <h2>Our role</h2>
 <p>The full cycle: from architecture to handover and support. The project is in production and running.</p>
 {svg("role", "Five stages of our role: architecture, deployment, secure connections, load testing, handover and support")}
-<div class="cta-horizontal step-up"><div class="cta-horizontal__text"><p class="cta-horizontal__title">Need a similar environment or your own team infrastructure?</p></div><a href="{u('/kontakty/')}" class="btn btn--primary">{esc(S['cta_apply'])}</a></div>
+<div class="cta-horizontal step-up"><div class="cta-horizontal__text"><p class="cta-horizontal__title">Need a similar environment or your own team infrastructure?</p></div><a href="{u('/kontakty/', lang)}" class="btn btn--primary">{esc(S['cta_apply'])}</a></div>
 '''
-    bc = f'<nav class="breadcrumbs" aria-label="{esc(S["breadcrumbs"])}"><a href="{u("/")}">{esc(S["home"])}</a><span>/</span><a href="{u("/kejsy/")}">{esc(S["cases_h1"])}</a><span>/</span><span aria-current="page">{esc(h1)}</span></nav>'
-    ld = json.dumps({"@context":"https://schema.org","@type":"Article","headline":h1,"inLanguage":lang,"image":SITE+"/assets/ui/og-cover.png","author":{"@type":"Organization","name":"Skill Dev"},"publisher":{"@type":"Organization","name":"Skill Dev"},"mainEntityOfPage":SITE+url}, ensure_ascii=False)
+    bc = f'<nav class="breadcrumbs" aria-label="{esc(S["breadcrumbs"])}"><a href="{u("/", lang)}">{esc(S["home"])}</a><span>/</span><a href="{u("/kejsy/", lang)}">{esc(S["cases_h1"])}</a><span>/</span><span aria-current="page">{esc(h1)}</span></nav>'
+    page_abs = abs_url(url, lang)
+    ld = json.dumps({"@context":"https://schema.org","@type":"Article","headline":h1,"inLanguage":lang,"image":SITE+"/assets/ui/og-cover.png","author":{"@type":"Organization","name":"Skill Dev"},"publisher":{"@type":"Organization","name":"Skill Dev"},"mainEntityOfPage":page_abs}, ensure_ascii=False)
     doc = f'''<!DOCTYPE html>
 <html lang="{lang}"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
   {head_common()}
 <title>{esc(title)}</title><meta name="description" content="{esc(desc)}">
 <meta http-equiv="content-language" content="{lang}">{noindex}
-<link rel="canonical" href="{SITE}{url}">
-<meta property="og:title" content="{esc(h1)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:type" content="article"><meta property="og:url" content="{SITE}{url}"><meta property="og:image" content="{SITE}/assets/img/case-vps-hero{sfx}.jpg"><meta name="twitter:card" content="summary_large_image">
+{seo_link_tags(url, lang)}
+<meta property="og:title" content="{esc(h1)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:type" content="article"><meta property="og:image" content="{SITE}/assets/img/case-vps-hero{sfx}.jpg"><meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{ld}</script>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{u('/css/styles.css')}?v=11"><link rel="stylesheet" href="{u('/css/pages.css')}?v=11"></head>
-<body class="inner-page">{header_html(lang)}
+<body class="inner-page">{header_html(lang, url)}
 <main class="page-main page-article">
 <section class="page-hero"><div class="container">{bc}
 <h1 class="heading1 page-hero__title">{esc(h1)}</h1>
 <div class="page-hero__lead"><p>{esc(lead)}</p></div></div></section>
 <div class="container page-content">{body}</div>
 </main>{footer_html(lang)}<script src="{u('/js/main.js')}?v=11"></script></body></html>'''
-    d = os.path.join(ROOT, 'kejsy', 'claude-vps-sreda')
-    os.makedirs(d, exist_ok=True)
-    open(os.path.join(d, out_html_name(lang)), 'w', encoding='utf-8').write(doc)
+    write_page(url, lang, doc)
 
 
 def _sitemap_priority(path):
@@ -808,14 +855,15 @@ def _hero_image(path):
 
 def build_html_sitemap(lang):
     S = STRINGS[lang]
+    path = "/karta-sajta/"
     noindex = '<meta name="robots" content="noindex,nofollow">' if NOINDEX else ''
-    bc = f'<nav class="breadcrumbs" aria-label="{esc(S["breadcrumbs"])}"><a href="{u("/")}">{esc(S["home"])}</a><span>/</span><span aria-current="page">{esc(S["sitemap_h1"])}</span></nav>'
-    def li(url, label): return f'<li><a href="{u(url)}">{esc(label)}</a></li>'
+    bc = f'<nav class="breadcrumbs" aria-label="{esc(S["breadcrumbs"])}"><a href="{u("/", lang)}">{esc(S["home"])}</a><span>/</span><span aria-current="page">{esc(S["sitemap_h1"])}</span></nav>'
+    def li(url, label): return f'<li><a href="{u(url, lang)}">{esc(label)}</a></li>'
     # услуги: хабы + дети
     svc = []
     for h in HUBS:
         kids = ''.join(li(PAGES[k][0], page_title(k, lang)) for k in KIDS[h])
-        svc.append(f'<li><a href="{u(PAGES[h][0])}">{esc(page_title(h, lang))}</a>' + (f'<ul>{kids}</ul>' if kids else '') + '</li>')
+        svc.append(f'<li><a href="{u(PAGES[h][0], lang)}">{esc(page_title(h, lang))}</a>' + (f'<ul>{kids}</ul>' if kids else '') + '</li>')
     cases = li('/kejsy/', S["cases_h1"]) + ''.join(li(CASE_META[c]["url"], CASE_META[c][lang]["card_title"]) for c in CASES)
     company = li('/o-kompanii/', S["about"]) + li('/kontakty/', S["contacts"]) + li('/uslugi/', S["all_services"])
     body = f'''<div class="sitemap-cols">
@@ -828,19 +876,17 @@ def build_html_sitemap(lang):
   {head_common()}
 <title>{esc(S["sitemap_title"])}</title><meta name="description" content="{esc(S["sitemap_desc"])}">
 <meta http-equiv="content-language" content="{lang}">{noindex}
-<link rel="canonical" href="{SITE}/karta-sajta/">
+{seo_link_tags(path, lang)}
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{u('/css/styles.css')}?v=11"><link rel="stylesheet" href="{u('/css/pages.css')}?v=11"></head>
-<body class="inner-page">{header_html(lang)}
+<body class="inner-page">{header_html(lang, path)}
 <main class="page-main page-article">
 <section class="page-hero"><div class="container">{bc}
 <h1 class="heading1 page-hero__title">{esc(S["sitemap_h1"])}</h1>
 <div class="page-hero__lead"><p>{esc(S["sitemap_lead"])}</p></div></div></section>
 <div class="container page-content">{body}</div>
 </main>{footer_html(lang)}<script src="{u('/js/main.js')}?v=11"></script></body></html>'''
-    d = os.path.join(ROOT, 'karta-sajta')
-    os.makedirs(d, exist_ok=True)
-    open(os.path.join(d, out_html_name(lang)), 'w', encoding='utf-8').write(doc)
+    write_page(path, lang, doc)
 
 
 def build_llms_txt():
@@ -853,33 +899,44 @@ def build_llms_txt():
         "## Services",
     ]
     for h in HUBS:
-        lines.append(f"- [{page_title(h,'en')}]({SITE}{PAGES[h][0]})")
+        lines.append(f"- [{page_title(h,'en')}]({abs_url(PAGES[h][0], 'en')})")
         for k in KIDS[h]:
-            lines.append(f"  - [{page_title(k,'en')}]({SITE}{PAGES[k][0]})")
+            lines.append(f"  - [{page_title(k,'en')}]({abs_url(PAGES[k][0], 'en')})")
     lines += ["", "## Cases"]
     for c in CASES:
-        lines.append(f"- [{CASE_META[c]['en']['card_title']}]({SITE}{CASE_META[c]['url']})")
+        lines.append(f"- [{CASE_META[c]['en']['card_title']}]({abs_url(CASE_META[c]['url'], 'en')})")
     lines += ["", "## Company",
-              f"- [About]({SITE}/o-kompanii/)",
-              f"- [Contact]({SITE}/kontakty/)",
-              f"- [Sitemap]({SITE}/karta-sajta/)",
+              f"- [About]({abs_url('/o-kompanii/', 'en')})",
+              f"- [Contact]({abs_url('/kontakty/', 'en')})",
+              f"- [Sitemap]({abs_url('/karta-sajta/', 'en')})",
               "", "Contact: hello@skill-dev.ai", ""]
     open(os.path.join(ROOT, 'llms.txt'), 'w', encoding='utf-8').write("\n".join(lines))
 
 
-def build_sitemap(urls):
+def build_sitemap(paths):
+    """paths — логические URL без локали (включая '/'). Пишет EN + /ru/ с xhtml:alternate."""
     import datetime
     today = datetime.date.today().isoformat()
-    all_urls = ['/'] + [u for u in urls if u != '/']
     parts = []
-    for path in all_urls:
+    for path in paths:
         pr, cf = _sitemap_priority(path)
         img = _hero_image(path)
         img_xml = f'<image:image><image:loc>{img}</image:loc></image:image>' if img else ''
-        parts.append(f'<url><loc>{SITE}{path}</loc><lastmod>{today}</lastmod><changefreq>{cf}</changefreq><priority>{pr}</priority>{img_xml}</url>')
+        for lang in ("en", "ru"):
+            loc = abs_url(path, lang)
+            en, ru = abs_url(path, "en"), abs_url(path, "ru")
+            parts.append(
+                f'<url><loc>{loc}</loc>'
+                f'<xhtml:link rel="alternate" hreflang="en" href="{en}"/>'
+                f'<xhtml:link rel="alternate" hreflang="ru" href="{ru}"/>'
+                f'<xhtml:link rel="alternate" hreflang="x-default" href="{en}"/>'
+                f'<lastmod>{today}</lastmod><changefreq>{cf}</changefreq><priority>{pr}</priority>{img_xml}</url>'
+            )
     open(os.path.join(ROOT, 'sitemap.xml'), 'w').write(
         '<?xml version="1.0" encoding="UTF-8"?>\n'
-        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
+        'xmlns:xhtml="http://www.w3.org/1999/xhtml" '
+        'xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">'
         + ''.join(parts) + '</urlset>')
     # robots: query-URL закрыты; AI/поисковым ботам явный доступ (GEO); тест-домен закрыт целиком
     if NOINDEX:
@@ -896,17 +953,59 @@ def build_sitemap(urls):
     robots += f"\nSitemap: {SITE}/sitemap.xml\n"
     open(os.path.join(ROOT, 'robots.txt'), 'w').write(robots)
 
+def home_file(lang):
+    if lang == "ru":
+        return os.path.join(ROOT, "ru", "index.html")
+    return os.path.join(ROOT, "index.html")
+
+def migrate_home_locale_layout():
+    """Одноразово: EN → корень index.html, RU → ru/index.html (из старых index.html / index.en.html)."""
+    en_src = os.path.join(ROOT, "index.en.html")
+    root_index = os.path.join(ROOT, "index.html")
+    ru_dir = os.path.join(ROOT, "ru")
+    ru_index = os.path.join(ru_dir, "index.html")
+    if not os.path.isfile(en_src):
+        return
+    os.makedirs(ru_dir, exist_ok=True)
+    if not os.path.isfile(ru_index) and os.path.isfile(root_index):
+        shutil.copy2(root_index, ru_index)
+        print("migrated RU home → ru/index.html")
+    shutil.copy2(en_src, root_index)
+    print("migrated EN home → index.html")
+
+def rewrite_main_content_hrefs(html, lang):
+    """В <main> переписать абсолютные / и BASE-prefixed href под локаль; relative не трогаем."""
+    def fix_main(m):
+        block = m.group(0)
+        def repl(hm):
+            href = hm.group(1)
+            if href.startswith(("mailto:", "http://", "https://", "#", "tel:")):
+                return hm.group(0)
+            path = href
+            if BASE and (path.startswith(BASE + "/") or path == BASE):
+                path = path[len(BASE):] or "/"
+            elif BASE and path.startswith(BASE + "#"):
+                return f'href="{u("/", lang)}{path[len(BASE):]}"'
+            if not path.startswith("/"):
+                return hm.group(0)
+            if path.startswith("/#"):
+                return f'href="{u("/", lang)}{path[1:]}"'
+            frag = ""
+            if "#" in path:
+                path, frag = path.split("#", 1)
+                frag = "#" + frag
+            if is_asset_path(path):
+                return hm.group(0)
+            logical = strip_locale(path)
+            if not logical.endswith("/") and logical != "/" and "." not in os.path.basename(logical):
+                logical = logical + "/"
+            return f'href="{u(logical, lang)}{frag}"'
+        return re.sub(r'href="([^"]+)"', repl, block)
+    return re.sub(r'<main\b[^>]*>.*?</main>', fix_main, html, count=1, flags=re.S)
+
 def patch_home(lang="ru"):
-    """Единые header/footer на главной. Для EN читает index.en.html если есть, иначе копирует RU."""
-    name = out_html_name(lang)
-    p = os.path.join(ROOT, name)
-    if lang == "en" and not os.path.isfile(p):
-        # bootstrap from RU once; content translation lives in index.en.html separately
-        src = os.path.join(ROOT, "index.html")
-        if not os.path.isfile(src):
-            print("skip EN home: no index.html", file=sys.stderr)
-            return
-        open(p, "w", encoding="utf-8").write(open(src, encoding="utf-8").read())
+    """Единые header/footer/SEO на главной. EN = /, RU = /ru/."""
+    p = home_file(lang)
     if not os.path.isfile(p):
         print(f"skip home {lang}: missing {p}", file=sys.stderr)
         return
@@ -925,8 +1024,26 @@ def patch_home(lang="ru"):
                       f'<meta charset="UTF-8">\n  <meta http-equiv="content-language" content="{lang}">', 1)
     else:
         h = re.sub(r'content-language" content="[^"]*"', f'content-language" content="{lang}"', h, count=1)
-    h = re.sub(r'<header class="header[^"]*" id="siteHeader">.*?</header>', header_html(lang), h, count=1, flags=re.S)
+    # canonical + hreflang + og:locale / og:url
+    h = re.sub(r'\s*<link rel="canonical"[^>]*>', '', h)
+    h = re.sub(r'\s*<link rel="alternate"[^>]*hreflang="[^"]*"[^>]*>', '', h)
+    h = re.sub(r'\s*<meta property="og:url"[^>]*>', '', h)
+    h = re.sub(r'\s*<meta property="og:locale"[^>]*>', '', h)
+    seo = seo_link_tags("/", lang)
+    if 'http-equiv="content-language"' in h:
+        h = re.sub(
+            r'(<meta http-equiv="content-language" content="[^"]*">)',
+            r'\1\n  ' + seo,
+            h,
+            count=1,
+        )
+    else:
+        h = h.replace('</title>', '</title>\n  ' + seo, 1)
+    # schema inLanguage
+    h = re.sub(r'"inLanguage"\s*:\s*"(?:ru|en)"', f'"inLanguage":"{lang}"', h)
+    h = re.sub(r'<header class="header[^"]*" id="siteHeader">.*?</header>', header_html(lang, "/"), h, count=1, flags=re.S)
     h = re.sub(r'<footer class="footer">.*?</footer>', footer_html(lang), h, count=1, flags=re.S)
+    h = rewrite_main_content_hrefs(h, lang)
     h = re.sub(r'href="[^"]*css/(styles|pages)\.css[^"]*"', lambda m: f'href="{u("/css/"+m.group(1)+".css")}?v=11"', h)
     h = re.sub(r'src="[^"]*/js/main\.js[^"]*"', f'src="{u("/js/main.js")}?v=11"', h)
     h = re.sub(
@@ -944,11 +1061,24 @@ def patch_home(lang="ru"):
     # Домен: захардкоженный тестовый geeedy.github.io/site → фактический SITE (canonical, og, JSON-LD)
     h = h.replace("https://geeedy.github.io/site", SITE)
     open(p, 'w', encoding='utf-8').write(h)
-    print(f'patched {name} (header/footer unified, lang={lang})')
+    print(f'patched home lang={lang} → {os.path.relpath(p, ROOT)}')
+
+def cleanup_stale_en_html():
+    removed = 0
+    skip_dirs = {".git", "content", "node_modules", ".cursor"}
+    for dirpath, dirnames, filenames in os.walk(ROOT):
+        dirnames[:] = [d for d in dirnames if d not in skip_dirs and not d.startswith(".")]
+        for f in filenames:
+            if f == "index.en.html":
+                os.remove(os.path.join(dirpath, f))
+                removed += 1
+    if removed:
+        print(f"removed {removed} stale index.en.html")
 
 if __name__ == '__main__':
-    urls = ['/uslugi/', '/kontakty/', '/kejsy/', '/kejsy/claude-vps-sreda/', '/karta-sajta/']
-    for lang in ("ru", "en"):
+    paths = ['/', '/uslugi/', '/kontakty/', '/kejsy/', '/kejsy/claude-vps-sreda/', '/karta-sajta/']
+    migrate_home_locale_layout()
+    for lang in ("en", "ru"):
         patch_home(lang)
         build_uslugi_catalog(lang)
         build_kontakty(lang)
@@ -957,17 +1087,17 @@ if __name__ == '__main__':
         build_html_sitemap(lang)
         for slug in PAGES:
             built = build_page(slug, lang)
-            if built and lang == "ru":
-                urls.append(built)
-                print('built', lang, built)
-            elif built:
-                print('built', lang, built)
+            if built:
+                if built not in paths:
+                    paths.append(built)
+                print('built', lang, loc_path(built, lang))
     # unique preserve order
     seen, uniq = set(), []
-    for p in urls:
+    for p in paths:
         if p not in seen:
             seen.add(p); uniq.append(p)
     build_404()
     build_llms_txt()
     build_sitemap(uniq)
-    print(f'\nDONE: {len(uniq)} URLs · BASE={BASE!r} · NOINDEX={NOINDEX}')
+    cleanup_stale_en_html()
+    print(f'\nDONE: {len(uniq)} logical paths × 2 locales · BASE={BASE!r} · NOINDEX={NOINDEX}')

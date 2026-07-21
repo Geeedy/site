@@ -180,6 +180,7 @@ ul { list-style: none; }
   font: inherit;
   font-weight: 600;
   line-height: 1;
+  text-decoration: none;
 }
 .lang-switch__btn:hover { color: var(--text); }
 .lang-switch__btn.is-active { color: var(--text); }
@@ -187,6 +188,39 @@ ul { list-style: none; }
   color: var(--gray-400, #9aa0a6);
   user-select: none;
 }
+.locale-banner {
+  background: var(--text, #1a1a1a);
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.locale-banner__inner {
+  max-width: var(--container, 1200px);
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.locale-banner__link {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 600;
+}
+.locale-banner__link:hover { opacity: 0.9; }
+.locale-banner__close {
+  background: none;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 4px;
+  opacity: 0.7;
+}
+.locale-banner__close:hover { opacity: 1; }
 .hgl-link {
   display: inline-flex;
   align-items: center;

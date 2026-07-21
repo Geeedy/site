@@ -1,45 +1,37 @@
-# Skill Dev — same-URL language negotiation (RU/EN)
+# Skill Dev — path-based locales (EN at root, RU under /ru/)
 #
-# Files per directory: index.html (RU), index.en.html (EN)
-# Cookie sd_lang=ru|en overrides Accept-Language. URL path never changes.
+# Files: /…/index.html (EN), /ru/…/index.html (RU). No cookie negotiation.
 #
-# Put the `map` blocks in http { }. Put the `location` blocks in server { }.
-
-# --- http { } ---
-map $http_accept_language $lang_from_header {
-    default   ru;
-    ~*^en     en;
-}
-
-map $cookie_sd_lang $sd_lang {
-    default   $lang_from_header;
-    "~*^en$"  en;
-    "~*^ru$"  ru;
-}
-
-map $sd_lang $lang_index {
-    default   index.html;
-    en        index.en.html;
-}
-
-map $sd_lang $content_language {
-    default   ru;
-    en        en;
-}
+# Put the `location` blocks in server { }. Adjust `root` to your deploy path.
 
 # --- server { } ---
 # root /var/www/skill-dev;
 
 location = / {
-    add_header Content-Language $content_language always;
-    add_header Cache-Control "no-store, no-cache, must-revalidate" always;
-    add_header Vary "Cookie, Accept-Language" always;
-    try_files /$lang_index /index.html =404;
+    add_header Content-Language en always;
+    add_header Cache-Control "public, max-age=300" always;
+    try_files /index.html =404;
 }
 
+# Russian tree
+location ^~ /ru/ {
+    add_header Content-Language ru always;
+    add_header Cache-Control "public, max-age=300" always;
+    try_files $uri $uri/ $uri/index.html =404;
+}
+
+location = /ru {
+    return 301 /ru/;
+}
+
+# English (and other) HTML directories
 location ~ ^(?<dir>.+)/$ {
-    add_header Content-Language $content_language always;
-    add_header Cache-Control "no-store, no-cache, must-revalidate" always;
-    add_header Vary "Cookie, Accept-Language" always;
-    try_files $dir/$lang_index $dir/index.html =404;
+    add_header Content-Language en always;
+    add_header Cache-Control "public, max-age=300" always;
+    try_files $dir/index.html =404;
+}
+
+location ~* \.(css|js|png|jpg|jpeg|svg|ico|webp|woff2?)$ {
+    add_header Cache-Control "public, max-age=86400" always;
+    try_files $uri =404;
 }
