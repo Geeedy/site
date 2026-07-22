@@ -42,6 +42,7 @@ PAGES = {
  "seo-audit":           ("/uslugi/seo-prodvizhenie/seo-audit/", {"ru":"SEO-аудит","en":"SEO Audit"}, "seo-prodvizhenie"),
  "geo-aeo":             ("/uslugi/seo-prodvizhenie/geo-aeo/", {"ru":"GEO/AEO-продвижение","en":"GEO/AEO Optimization"}, "seo-prodvizhenie"),
  "o-kompanii":          ("/o-kompanii/", {"ru":"О компании","en":"About Us"}, None),
+ "politika":            ("/politika/", {"ru":"Политика обработки данных","en":"Privacy & Cookie Policy"}, None),
  "audit-ii-strategiya":  ("/uslugi/vnedrenie-ii/audit-ii-strategiya/", {"ru":"Аудит и ИИ-стратегия","en":"AI Audit & Strategy"}, "vnedrenie-ii"),
  "avtomatizatsiya-dokumentooborota": ("/uslugi/vnedrenie-ii/avtomatizatsiya-dokumentooborota/", {"ru":"Автоматизация документооборота","en":"Document Workflow Automation"}, "vnedrenie-ii"),
  "ii-v-1c":              ("/uslugi/vnedrenie-ii/ii-v-1c/", {"ru":"ИИ в 1С","en":"AI for 1C"}, "vnedrenie-ii"),
@@ -232,9 +233,11 @@ def inline(md, lang="ru"):
     md = re.sub(r'\[\[TBD[^\]]*\]\]', f'<mark class="tbd">{tbd}</mark>', md)
     def link(m):
         text, url = m.group(1), m.group(2)
+        if url.startswith('http://') or url.startswith('https://'):
+            return f'<a href="{url}" target="_blank" rel="nofollow noopener">{text}</a>'
         if url.startswith('/'):
             return f'<a href="{u(url, lang)}">{text}</a>'
-        return f'<a href="{url}" target="_blank" rel="noopener">{text}</a>'
+        return f'<a href="{url}">{text}</a>'
     md = re.sub(r'\[([^\]]+)\]\(([^)\s]+)\)', link, md)
     md = re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', md)
     return md
@@ -493,10 +496,29 @@ def footer_html(lang="ru"):
       <div class="footer__contacts"><p><strong>{esc(S["contacts_label"])}</strong></p><p>hello@skill-dev.ai</p><p>{esc(S["worldwide"])}</p></div>
     </div>
     <div class="footer__grid footer__grid--silo">{''.join(cols)}
-      <div><div class="footer__h">{esc(S["company"])}</div><ul><li><a href="{u('/o-kompanii/', lang)}">{esc(S["about_us"])}</a></li><li><a href="{u('/kejsy/', lang)}">{esc(S["cases_nav"])}</a></li><li><a href="{u('/kontakty/', lang)}">{esc(S["contacts"])}</a></li><li><a href="{u('/uslugi/', lang)}">{esc(S["all_services"])}</a></li><li><a href="{u('/karta-sajta/', lang)}">{esc(S["sitemap_nav"])}</a></li></ul></div>
+      <div><div class="footer__h">{esc(S["company"])}</div><ul><li><a href="{u('/o-kompanii/', lang)}">{esc(S["about_us"])}</a></li><li><a href="{u('/kejsy/', lang)}">{esc(S["cases_nav"])}</a></li><li><a href="{u('/kontakty/', lang)}">{esc(S["contacts"])}</a></li><li><a href="{u('/uslugi/', lang)}">{esc(S["all_services"])}</a></li><li><a href="{u('/karta-sajta/', lang)}">{esc(S["sitemap_nav"])}</a></li><li><a href="{u('/politika/', lang)}">{esc(page_title('politika', lang))}</a></li></ul></div>
     </div>
     <div class="footer__bottom"><span>{esc(S["rights"])}</span><span>hello@skill-dev.ai</span></div>
   </div></footer>'''
+
+def cookie_banner_html(lang="ru"):
+    if lang == "en":
+        text = ('We use cookies to run the site and improve your experience. '
+                'By staying on the site, you agree to the processing of your data. '
+                f'<a href="{u("/politika/", "en")}">Learn more</a>.')
+        decline, accept = "Decline", "Accept"
+    else:
+        text = ('Мы используем cookies, чтобы сайт работал и был удобнее. '
+                'Оставаясь на сайте, вы соглашаетесь с обработкой данных. '
+                f'<a href="{u("/politika/", "ru")}">Подробнее</a>.')
+        decline, accept = "Отклонить", "Принять"
+    return (f'  <div class="cookie-banner" id="cookieBanner">\n'
+            f'    <div class="cookie-banner__inner container">\n'
+            f'      <p>{text}</p>\n'
+            f'      <div><button class="btn btn--outline" id="cookieDecline">{decline}</button> '
+            f'<button class="btn btn--primary" id="cookieAccept">{accept}</button></div>\n'
+            f'    </div>\n'
+            f'  </div>')
 
 def page_shell(slug, meta, hero_html, body_html, faq, bc_ld, lang):
     url, titles, parent = PAGES[slug]
@@ -536,6 +558,7 @@ def page_shell(slug, meta, hero_html, body_html, faq, bc_ld, lang):
   </div>
 </main>
 {footer_html(lang)}
+{cookie_banner_html(lang)}
 <script src="{u('/js/main.js')}?v=12"></script>
 </body>
 </html>'''
@@ -1106,6 +1129,9 @@ def patch_home(lang="ru"):
     h = re.sub(r'\s*<!-- Yandex\.Metrika counter -->.*?<!-- /Yandex\.Metrika counter -->\s*', '\n', h, flags=re.S)
     if '110912791' not in h:
         h = h.replace('</head>', '\n' + yandex_metrika_html() + '\n</head>')
+    # Cookie-баннер: единый источник (текст + ссылка на политику по локали)
+    h = re.sub(r'  <div class="cookie-banner" id="cookieBanner">.*?\n  </div>',
+               cookie_banner_html(lang), h, count=1, flags=re.S)
     # Домен: захардкоженный тестовый geeedy.github.io/site → фактический SITE (canonical, og, JSON-LD)
     h = h.replace("https://geeedy.github.io/site", SITE)
     open(p, 'w', encoding='utf-8').write(h)

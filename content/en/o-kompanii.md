@@ -6,14 +6,14 @@
 
 - **Title:** About Skill Dev | Engineers from Big Tech
 - **Meta description:** For 3 years we cut business costs with technology. Team: big-tech alumni with 8–15 years of experience.
-- **OG title:** Skill Dev: Engineers Who Count Your Money
+- **OG title:** Skill Dev: Engineers Who Cut Your Costs
 - **OG description:** 3 years. Big-tech experience. Before/after metrics on every project.
 
 ---
 
-# Engineers from Big Tech Who Count Your Money
+# Engineers from Big Tech Who Cut Your Costs
 
-We founded the company in 2023 with a simple idea: technology should cut the client’s costs, not inflate their budget. Three years later that is still the main filter for every decision we make: from choosing an AI model to website architecture.
+We founded the company in 2023 with a simple idea: technology should cut the client’s costs, not inflate their budget. Three years later that is still the main filter for every decision we make, from choosing an AI model to website architecture. Our experience helps you optimize existing processes and adopt advanced IT and AI tools. Development that speaks the language of business.
 
 [IMG: ../assets/images/o-kompanii-hero.jpg | Skill Dev team: engineers and ML specialists]
 

@@ -610,6 +610,24 @@
     </image:image>
   </url>
   <url>
+    <loc>https://geeedy.github.io/site/politika/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/politika/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/politika/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/politika/"/>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://geeedy.github.io/site/ru/politika/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/politika/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/politika/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/politika/"/>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://geeedy.github.io/site/uslugi/vnedrenie-ii/audit-ii-strategiya/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/audit-ii-strategiya/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/audit-ii-strategiya/"/>
