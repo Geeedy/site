@@ -387,25 +387,78 @@
 
   // Contact form → Telegram leads bot via /api/lead
   const contactForm = document.getElementById('contactForm');
+  let leadModalTimer = null;
+
+  function ensureLeadModal() {
+    let modal = document.getElementById('leadModal');
+    if (modal) return modal;
+    modal = document.createElement('div');
+    modal.id = 'leadModal';
+    modal.className = 'lead-modal';
+    modal.setAttribute('role', 'dialog');
+    modal.setAttribute('aria-modal', 'true');
+    modal.setAttribute('aria-live', 'polite');
+    modal.innerHTML = [
+      '<div class="lead-modal__dialog">',
+      '  <p class="lead-modal__text"></p>',
+      '  <button type="button" class="btn btn--primary lead-modal__ok">OK</button>',
+      '</div>',
+    ].join('');
+    document.body.appendChild(modal);
+
+    const close = () => closeLeadModal();
+    modal.querySelector('.lead-modal__ok')?.addEventListener('click', close);
+    modal.addEventListener('click', (ev) => {
+      if (ev.target === modal) close();
+    });
+    document.addEventListener('keydown', (ev) => {
+      if (ev.key === 'Escape' && modal.classList.contains('is-open')) close();
+    });
+    return modal;
+  }
+
+  function closeLeadModal() {
+    const modal = document.getElementById('leadModal');
+    if (!modal) return;
+    modal.classList.remove('is-open');
+    if (leadModalTimer) {
+      clearTimeout(leadModalTimer);
+      leadModalTimer = null;
+    }
+  }
+
+  function showLeadModal(message, isError) {
+    const modal = ensureLeadModal();
+    const dialog = modal.querySelector('.lead-modal__dialog');
+    const textEl = modal.querySelector('.lead-modal__text');
+    const okBtn = modal.querySelector('.lead-modal__ok');
+    if (textEl) textEl.textContent = message;
+    dialog?.classList.toggle('lead-modal__dialog--error', !!isError);
+    if (okBtn) okBtn.textContent = pageLang === 'en' ? 'OK' : 'Ок';
+    modal.classList.add('is-open');
+    if (leadModalTimer) clearTimeout(leadModalTimer);
+    leadModalTimer = setTimeout(closeLeadModal, 5000);
+    okBtn?.focus();
+  }
+
   contactForm?.addEventListener('submit', async (e) => {
     e.preventDefault();
     const form = e.target;
     if (!(form instanceof HTMLFormElement)) return;
 
     const btn = form.querySelector('button[type="submit"]');
-    const successEl = form.querySelector('.form-success');
-    const fieldsEl = form.querySelector('.form-fields') || form;
-
     const i18n = pageLang === 'en'
       ? {
           ok: 'Your request has been sent. A manager will contact you shortly.',
           err: 'Could not send the request. Please try again or email hello@skill-dev.ai',
           sending: 'Sending…',
+          btnOk: 'OK',
         }
       : {
           ok: 'Заявка отправлена. Менеджер свяжется с вами в ближайшее время.',
           err: 'Не удалось отправить заявку. Попробуйте ещё раз или напишите на hello@skill-dev.ai',
           sending: 'Отправка…',
+          btnOk: 'Ок',
         };
 
     const nameInput = form.querySelector('[name="name"]');
@@ -424,8 +477,8 @@
     }
 
     const apiBase = (() => {
-      const base = document.querySelector('link[href*="css/styles.css"]')?.getAttribute('href') || '';
-      const root = base.replace(/\/css\/styles\.css.*$/, '') || '';
+      const href = document.querySelector('link[href*="css/styles.css"]')?.getAttribute('href') || '';
+      const root = href.replace(/\/css\/styles\.css.*$/, '') || '';
       return root;
     })();
 
@@ -439,27 +492,10 @@
       if (!res.ok || !data.ok) throw new Error(data.error || 'fail');
 
       form.reset();
-      if (successEl) {
-        successEl.hidden = false;
-        successEl.classList.remove('form-success--error');
-        successEl.textContent = i18n.ok;
-      } else {
-        const note = document.createElement('p');
-        note.className = 'form-success';
-        note.textContent = i18n.ok;
-        fieldsEl.appendChild(note);
-      }
-      form.querySelectorAll('.form-group, .form-row, button[type="submit"], .form-honeypot').forEach((el) => {
-        el.hidden = true;
-      });
+      showLeadModal(i18n.ok, false);
     } catch (_) {
-      if (successEl) {
-        successEl.hidden = false;
-        successEl.classList.add('form-success--error');
-        successEl.textContent = i18n.err;
-      } else {
-        alert(i18n.err);
-      }
+      showLeadModal(i18n.err, true);
+    } finally {
       if (btn) {
         btn.disabled = false;
         btn.textContent = prevLabel;
