@@ -639,7 +639,7 @@ def build_kontakty(lang):
 <h1 class="heading1 page-hero__title">{esc(S["kontakty_h1"])}</h1>
 <div class="page-hero__lead"><p>{esc(S["kontakty_lead"])}</p></div></div></section>
 <section class="contact-section" id="contact"><div class="container"><div class="contact-grid">
-<div class="contact-info"><h2 class="heading2">{esc(S["kontakty_need"])}</h2><p>hello@skill-dev.ai</p><p>{esc(S["kontakty_remote"])}</p></div>
+<div class="contact-info"><h2 class="heading2">{esc(S["kontakty_need"])}</h2><p>manager@skill-dev.online</p><p>{esc(S["kontakty_remote"])}</p></div>
 <form class="contact-form" id="contactForm">
 <div class="form-group"><label for="msg">{esc(S["form_help"])}</label><textarea id="msg" name="message" rows="4" required placeholder="{esc(S["form_placeholder"])}"></textarea></div>
 <div class="form-row"><div class="form-group"><label for="name">{esc(S["form_name"])}</label><input id="name" name="name" type="text" required autocomplete="name"></div>
