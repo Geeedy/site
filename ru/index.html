@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/site/css/styles.css?v=12">
+  <link rel="stylesheet" href="/site/css/styles.css?v=13">
   <link rel="stylesheet" href="/site/css/pages.css?v=12">
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://skill-dev.online/#org","name":"Skill Dev","url":"https://skill-dev.online/","logo":"https://skill-dev.online/assets/ui/logo-full.png","email":"hello@skill-dev.ai"},{"@type":"WebSite","url":"https://skill-dev.online/","name":"Skill Dev","inLanguage":"ru","publisher":{"@id":"https://skill-dev.online/#org"}}]}</script>
   <meta name="yandex-verification" content="bac091f33d55ea2c">
@@ -257,11 +257,13 @@
             <p>Вернёмся с расчётом за 2 дня, будь то сайт, ИИ, CRM или всё вместе.</p>
           </div>
           <form class="contact-form step-up" id="contactForm">
-            <div class="form-group"><label for="msg">Чем помочь?</label><textarea id="msg" rows="4" required placeholder="Опишите задачу..."></textarea></div>
+            <div class="form-group"><label for="msg">Чем помочь?</label><textarea id="msg" name="message" rows="4" required placeholder="Опишите задачу..."></textarea></div>
             <div class="form-row">
-              <div class="form-group"><label>Имя</label><input type="text" required></div>
-              <div class="form-group"><label>Email или Telegram</label><input type="text" required></div>
+              <div class="form-group"><label for="name">Имя</label><input id="name" name="name" type="text" required autocomplete="name"></div>
+              <div class="form-group"><label for="contact">Email или Telegram</label><input id="contact" name="contact" type="text" required autocomplete="email"></div>
             </div>
+            <input type="text" name="website" value="" tabindex="-1" autocomplete="off" class="form-honeypot" aria-hidden="true">
+            <p class="form-success" hidden></p>
             <button type="submit" class="btn btn--primary" style="width:100%">Отправить</button>
           </form>
         </div>
@@ -288,6 +290,6 @@
     </div>
   </div>
 
-  <script src="/site/js/main.js?v=12"></script>
+  <script src="/site/js/main.js?v=13"></script>
 </body>
 </html>

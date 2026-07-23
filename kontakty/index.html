@@ -16,7 +16,7 @@
   <meta property="og:url" content="https://geeedy.github.io/site/kontakty/">
   <meta property="og:locale" content="en_US">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/site/css/styles.css?v=12"><link rel="stylesheet" href="/site/css/pages.css?v=12"></head>
+<link rel="stylesheet" href="/site/css/styles.css?v=13"><link rel="stylesheet" href="/site/css/pages.css?v=13"></head>
 <body class="inner-page"><header class="header" id="siteHeader">
     <div class="header-global-line">
       <div class="container header-global-line__inner">
@@ -51,9 +51,11 @@
 <section class="contact-section" id="contact"><div class="container"><div class="contact-grid">
 <div class="contact-info"><h2 class="heading2">Need a consultation?</h2><p>hello@skill-dev.ai</p><p>We work worldwide, remotely.</p></div>
 <form class="contact-form" id="contactForm">
-<div class="form-group"><label for="msg">How can we help?</label><textarea id="msg" rows="4" required placeholder="Describe your project..."></textarea></div>
-<div class="form-row"><div class="form-group"><label>Name</label><input type="text" required></div>
-<div class="form-group"><label>Email or Telegram</label><input type="text" required></div></div>
+<div class="form-group"><label for="msg">How can we help?</label><textarea id="msg" name="message" rows="4" required placeholder="Describe your project..."></textarea></div>
+<div class="form-row"><div class="form-group"><label for="name">Name</label><input id="name" name="name" type="text" required autocomplete="name"></div>
+<div class="form-group"><label for="contact">Email or Telegram</label><input id="contact" name="contact" type="text" required autocomplete="email"></div></div>
+<input type="text" name="website" value="" tabindex="-1" autocomplete="off" class="form-honeypot" aria-hidden="true">
+<p class="form-success" hidden></p>
 <button type="submit" class="btn btn--primary" style="width:100%">Send</button></form>
 </div></div></section>
 </main><footer class="footer"><div class="container">
@@ -65,4 +67,4 @@
       <div><div class="footer__h">Company</div><ul><li><a href="/site/o-kompanii/">About us</a></li><li><a href="/site/kejsy/">Cases</a></li><li><a href="/site/kontakty/">Contact</a></li><li><a href="/site/uslugi/">All services</a></li><li><a href="/site/karta-sajta/">Sitemap</a></li><li><a href="/site/politika/">Privacy &amp; Cookie Policy</a></li></ul></div>
     </div>
     <div class="footer__bottom"><span>© 2026 Skill Dev. All rights reserved.</span><span>hello@skill-dev.ai</span></div>
-  </div></footer><script src="/site/js/main.js?v=12"></script></body></html>
+  </div></footer><script src="/site/js/main.js?v=13"></script></body></html>

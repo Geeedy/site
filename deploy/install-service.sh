@@ -62,7 +62,25 @@ if [[ ! -f "$ENV_FILE" ]]; then
   echo "[install] wrote $ENV_FILE"
 else
   echo "[install] keep existing $ENV_FILE"
+  # Append leads bot vars if missing
+  if ! grep -q '^TELEGRAM_BOT_TOKEN=' "$ENV_FILE"; then
+    {
+      echo
+      echo "# Leads Telegram bot — set TELEGRAM_BOT_TOKEN"
+      echo "TELEGRAM_BOT_TOKEN="
+      echo "LEADS_BOT_PASSWORD=skill-def-get-leads"
+      echo "LEADS_DATA_DIR=/var/lib/skilldev"
+    } >> "$ENV_FILE"
+    echo "[install] appended leads bot env to $ENV_FILE"
+  fi
 fi
+
+if grep -q '^TELEGRAM_BOT_TOKEN=$' "$ENV_FILE" || ! grep -q '^TELEGRAM_BOT_TOKEN=.\+' "$ENV_FILE"; then
+  echo "[install] WARNING: set TELEGRAM_BOT_TOKEN in $ENV_FILE before leads bot can send messages" >&2
+fi
+
+mkdir -p /var/lib/skilldev
+chmod 750 /var/lib/skilldev
 
 # Unit file with correct WorkingDirectory / ExecStart
 UNIT=/etc/systemd/system/skilldev-site.service
@@ -71,13 +89,24 @@ sed \
   "$SITE_ROOT/deploy/skilldev-site.service" > "$UNIT"
 echo "[install] wrote $UNIT"
 
+BOT_UNIT=/etc/systemd/system/skilldev-leads-bot.service
+sed \
+  -e "s|/var/www/skilldev-site|$SITE_ROOT|g" \
+  "$SITE_ROOT/deploy/skilldev-leads-bot.service" > "$BOT_UNIT"
+echo "[install] wrote $BOT_UNIT"
+
 systemctl daemon-reload
-systemctl enable skilldev-site.service
-systemctl restart skilldev-site.service
+systemctl enable skilldev-site.service skilldev-leads-bot.service
+systemctl restart skilldev-site.service skilldev-leads-bot.service
 systemctl --no-pager --full status skilldev-site.service || true
+systemctl --no-pager --full status skilldev-leads-bot.service || true
 
 echo
 echo "[install] done. Useful commands:"
 echo "  systemctl status skilldev-site"
+echo "  systemctl status skilldev-leads-bot"
 echo "  journalctl -u skilldev-site -f"
-echo "  systemctl restart skilldev-site"
+echo "  journalctl -u skilldev-leads-bot -f"
+echo "  systemctl restart skilldev-site skilldev-leads-bot"
+echo
+echo "Telegram: open the bot → /start → password from LEADS_BOT_PASSWORD"

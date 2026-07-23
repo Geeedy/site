@@ -538,8 +538,8 @@ def page_shell(slug, meta, hero_html, body_html, faq, bc_ld, lang):
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{u('/css/styles.css')}?v=12">
-  <link rel="stylesheet" href="{u('/css/pages.css')}?v=12">
+  <link rel="stylesheet" href="{u('/css/styles.css')}?v=13">
+  <link rel="stylesheet" href="{u('/css/pages.css')}?v=13">
   {schema(slug, meta, faq, bc_ld, lang)}
 </head>
 <body class="inner-page">
@@ -552,7 +552,7 @@ def page_shell(slug, meta, hero_html, body_html, faq, bc_ld, lang):
 </main>
 {footer_html(lang)}
 {cookie_banner_html(lang)}
-<script src="{u('/js/main.js')}?v=12"></script>
+<script src="{u('/js/main.js')}?v=13"></script>
 </body>
 </html>'''
 
@@ -609,7 +609,7 @@ def build_uslugi_catalog(lang):
 {seo_link_tags(path, lang)}
 <script type="application/ld+json">{{"@context":"https://schema.org","@graph":[{{"@type":"CollectionPage","@id":"{path_abs}","url":"{path_abs}","name":{json.dumps(S["catalog_title"], ensure_ascii=False)},"inLanguage":"{lang}"}},{{"@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":{json.dumps(S["home"], ensure_ascii=False)},"item":"{home_abs}"}},{{"@type":"ListItem","position":2,"name":{json.dumps(S["services"], ensure_ascii=False)},"item":"{path_abs}"}}]}},{{"@type":"ItemList","itemListElement":[{itemlist}]}}]}}</script>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{u('/css/styles.css')}?v=12"><link rel="stylesheet" href="{u('/css/pages.css')}?v=12"></head>
+<link rel="stylesheet" href="{u('/css/styles.css')}?v=13"><link rel="stylesheet" href="{u('/css/pages.css')}?v=13"></head>
 <body class="inner-page">{header_html(lang, path)}
 <main class="page-main page-article">
 <section class="page-hero"><div class="container">{bc}
@@ -617,7 +617,7 @@ def build_uslugi_catalog(lang):
 <div class="page-hero__lead"><p>{esc(S["catalog_lead"])}</p></div>
 </div></section>
 <div class="container page-content"><div class="catalog-grid">{''.join(cards)}</div></div>
-</main>{footer_html(lang)}<script src="{u('/js/main.js')}?v=12"></script></body></html>'''
+</main>{footer_html(lang)}<script src="{u('/js/main.js')}?v=13"></script></body></html>'''
     write_page(path, lang, doc)
 
 def build_kontakty(lang):
@@ -632,7 +632,7 @@ def build_kontakty(lang):
 <meta http-equiv="content-language" content="{lang}">{noindex}
 {seo_link_tags(path, lang)}
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{u('/css/styles.css')}?v=12"><link rel="stylesheet" href="{u('/css/pages.css')}?v=12"></head>
+<link rel="stylesheet" href="{u('/css/styles.css')}?v=13"><link rel="stylesheet" href="{u('/css/pages.css')}?v=13"></head>
 <body class="inner-page">{header_html(lang, path)}
 <main class="page-main page-article">
 <section class="page-hero"><div class="container">{bc}
@@ -641,12 +641,14 @@ def build_kontakty(lang):
 <section class="contact-section" id="contact"><div class="container"><div class="contact-grid">
 <div class="contact-info"><h2 class="heading2">{esc(S["kontakty_need"])}</h2><p>hello@skill-dev.ai</p><p>{esc(S["kontakty_remote"])}</p></div>
 <form class="contact-form" id="contactForm">
-<div class="form-group"><label for="msg">{esc(S["form_help"])}</label><textarea id="msg" rows="4" required placeholder="{esc(S["form_placeholder"])}"></textarea></div>
-<div class="form-row"><div class="form-group"><label>{esc(S["form_name"])}</label><input type="text" required></div>
-<div class="form-group"><label>{esc(S["form_contact"])}</label><input type="text" required></div></div>
+<div class="form-group"><label for="msg">{esc(S["form_help"])}</label><textarea id="msg" name="message" rows="4" required placeholder="{esc(S["form_placeholder"])}"></textarea></div>
+<div class="form-row"><div class="form-group"><label for="name">{esc(S["form_name"])}</label><input id="name" name="name" type="text" required autocomplete="name"></div>
+<div class="form-group"><label for="contact">{esc(S["form_contact"])}</label><input id="contact" name="contact" type="text" required autocomplete="email"></div></div>
+<input type="text" name="website" value="" tabindex="-1" autocomplete="off" class="form-honeypot" aria-hidden="true">
+<p class="form-success" hidden></p>
 <button type="submit" class="btn btn--primary" style="width:100%">{esc(S["form_send"])}</button></form>
 </div></div></section>
-</main>{footer_html(lang)}<script src="{u('/js/main.js')}?v=12"></script></body></html>'''
+</main>{footer_html(lang)}<script src="{u('/js/main.js')}?v=13"></script></body></html>'''
     write_page(path, lang, doc)
 
 
@@ -657,7 +659,7 @@ def build_404():
   {head_common()}
 <title>Page not found | Skill Dev</title>
 <meta name="robots" content="noindex">
-<link rel="stylesheet" href="{u('/css/styles.css')}?v=12"><link rel="stylesheet" href="{u('/css/pages.css')}?v=12"></head>
+<link rel="stylesheet" href="{u('/css/styles.css')}?v=13"><link rel="stylesheet" href="{u('/css/pages.css')}?v=13"></head>
 <body class="inner-page">{header_html("en", "/")}
 <main class="page-main page-article">
 <section class="page-hero"><div class="container">
@@ -665,7 +667,7 @@ def build_404():
 <div class="page-hero__lead"><p>This address does not exist or the page has moved. Here is where you can go from here.</p></div>
 <div class="page-hero__actions"><a class="btn btn--primary" href="{u('/', 'en')}">Home</a> <a class="btn btn--outline" href="{u('/uslugi/', 'en')}">All services</a></div>
 </div></section>
-</main>{footer_html("en")}<script src="{u('/js/main.js')}?v=12"></script></body></html>'''
+</main>{footer_html("en")}<script src="{u('/js/main.js')}?v=13"></script></body></html>'''
     open(os.path.join(ROOT, '404.html'), 'w', encoding='utf-8').write(doc)
 
 # ==================== КЕЙСЫ ====================
@@ -714,14 +716,14 @@ def build_cases_hub(lang):
 <meta property="og:title" content="{esc(S["cases_title"])}"><meta property="og:type" content="website"><meta property="og:image" content="{SITE}/assets/ui/og-cover.png">
 <script type="application/ld+json">{{"@context":"https://schema.org","@graph":[{{"@type":"CollectionPage","@id":"{path_abs}","url":"{path_abs}","name":{json.dumps(S["cases_title"], ensure_ascii=False)},"inLanguage":"{lang}"}},{{"@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":{json.dumps(S["home"], ensure_ascii=False)},"item":"{home_abs}"}},{{"@type":"ListItem","position":2,"name":{json.dumps(S["cases_h1"], ensure_ascii=False)},"item":"{path_abs}"}}]}},{{"@type":"ItemList","itemListElement":[{items_ld}]}}]}}</script>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{u('/css/styles.css')}?v=12"><link rel="stylesheet" href="{u('/css/pages.css')}?v=12"></head>
+<link rel="stylesheet" href="{u('/css/styles.css')}?v=13"><link rel="stylesheet" href="{u('/css/pages.css')}?v=13"></head>
 <body class="inner-page">{header_html(lang, path)}
 <main class="page-main page-article">
 <section class="page-hero"><div class="container">{bc}
 <h1 class="heading1 page-hero__title">{esc(S["cases_h1"])}</h1>
 <div class="page-hero__lead"><p>{esc(S["cases_lead"])}</p></div></div></section>
 <div class="container page-content"><div class="case-grid">{''.join(cards)}</div></div>
-</main>{footer_html(lang)}<script src="{u('/js/main.js')}?v=12"></script></body></html>'''
+</main>{footer_html(lang)}<script src="{u('/js/main.js')}?v=13"></script></body></html>'''
     write_page(path, lang, doc)
 
 
@@ -842,14 +844,14 @@ def build_case_vps(lang):
 <meta property="og:title" content="{esc(h1)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:type" content="article"><meta property="og:image" content="{SITE}/assets/img/case-vps-hero{sfx}.jpg"><meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{ld}</script>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{u('/css/styles.css')}?v=12"><link rel="stylesheet" href="{u('/css/pages.css')}?v=12"></head>
+<link rel="stylesheet" href="{u('/css/styles.css')}?v=13"><link rel="stylesheet" href="{u('/css/pages.css')}?v=13"></head>
 <body class="inner-page">{header_html(lang, url)}
 <main class="page-main page-article">
 <section class="page-hero"><div class="container">{bc}
 <h1 class="heading1 page-hero__title">{esc(h1)}</h1>
 <div class="page-hero__lead"><p>{esc(lead)}</p></div></div></section>
 <div class="container page-content">{body}</div>
-</main>{footer_html(lang)}<script src="{u('/js/main.js')}?v=12"></script></body></html>'''
+</main>{footer_html(lang)}<script src="{u('/js/main.js')}?v=13"></script></body></html>'''
     write_page(url, lang, doc)
 
 
@@ -894,14 +896,14 @@ def build_html_sitemap(lang):
 <meta http-equiv="content-language" content="{lang}">{noindex}
 {seo_link_tags(path, lang)}
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sumana&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{u('/css/styles.css')}?v=12"><link rel="stylesheet" href="{u('/css/pages.css')}?v=12"></head>
+<link rel="stylesheet" href="{u('/css/styles.css')}?v=13"><link rel="stylesheet" href="{u('/css/pages.css')}?v=13"></head>
 <body class="inner-page">{header_html(lang, path)}
 <main class="page-main page-article">
 <section class="page-hero"><div class="container">{bc}
 <h1 class="heading1 page-hero__title">{esc(S["sitemap_h1"])}</h1>
 <div class="page-hero__lead"><p>{esc(S["sitemap_lead"])}</p></div></div></section>
 <div class="container page-content">{body}</div>
-</main>{footer_html(lang)}<script src="{u('/js/main.js')}?v=12"></script></body></html>'''
+</main>{footer_html(lang)}<script src="{u('/js/main.js')}?v=13"></script></body></html>'''
     write_page(path, lang, doc)
 
 
@@ -1108,8 +1110,8 @@ def patch_home(lang="ru"):
     h = re.sub(r'<header class="header[^"]*" id="siteHeader">.*?</header>', header_html(lang, "/"), h, count=1, flags=re.S)
     h = re.sub(r'<footer class="footer">.*?</footer>', footer_html(lang), h, count=1, flags=re.S)
     h = rewrite_main_content_hrefs(h, lang)
-    h = re.sub(r'href="[^"]*css/(styles|pages)\.css[^"]*"', lambda m: f'href="{u("/css/"+m.group(1)+".css")}?v=12"', h)
-    h = re.sub(r'src="[^"]*/js/main\.js[^"]*"', f'src="{u("/js/main.js")}?v=12"', h)
+    h = re.sub(r'href="[^"]*css/(styles|pages)\.css[^"]*"', lambda m: f'href="{u("/css/"+m.group(1)+".css")}?v=13"', h)
+    h = re.sub(r'src="[^"]*/js/main\.js[^"]*"', f'src="{u("/js/main.js")}?v=13"', h)
     # Hero frame and any other local asset <img src> (strip leftover /site for BASE="")
     h = re.sub(
         r'src="(?:/site)?(/assets/[^"]+)"',

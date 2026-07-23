@@ -385,13 +385,86 @@
     chatTeaser?.classList.remove('visible');
   });
 
-  // Form
-  document.getElementById('contactForm')?.addEventListener('submit', (e) => {
+  // Contact form → Telegram leads bot via /api/lead
+  const contactForm = document.getElementById('contactForm');
+  contactForm?.addEventListener('submit', async (e) => {
     e.preventDefault();
-    alert(pageLang === 'en'
-      ? 'Thank you! We will contact you within 24 hours.'
-      : 'Спасибо! Мы свяжемся с вами в течение 24 часов.');
-    e.target.reset();
+    const form = e.target;
+    if (!(form instanceof HTMLFormElement)) return;
+
+    const btn = form.querySelector('button[type="submit"]');
+    const successEl = form.querySelector('.form-success');
+    const fieldsEl = form.querySelector('.form-fields') || form;
+
+    const i18n = pageLang === 'en'
+      ? {
+          ok: 'Your request has been sent. A manager will contact you shortly.',
+          err: 'Could not send the request. Please try again or email hello@skill-dev.ai',
+          sending: 'Sending…',
+        }
+      : {
+          ok: 'Заявка отправлена. Менеджер свяжется с вами в ближайшее время.',
+          err: 'Не удалось отправить заявку. Попробуйте ещё раз или напишите на hello@skill-dev.ai',
+          sending: 'Отправка…',
+        };
+
+    const nameInput = form.querySelector('[name="name"]');
+    const contactInput = form.querySelector('[name="contact"]');
+    const messageInput = form.querySelector('[name="message"], #msg');
+
+    const name = (nameInput && 'value' in nameInput ? nameInput.value : '').trim();
+    const contact = (contactInput && 'value' in contactInput ? contactInput.value : '').trim();
+    const message = (messageInput && 'value' in messageInput ? messageInput.value : '').trim();
+    if (!name || !contact || !message) return;
+
+    const prevLabel = btn ? btn.textContent : '';
+    if (btn) {
+      btn.disabled = true;
+      btn.textContent = i18n.sending;
+    }
+
+    const apiBase = (() => {
+      const base = document.querySelector('link[href*="css/styles.css"]')?.getAttribute('href') || '';
+      const root = base.replace(/\/css\/styles\.css.*$/, '') || '';
+      return root;
+    })();
+
+    try {
+      const res = await fetch(`${apiBase}/api/lead`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, contact, message, lang: pageLang }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok || !data.ok) throw new Error(data.error || 'fail');
+
+      form.reset();
+      if (successEl) {
+        successEl.hidden = false;
+        successEl.classList.remove('form-success--error');
+        successEl.textContent = i18n.ok;
+      } else {
+        const note = document.createElement('p');
+        note.className = 'form-success';
+        note.textContent = i18n.ok;
+        fieldsEl.appendChild(note);
+      }
+      form.querySelectorAll('.form-group, .form-row, button[type="submit"], .form-honeypot').forEach((el) => {
+        el.hidden = true;
+      });
+    } catch (_) {
+      if (successEl) {
+        successEl.hidden = false;
+        successEl.classList.add('form-success--error');
+        successEl.textContent = i18n.err;
+      } else {
+        alert(i18n.err);
+      }
+      if (btn) {
+        btn.disabled = false;
+        btn.textContent = prevLabel;
+      }
+    }
   });
 
   // Cookies

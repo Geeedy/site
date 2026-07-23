@@ -983,6 +983,30 @@ ul { list-style: none; }
   border-radius: 1px;
 }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form-honeypot {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+.contact-form { position: relative; }
+.form-success {
+  margin: 0 0 16px;
+  padding: 14px 16px;
+  background: #eef7ff;
+  border: 1px solid #b7d6ff;
+  color: #0b3a75;
+  font-size: 15px;
+  line-height: 1.45;
+  font-weight: 600;
+}
+.form-success--error {
+  background: #fff2f2;
+  border-color: #f0b4b4;
+  color: #8a1f1f;
+}
 
 /* Footer */
 .footer { background: #1a1a1a; color: #aaa; padding: 56px 0 32px; font-size: 14px; }

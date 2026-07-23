@@ -1,0 +1,19 @@
+[Unit]
+Description=Skill Dev leads Telegram bot
+Documentation=https://github.com/Geeedy/site
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+EnvironmentFile=-/etc/skilldev-site.env
+WorkingDirectory=/var/www/skilldev-site
+ExecStart=/usr/bin/python3 /var/www/skilldev-site/tools/leads_bot.py
+Restart=always
+RestartSec=5
+
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
