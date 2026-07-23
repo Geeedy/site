@@ -450,13 +450,13 @@
     const i18n = pageLang === 'en'
       ? {
           ok: 'Your request has been sent. A manager will contact you shortly.',
-          err: 'Could not send the request. Please try again or email hello@skill-dev.ai',
+          err: 'Could not send the request. Please try again or email manager@skill-dev.online',
           sending: 'Sending…',
           btnOk: 'OK',
         }
       : {
           ok: 'Заявка отправлена. Менеджер свяжется с вами в ближайшее время.',
-          err: 'Не удалось отправить заявку. Попробуйте ещё раз или напишите на hello@skill-dev.ai',
+          err: 'Не удалось отправить заявку. Попробуйте ещё раз или напишите на manager@skill-dev.online',
           sending: 'Отправка…',
           btnOk: 'Ок',
         };

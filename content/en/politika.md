@@ -43,7 +43,7 @@ We keep request data for as long as needed to handle your inquiry and meet our o
 
 ## Your rights
 
-You may request access to your data, its correction or deletion, and withdraw your consent to processing. To do so, write to us at hello@skill-dev.ai. We will respond within the period set by law.
+You may request access to your data, its correction or deletion, and withdraw your consent to processing. To do so, write to us at manager@skill-dev.online. We will respond within the period set by law.
 
 ## How we protect data
 
@@ -55,4 +55,4 @@ We may update this policy. The current version is always published on this page,
 
 ## Contact
 
-For questions about data processing, write to hello@skill-dev.ai.
+For questions about data processing, write to manager@skill-dev.online.

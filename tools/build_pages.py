@@ -377,9 +377,9 @@ def schema(slug, meta, faq, bc_ld, lang):
     page_abs = abs_url(url, lang)
     g = [
       {"@type":"Organization","@id":SITE+"/#org","name":"Skill Dev","url":SITE+"/",
-       "logo":SITE+"/assets/ui/logo-full.png","email":"hello@skill-dev.ai","areaServed":area,
+       "logo":SITE+"/assets/ui/logo-full.png","email":"manager@skill-dev.online","areaServed":area,
        "description":("Agency for AI implementation, development, CRM and SEO." if lang=="en" else "Агентство: внедрение ИИ, разработка, CRM и SEO."),
-       "contactPoint":{"@type":"ContactPoint","email":"hello@skill-dev.ai","contactType":"sales","availableLanguage":["ru","en"]}},
+       "contactPoint":{"@type":"ContactPoint","email":"manager@skill-dev.online","contactType":"sales","availableLanguage":["ru","en"]}},
       {"@type":"WebPage","@id":page_abs,"url":page_abs,"name":meta.get("title",title),
        "description":meta.get("description",""),"inLanguage":lang,"isPartOf":{"@id":SITE+"/#org"}},
       {"@type":"BreadcrumbList","itemListElement":bc_ld},
@@ -486,12 +486,12 @@ def footer_html(lang="ru"):
     return f'''<footer class="footer"><div class="container">
     <div class="footer__top">
       <div class="footer__brand"><div class="footer__logo">Skill Dev</div></div>
-      <div class="footer__contacts"><p><strong>{esc(S["contacts_label"])}</strong></p><p>hello@skill-dev.ai</p><p>{esc(S["worldwide"])}</p></div>
+      <div class="footer__contacts"><p><strong>{esc(S["contacts_label"])}</strong></p><p>manager@skill-dev.online</p><p>{esc(S["worldwide"])}</p></div>
     </div>
     <div class="footer__grid footer__grid--silo">{''.join(cols)}
       <div><div class="footer__h">{esc(S["company"])}</div><ul><li><a href="{u('/o-kompanii/', lang)}">{esc(S["about_us"])}</a></li><li><a href="{u('/kejsy/', lang)}">{esc(S["cases_nav"])}</a></li><li><a href="{u('/kontakty/', lang)}">{esc(S["contacts"])}</a></li><li><a href="{u('/uslugi/', lang)}">{esc(S["all_services"])}</a></li><li><a href="{u('/karta-sajta/', lang)}">{esc(S["sitemap_nav"])}</a></li><li><a href="{u('/politika/', lang)}">{esc(page_title('politika', lang))}</a></li></ul></div>
     </div>
-    <div class="footer__bottom"><span>{esc(S["rights"])}</span><span>hello@skill-dev.ai</span></div>
+    <div class="footer__bottom"><span>{esc(S["rights"])}</span><span>manager@skill-dev.online</span></div>
   </div></footer>'''
 
 def cookie_banner_html(lang="ru"):
@@ -926,7 +926,7 @@ def build_llms_txt():
               f"- [About]({abs_url('/o-kompanii/', 'en')})",
               f"- [Contact]({abs_url('/kontakty/', 'en')})",
               f"- [Sitemap]({abs_url('/karta-sajta/', 'en')})",
-              "", "Contact: hello@skill-dev.ai", ""]
+              "", "Contact: manager@skill-dev.online", ""]
     open(os.path.join(ROOT, 'llms.txt'), 'w', encoding='utf-8').write("\n".join(lines))
 
 

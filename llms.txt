@@ -40,4 +40,4 @@
 - [Contact](https://geeedy.github.io/site/kontakty/)
 - [Sitemap](https://geeedy.github.io/site/karta-sajta/)
 
-Contact: hello@skill-dev.ai
+Contact: manager@skill-dev.online
