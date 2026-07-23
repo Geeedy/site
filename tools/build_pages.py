@@ -452,15 +452,8 @@ def header_html(lang="ru", path="/"):
     return f'''<header class="header" id="siteHeader">
     <div class="header-global-line">
       <div class="container header-global-line__inner">
-        <div class="header-global-line__sites">
-          <a href="{u(PAGES["vnedrenie-ii"][0], lang)}" class="hgl-link"><span class="hgl-icon hgl-icon--ai"></span>Skill Dev AI</a>
-          <a href="{u(PAGES["razrabotka-saitov"][0], lang)}" class="hgl-link"><span class="hgl-icon hgl-icon--web"></span>Skill Dev Web</a>
-        </div>
         <div class="header-global-line__right">
           {lang_switcher(lang, path)}
-          <a href="mailto:hello@skill-dev.ai" class="header-global-line__contact">
-            <img src="{u('/assets/ui/email-icon.svg')}" alt="" width="18" height="12">hello@skill-dev.ai
-          </a>
         </div>
       </div>
     </div>
