@@ -1117,6 +1117,12 @@ def patch_home(lang="ru"):
     h = rewrite_main_content_hrefs(h, lang)
     h = re.sub(r'href="[^"]*css/(styles|pages)\.css[^"]*"', lambda m: f'href="{u("/css/"+m.group(1)+".css")}?v=12"', h)
     h = re.sub(r'src="[^"]*/js/main\.js[^"]*"', f'src="{u("/js/main.js")}?v=12"', h)
+    # Hero frame and any other local asset <img src> (strip leftover /site for BASE="")
+    h = re.sub(
+        r'src="(?:/site)?(/assets/[^"]+)"',
+        lambda m: f'src="{u(m.group(1))}"',
+        h,
+    )
     h = re.sub(
         r'  <link rel="icon" href="[^"]*" sizes="48x48">\n'
         r'  <link rel="icon" type="image/png" sizes="32x32" href="[^"]*">\n'
