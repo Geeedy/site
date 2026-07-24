@@ -5,7 +5,7 @@
 
 ## Мета
 
-- **Title:** AI for Lawyers: Contract Review and Legal | Skill Dev
+- **Title:** AI for Lawyers: Contract Review and Legal Document Work
 - **Meta description:** AI agent for legal work: first-pass contract review against checklists, document-base search, standard forms. The agent drafts; the lawyer approves.
 - **OG title:** AI for Lawyers: Agent Drafts, Lawyer Decides
 - **OG description:** Contract review, document search, standard forms. In your perimeter.

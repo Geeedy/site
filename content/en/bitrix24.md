@@ -5,7 +5,7 @@
 
 ## Мета
 
-- **Title:** Bitrix24 Implementation: Setup and Integrations | Skill Dev
+- **Title:** Bitrix24 Implementation: CRM Setup, Integrations, Training
 - **Meta description:** We implement Bitrix24 in stages: CRM first, then tasks and portal. Integrations with website, 1C, and telephony; training on live deals. Cloud launch from 1–4 weeks.
 - **OG title:** Bitrix24 Implementation: Staged So It Sticks
 - **OG description:** CRM first, the rest as the team adapts. Integrations and training.

@@ -5,7 +5,7 @@
 
 ## Мета
 
-- **Title:** GEO and AEO: Website Promotion in AI Answers | Skill Dev
+- **Title:** GEO and AEO Promotion: Getting Your Site into AI Answers
 - **Meta description:** GEO/AEO promotion: we get your brand into Yandex Neuro, ChatGPT, and Perplexity answers. AI-answer audience 13M+ per day. Free check of whether AI already cites you.
 - **OG title:** GEO and AEO: Promotion in Neural Network Answers
 - **OG description:** Brand in Neuro, ChatGPT, and Perplexity answers. Free citability check.

@@ -5,7 +5,7 @@
 
 ## Мета
 
-- **Title:** amoCRM Implementation: Sales Team Live in 2 | Skill Dev
+- **Title:** amoCRM Implementation: Sales Team Live in 1–2 Weeks
 - **Meta description:** We implement amoCRM: pipeline for your stages, request channels, base migration, training on live deals. Standard launch 1–2 weeks. Bots and AI scoring included.
 - **OG title:** amoCRM: Sales Team in the System in Two Weeks
 - **OG description:** Pipeline, channels, migration, training. No extra modules.

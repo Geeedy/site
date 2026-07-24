@@ -5,7 +5,7 @@
 
 ## Мета
 
-- **Title:** Turnkey Landing Page: a Page That Pays Back | Skill Dev
+- **Title:** Turnkey Landing Page Development: Turning Clicks Into Leads
 - **Meta description:** Turnkey landing page development: offer for your segment, requests into CRM, analytics through to the lead. We will say honestly when a builder is enough.
 - **OG title:** Turnkey Landing Page: we pay back clicks with leads
 - **OG description:** Offer, form to CRM, analytics. Honest path choice.

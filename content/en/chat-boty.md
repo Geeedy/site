@@ -5,7 +5,7 @@
 
 ## Мета
 
-- **Title:** AI Chatbots for Business: Website, Telegram, | Skill Dev
+- **Title:** AI Chatbots for Business: Website, Telegram, WhatsApp
 - **Meta description:** Custom AI chatbots for business: reply in seconds 24/7, close up to two-thirds of inquiries, push leads to CRM. Demo on your knowledge base before the contract.
 - **OG title:** AI Chatbots for Business
 - **OG description:** Replies in seconds, leads in CRM, demo before the contract.

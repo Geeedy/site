@@ -5,7 +5,7 @@
 
 ## Мета
 
-- **Title:** Web Application Development: MVP, SaaS, Portals | Skill Dev
+- **Title:** Web Application Development: MVP, SaaS, Client Portals
 - **Meta description:** Web apps built for the task: client portals, SaaS, partner portals, internal tools. MVP with data-driven iterations; microservices where justified.
 - **OG title:** Web Application Development: A Product, Not a Presentation
 - **OG description:** MVP, data-driven iterations, architecture without over-engineering.

@@ -5,7 +5,7 @@
 
 ## Мета
 
-- **Title:** AI Implementation for Business: Cut Costs Up to 40% | Skill Dev
+- **Title:** AI Implementation for Business: Cut Costs Up to 40%
 - **Meta description:** We implement AI in business processes: audit, pilot, before/after metrics. Support payroll costs down 30–40%, document processing up to 70% cheaper.
 - **OG title:** AI Implementation Without the Hype
 - **OG description:** Audit, pilot, before/after metrics. You pay for results.

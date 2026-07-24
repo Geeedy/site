@@ -5,7 +5,7 @@
 
 ## Мета
 
-- **Title:** CRM Implementation: Bitrix24 and amoCRM for | Skill Dev
+- **Title:** CRM Implementation: Bitrix24 and amoCRM for Your Sales Team
 - **Meta description:** We implement CRM as an independent integrator: honest choice between Bitrix24 and amoCRM, all request channels in one pipeline.
 - **OG title:** CRM Implementation: Requests Stop Getting Lost
 - **OG description:** Independent integrator: a platform for your tasks, not for our margin.

@@ -4,7 +4,7 @@
 
 ## Мета
 
-- **Title:** AI in 1C: Implementation Without Risk to Accounting | Skill Dev
+- **Title:** AI in 1C: Implementation Without Risk to Accounting
 - **Meta description:** What AI can do in 1C and how to implement it: primary-document recognition, document drafts, answers from accounting data. Human approves; agent prepares.
 - **OG title:** AI in 1C: Automate Accounting Without Breaking It
 - **OG description:** Primary docs, drafts, answers from data. Human approves.

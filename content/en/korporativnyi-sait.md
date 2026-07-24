@@ -5,7 +5,7 @@
 
 ## Мета
 
-- **Title:** Corporate Website Development: Catalog + CRM | Skill Dev
+- **Title:** Corporate Website Development: Catalog, CRM and 1C
 - **Meta description:** Turnkey corporate website: structure for demand, CRM and 1C integrations, SEO readiness, AI modules. Market range roughly 300–900k RUB, timeline 2–3 months.
 - **OG title:** Corporate Website: A Sales Tool, Not a Bigger Brochure Site
 - **OG description:** Catalog for demand, CRM/1C integrations, SEO from day one.

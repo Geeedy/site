@@ -5,7 +5,7 @@
 
 ## Мета
 
-- **Title:** Website Development of Any Complexity | Skill Dev
+- **Title:** Website Development: From Brochure Sites to AI Ecosystems
 - **Meta description:** Turnkey website development: brochure sites, corporate sites, stores, web apps, and AI ecosystems. Open price and timeline ranges per tier. SEO-ready from day one.
 - **OG title:** Development of Any Complexity: From Brochure Site to AI Ecosystem
 - **OG description:** Open prices by tier. Code and access stay yours.

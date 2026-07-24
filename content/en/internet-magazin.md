@@ -5,7 +5,7 @@
 
 ## Мета
 
-- **Title:** Turnkey Online Store: Development with 1C and | Skill Dev
+- **Title:** Turnkey Online Store: Catalog, Payments, Delivery, 1C Sync
 - **Meta description:** Turnkey online store development: catalog, payment, delivery, sync with 1C. Classes from niche test (roughly 200–300k RUB) to highload.
 - **OG title:** Turnkey Online Store: From Niche Test to Highload
 - **OG description:** Catalog, payment, 1C, AI search. Open ranges by class.

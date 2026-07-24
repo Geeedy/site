@@ -4,7 +4,7 @@
 
 ## Мета
 
-- **Title:** Document Workflow Automation with AI | Skill Dev
+- **Title:** Document Workflow Automation: ECM, E-Docs and AI Processing
 - **Meta description:** Document workflow automation without vendor lock-in: ECM/DMS, e-document exchange, or AI processing on top of your systems.
 - **OG title:** Document Workflow Automation: We Calculate Cost per Document
 - **OG description:** ECM, e-document exchange, or AI layer on your systems. An honest path choice.

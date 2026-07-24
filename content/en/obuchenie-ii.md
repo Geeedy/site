@@ -4,7 +4,7 @@
 
 ## Мета
 
-- **Title:** Corporate AI Training: On Your Processes | Skill Dev
+- **Title:** Corporate AI Training on Your Company Processes and Data
 - **Meta description:** Train employees to work with neural networks on your company’s processes and data. Formats from workshop to program, with “time on task before and after” measured.
 - **OG title:** Corporate AI Training on Your Processes
 - **OG description:** Employees leave with tools tuned for their own process.

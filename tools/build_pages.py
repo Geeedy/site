@@ -69,7 +69,7 @@ STRINGS = {
     "rights": "© 2026 Skill Dev. Все права защищены.",
     "cta_discuss": "Обсудим вашу задачу", "cta_apply": "Оставить заявку",
     "tbd": "уточняется",
-    "catalog_title": "Услуги Skill Dev: внедрение ИИ, разработка, CRM, SEO",
+    "catalog_title": "Услуги: внедрение ИИ, чат-боты, разработка сайтов, CRM, SEO",
     "catalog_desc": "Шесть направлений: внедрение ИИ, ИИ-агенты, чат-боты, разработка сайтов, CRM и SEO. Внутри направлений 13 услуг под конкретные задачи.",
     "catalog_h1": "Услуги",
     "catalog_lead": "Мы сокращаем расходы бизнеса технологиями: внедряем ИИ, строим сайты любой сложности, наводим порядок в продажах и приводим трафик. Выберите направление, внутри каждого есть услуги под конкретные задачи.",
@@ -81,20 +81,20 @@ STRINGS = {
       "vnedrenie-crm": "Битрикс24 и amoCRM: заявки перестают теряться.",
       "seo-prodvizhenie": "Лиды из Яндекса и Google, которые дешевеют со временем.",
     },
-    "kontakty_title": "Контакты — Skill Dev",
+    "kontakty_title": "Контакты: обсудить задачу и получить расчёт за 2 дня",
     "kontakty_desc": "Свяжитесь с командой Skill Dev: обсудим задачу и вернёмся с расчётом за 2 дня.",
     "kontakty_h1": "Контакты",
     "kontakty_lead": "Опишите задачу своими словами, и мы вернёмся с расчётом за 2 дня. Сроки и цены обсуждаем индивидуально, с вами будет работать персональный менеджер.",
     "cases_nav": "Кейсы",
     "sitemap_nav": "Карта сайта",
-    "sitemap_title": "Карта сайта Skill Dev: все страницы",
+    "sitemap_title": "Карта сайта: все разделы и страницы одним списком",
     "sitemap_desc": "Полная карта сайта Skill Dev: услуги, кейсы, компания, контакты. Все разделы одним списком.",
     "sitemap_h1": "Карта сайта",
     "sitemap_lead": "Все разделы сайта одним списком, для людей и поисковых систем.",
     "sitemap_sec_services": "Услуги",
     "sitemap_sec_cases": "Кейсы",
     "sitemap_sec_company": "Компания",
-    "cases_title": "Кейсы Skill Dev: выполненные проекты",
+    "cases_title": "Кейсы: проекты по внедрению ИИ, автоматизации и разработке",
     "cases_desc": "Реальные проекты команды Skill Dev: инфраструктура, автоматизация, разработка. Каждый кейс с задачей, решением и результатом.",
     "cases_h1": "Кейсы",
     "cases_lead": "Мы показываем работу как есть: задача клиента, что мы сделали и какой получился результат. Список будет пополняться по мере новых проектов.",
@@ -118,7 +118,7 @@ STRINGS = {
     "rights": "© 2026 Skill Dev. All rights reserved.",
     "cta_discuss": "Let's discuss your project", "cta_apply": "Send a request",
     "tbd": "TBD",
-    "catalog_title": "Skill Dev Services: AI Implementation, Development, CRM, SEO",
+    "catalog_title": "Services: AI Implementation, Chatbots, Web Development, CRM, SEO",
     "catalog_desc": "Six practice areas: AI implementation, AI agents, chatbots, website development, CRM, and SEO — with focused services inside each.",
     "catalog_h1": "Services",
     "catalog_lead": "We cut business costs with technology: AI implementation, websites of any complexity, sales systems, and organic traffic. Pick a practice area — each one has services for specific jobs.",
@@ -130,20 +130,20 @@ STRINGS = {
       "vnedrenie-crm": "Bitrix24 and amoCRM so leads stop getting lost.",
       "seo-prodvizhenie": "Leads from Yandex and Google that get cheaper over time.",
     },
-    "kontakty_title": "Contact — Skill Dev",
+    "kontakty_title": "Contact: Discuss Your Project and Get an Estimate in 2 Days",
     "kontakty_desc": "Contact the Skill Dev team: we'll discuss your project and return with an estimate within 2 days.",
     "kontakty_h1": "Contact",
     "kontakty_lead": "Describe your project in your own words — we'll return with an estimate in 2 days. Timelines and pricing are tailored; you'll work with a dedicated manager.",
     "cases_nav": "Cases",
     "sitemap_nav": "Sitemap",
-    "sitemap_title": "Skill Dev Sitemap: all pages",
+    "sitemap_title": "Sitemap: All Sections and Pages in One List",
     "sitemap_desc": "Full Skill Dev sitemap: services, cases, company, contact. Every section in one list.",
     "sitemap_h1": "Sitemap",
     "sitemap_lead": "Every section of the site in one list, for people and search engines.",
     "sitemap_sec_services": "Services",
     "sitemap_sec_cases": "Cases",
     "sitemap_sec_company": "Company",
-    "cases_title": "Skill Dev Cases: Delivered Projects",
+    "cases_title": "Cases: Delivered AI, Automation and Development Projects",
     "cases_desc": "Real projects by the Skill Dev team: infrastructure, automation, development. Every case has the task, the solution, and the outcome.",
     "cases_h1": "Cases",
     "cases_lead": "We show the work as it is: the client's task, what we did, and the outcome. The list grows as new projects ship.",
@@ -656,7 +656,7 @@ def build_404():
     doc = f'''<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
   {head_common()}
-<title>Page not found | Skill Dev</title>
+<title>Page not found</title>
 <meta name="robots" content="noindex">
 <link rel="stylesheet" href="{u('/css/styles.css')}?v=14"><link rel="stylesheet" href="{u('/css/pages.css')}?v=14"></head>
 <body class="inner-page">{header_html("en", "/")}
@@ -734,7 +734,7 @@ def build_case_vps(lang):
     def svg(n, cap): return f'<figure class="page-figure page-figure--chart"><img src="{u("/assets/infographics/case-vps-"+n+sfx+".svg")}" alt="{esc(cap)}" loading="lazy"></figure>'
     url = "/kejsy/claude-vps-sreda/"
     if lang == "ru":
-        title = "Кейс: изолированная среда командной разработки на VPS | Skill Dev"
+        title = "Кейс: изолированная среда командной разработки на VPS"
         desc = "Развернули общий VPS для распределённой SEO-команды: безопасный SSH-доступ, единый workspace, автоматизация SEO-пайплайнов. Три оператора работают одновременно."
         h1 = "Изолированная среда командной разработки на VPS"
         lead = "SEO-команде нужен был стабильный и безопасный доступ нескольких операторов к общей рабочей среде с ИИ-инструментами. Мы собрали такую среду на выделенном VPS и передали её в эксплуатацию."
@@ -783,7 +783,7 @@ def build_case_vps(lang):
 <div class="cta-horizontal step-up"><div class="cta-horizontal__text"><p class="cta-horizontal__title">Нужна похожая среда или своя инфраструктура под команду?</p></div><a href="{u('/kontakty/', lang)}" class="btn btn--primary">{esc(S['cta_apply'])}</a></div>
 '''
     else:
-        title = "Case: isolated team dev environment on a VPS | Skill Dev"
+        title = "Case: isolated team dev environment on a VPS"
         desc = "We built a shared VPS for a distributed SEO team: secure SSH access, a single workspace, and automated SEO pipelines. Three operators work at the same time."
         h1 = "Isolated team dev environment on a VPS"
         lead = "An SEO team needed stable, secure, simultaneous access for several operators to one shared working environment with AI tooling. We built that environment on a dedicated VPS and handed it over to production."

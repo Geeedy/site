@@ -5,7 +5,7 @@
 
 ## Мета
 
-- **Title:** AI Agents for Business: Digital Employees | Skill Dev
+- **Title:** AI Agents for Business: Digital Employees for Your Processes
 - **Meta description:** We build AI agents for real processes: requests, documents, support, sales. They work in your systems 24/7; market payback 8–18 months. We take them to production.
 - **OG title:** AI Agents: Digital Employees for Your Business
 - **OG description:** They run processes in your systems. We take them to production.

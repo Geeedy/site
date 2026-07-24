@@ -4,7 +4,7 @@
 
 ## Мета
 
-- **Title:** About Skill Dev | Engineers from Big Tech
+- **Title:** About Us: Big Tech Engineers with 8–15 Years of Experience
 - **Meta description:** For 3 years we cut business costs with technology. Team: big-tech alumni with 8–15 years of experience.
 - **OG title:** Skill Dev: Engineers Who Cut Your Costs
 - **OG description:** 3 years. Big-tech experience. Before/after metrics on every project.

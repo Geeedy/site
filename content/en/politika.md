@@ -2,7 +2,7 @@
 
 ## Мета
 
-- **Title:** Privacy & Cookie Policy | Skill Dev
+- **Title:** Privacy and Cookie Policy
 - **Meta description:** How Skill Dev handles personal data and uses cookies: what we collect, why, on what basis, and how you can control it.
 - **OG title:** Privacy & Cookie Policy
 - **OG description:** What data we collect, why, and how you can control it.

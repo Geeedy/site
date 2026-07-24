@@ -5,7 +5,7 @@
 
 ## Мета
 
-- **Title:** AI Analytics for Business: Answers from Your | Skill Dev
+- **Title:** AI Analytics for Business: Answers from Your Company Data
 - **Meta description:** An AI analyst answers company-data questions in plain language: sales, leads, inventory. Scheduled reports; forecasts 10–30% more accurate. Demo on your data.
 - **OG title:** AI Analytics: Ask Your Data in Plain Language
 - **OG description:** Answers in minutes instead of reports “by Friday.”
