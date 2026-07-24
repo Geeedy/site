@@ -906,6 +906,15 @@ def build_html_sitemap(lang):
     write_page(path, lang, doc)
 
 
+LLMS_HUB_DESC = {
+    "vnedrenie-ii":      "AI process audit, pilot with fixed quote, rollout with before/after metrics",
+    "ii-agenty":         "AI agents that handle sales, legal, HR and analytics workflows",
+    "chat-boty":         "AI chatbots for websites, Telegram and other messengers",
+    "razrabotka-saitov": "Websites from landing pages to web applications and online stores",
+    "vnedrenie-crm":     "CRM implementation and integration: Bitrix24, amoCRM, end-to-end analytics",
+    "seo-prodvizhenie":  "SEO for Yandex and Google, SEO audit, GEO/AEO optimization for AI answers",
+}
+
 def build_llms_txt():
     """llms.txt — файл-навигатор для AI-краулеров (практика сообщества)."""
     lines = [
@@ -916,16 +925,24 @@ def build_llms_txt():
         "## Services",
     ]
     for h in HUBS:
-        lines.append(f"- [{page_title(h,'en')}]({abs_url(PAGES[h][0], 'en')})")
+        desc = LLMS_HUB_DESC.get(h)
+        suffix = f": {desc}" if desc else ""
+        lines.append(f"- [{page_title(h,'en')}]({abs_url(PAGES[h][0], 'en')}){suffix}")
         for k in KIDS[h]:
             lines.append(f"  - [{page_title(k,'en')}]({abs_url(PAGES[k][0], 'en')})")
     lines += ["", "## Cases"]
     for c in CASES:
         lines.append(f"- [{CASE_META[c]['en']['card_title']}]({abs_url(CASE_META[c]['url'], 'en')})")
     lines += ["", "## Company",
+              f"- [Home]({abs_url('/', 'en')})",
+              f"- [All services]({abs_url('/uslugi/', 'en')})",
+              f"- [Cases]({abs_url('/kejsy/', 'en')})",
               f"- [About]({abs_url('/o-kompanii/', 'en')})",
               f"- [Contact]({abs_url('/kontakty/', 'en')})",
               f"- [Sitemap]({abs_url('/karta-sajta/', 'en')})",
+              "", "## Languages",
+              f"- English: {abs_url('/', 'en')}",
+              f"- Russian: {abs_url('/', 'ru')} (same page structure under /ru/)",
               "", "Contact: manager@skill-dev.online", ""]
     open(os.path.join(ROOT, 'llms.txt'), 'w', encoding='utf-8').write("\n".join(lines))
 

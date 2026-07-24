@@ -3,32 +3,32 @@
 > Agency for AI implementation, AI agents, chatbots, website development, CRM and SEO. We cut business costs with technology and measure before/after.
 
 ## Services
-- [AI Implementation](https://geeedy.github.io/site/uslugi/vnedrenie-ii/)
+- [AI Implementation](https://geeedy.github.io/site/uslugi/vnedrenie-ii/): AI process audit, pilot with fixed quote, rollout with before/after metrics
   - [AI Audit & Strategy](https://geeedy.github.io/site/uslugi/vnedrenie-ii/audit-ii-strategiya/)
   - [Document Workflow Automation](https://geeedy.github.io/site/uslugi/vnedrenie-ii/avtomatizatsiya-dokumentooborota/)
   - [AI for 1C](https://geeedy.github.io/site/uslugi/vnedrenie-ii/ii-v-1c/)
   - [AI Team Training](https://geeedy.github.io/site/uslugi/vnedrenie-ii/obuchenie-ii/)
-- [AI Agents](https://geeedy.github.io/site/uslugi/ii-agenty/)
+- [AI Agents](https://geeedy.github.io/site/uslugi/ii-agenty/): AI agents that handle sales, legal, HR and analytics workflows
   - [AI Sales Agent](https://geeedy.github.io/site/uslugi/ii-agenty/dlya-prodazh/)
   - [AI for Legal Teams](https://geeedy.github.io/site/uslugi/ii-agenty/dlya-yuristov/)
   - [AI Analytics](https://geeedy.github.io/site/uslugi/ii-agenty/ii-analitika/)
   - [AI for HR](https://geeedy.github.io/site/uslugi/ii-agenty/dlya-hr/)
-- [AI Chatbots](https://geeedy.github.io/site/uslugi/chat-boty/)
+- [AI Chatbots](https://geeedy.github.io/site/uslugi/chat-boty/): AI chatbots for websites, Telegram and other messengers
   - [Voice Bots](https://geeedy.github.io/site/uslugi/golosovye-boty/)
   - [Website Chatbot](https://geeedy.github.io/site/uslugi/chat-boty/bot-na-sait/)
   - [Telegram Bot](https://geeedy.github.io/site/uslugi/chat-boty/telegram-bot/)
-- [Website Development](https://geeedy.github.io/site/uslugi/razrabotka-saitov/)
+- [Website Development](https://geeedy.github.io/site/uslugi/razrabotka-saitov/): Websites from landing pages to web applications and online stores
   - [Corporate Website](https://geeedy.github.io/site/uslugi/razrabotka-saitov/korporativnyi-sait/)
   - [Online Store](https://geeedy.github.io/site/uslugi/razrabotka-saitov/internet-magazin/)
   - [Landing Page](https://geeedy.github.io/site/uslugi/razrabotka-saitov/lending/)
   - [AI-Powered Website](https://geeedy.github.io/site/uslugi/razrabotka-saitov/sait-s-ii/)
   - [Tilda Website](https://geeedy.github.io/site/uslugi/razrabotka-saitov/sait-na-tilde/)
   - [Web Applications](https://geeedy.github.io/site/uslugi/razrabotka-saitov/veb-prilozheniya/)
-- [CRM Implementation](https://geeedy.github.io/site/uslugi/vnedrenie-crm/)
+- [CRM Implementation](https://geeedy.github.io/site/uslugi/vnedrenie-crm/): CRM implementation and integration: Bitrix24, amoCRM, end-to-end analytics
   - [Bitrix24](https://geeedy.github.io/site/uslugi/vnedrenie-crm/bitrix24/)
   - [amoCRM](https://geeedy.github.io/site/uslugi/vnedrenie-crm/amocrm/)
   - [End-to-End Analytics](https://geeedy.github.io/site/uslugi/vnedrenie-crm/skvoznaya-analitika/)
-- [SEO Services](https://geeedy.github.io/site/uslugi/seo-prodvizhenie/)
+- [SEO Services](https://geeedy.github.io/site/uslugi/seo-prodvizhenie/): SEO for Yandex and Google, SEO audit, GEO/AEO optimization for AI answers
   - [SEO Audit](https://geeedy.github.io/site/uslugi/seo-prodvizhenie/seo-audit/)
   - [GEO/AEO Optimization](https://geeedy.github.io/site/uslugi/seo-prodvizhenie/geo-aeo/)
 
@@ -36,8 +36,15 @@
 - [Isolated team dev environment on a VPS](https://geeedy.github.io/site/kejsy/claude-vps-sreda/)
 
 ## Company
+- [Home](https://geeedy.github.io/site/)
+- [All services](https://geeedy.github.io/site/uslugi/)
+- [Cases](https://geeedy.github.io/site/kejsy/)
 - [About](https://geeedy.github.io/site/o-kompanii/)
 - [Contact](https://geeedy.github.io/site/kontakty/)
 - [Sitemap](https://geeedy.github.io/site/karta-sajta/)
+
+## Languages
+- English: https://geeedy.github.io/site/
+- Russian: https://geeedy.github.io/site/ru/ (same page structure under /ru/)
 
 Contact: manager@skill-dev.online
