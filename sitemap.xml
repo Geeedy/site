@@ -1005,4 +1005,82 @@
       <image:loc>https://geeedy.github.io/site/assets/img/crm-dlya-malogo-biznesa-hero.jpg</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://geeedy.github.io/site/uslugi/chat-boty/dlya-zapisi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/chat-boty/dlya-zapisi/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/chat-boty/dlya-zapisi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/chat-boty/dlya-zapisi/"/>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://geeedy.github.io/site/assets/img/dlya-zapisi-hero.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://geeedy.github.io/site/ru/uslugi/chat-boty/dlya-zapisi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/chat-boty/dlya-zapisi/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/chat-boty/dlya-zapisi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/chat-boty/dlya-zapisi/"/>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://geeedy.github.io/site/assets/img/dlya-zapisi-hero.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-nedvizhimosti/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-nedvizhimosti/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-nedvizhimosti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-nedvizhimosti/"/>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-nedvizhimosti/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-nedvizhimosti/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-nedvizhimosti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-nedvizhimosti/"/>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-avtoservisa/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-avtoservisa/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-avtoservisa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-avtoservisa/"/>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-avtoservisa/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-avtoservisa/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-avtoservisa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-avtoservisa/"/>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-salona-krasoty/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-salona-krasoty/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-salona-krasoty/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-salona-krasoty/"/>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-salona-krasoty/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-salona-krasoty/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-salona-krasoty/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-salona-krasoty/"/>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

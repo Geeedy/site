@@ -20,6 +20,7 @@
 - [AI Chatbots](https://geeedy.github.io/site/uslugi/chat-boty/): AI chatbots for websites, Telegram and other messengers
   - [Voice Bots](https://geeedy.github.io/site/uslugi/golosovye-boty/)
   - [GPT Chatbot](https://geeedy.github.io/site/uslugi/chat-boty/bot-na-gpt/)
+  - [Booking Chatbot](https://geeedy.github.io/site/uslugi/chat-boty/dlya-zapisi/)
   - [Website Chatbot](https://geeedy.github.io/site/uslugi/chat-boty/bot-na-sait/)
   - [Telegram Bot](https://geeedy.github.io/site/uslugi/chat-boty/telegram-bot/)
 - [Website Development](https://geeedy.github.io/site/uslugi/razrabotka-saitov/): Websites from landing pages to web applications and online stores
@@ -35,6 +36,9 @@
   - [amoCRM](https://geeedy.github.io/site/uslugi/vnedrenie-crm/amocrm/)
   - [Bitrix24 Integration](https://geeedy.github.io/site/uslugi/vnedrenie-crm/bitrix24/integraciya/)
   - [CRM for Small Business](https://geeedy.github.io/site/uslugi/vnedrenie-crm/crm-dlya-malogo-biznesa/)
+  - [CRM for Real Estate](https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-nedvizhimosti/)
+  - [CRM for Auto Service](https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-avtoservisa/)
+  - [CRM for Beauty Salon](https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-salona-krasoty/)
   - [End-to-End Analytics](https://geeedy.github.io/site/uslugi/vnedrenie-crm/skvoznaya-analitika/)
 - [SEO Services](https://geeedy.github.io/site/uslugi/seo-prodvizhenie/): SEO for Yandex and Google, SEO audit, GEO/AEO optimization for AI answers
   - [SEO Audit](https://geeedy.github.io/site/uslugi/seo-prodvizhenie/seo-audit/)
