@@ -8,6 +8,10 @@
   - [Document Workflow Automation](https://geeedy.github.io/site/uslugi/vnedrenie-ii/avtomatizatsiya-dokumentooborota/)
   - [AI for 1C](https://geeedy.github.io/site/uslugi/vnedrenie-ii/ii-v-1c/)
   - [AI Team Training](https://geeedy.github.io/site/uslugi/vnedrenie-ii/obuchenie-ii/)
+  - [Predictive Analytics](https://geeedy.github.io/site/uslugi/vnedrenie-ii/prediktivnaya-analitika/)
+  - [Generative AI](https://geeedy.github.io/site/uslugi/vnedrenie-ii/generativnyy-ii/)
+  - [Computer Vision](https://geeedy.github.io/site/uslugi/vnedrenie-ii/kompyuternoe-zrenie/)
+  - [Speech Analytics](https://geeedy.github.io/site/uslugi/vnedrenie-ii/rechevaya-analitika/)
 - [AI Agents](https://geeedy.github.io/site/uslugi/ii-agenty/): AI agents that handle sales, legal, HR and analytics workflows
   - [AI Sales Agent](https://geeedy.github.io/site/uslugi/ii-agenty/dlya-prodazh/)
   - [AI for Legal Teams](https://geeedy.github.io/site/uslugi/ii-agenty/dlya-yuristov/)
