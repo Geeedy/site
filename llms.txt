@@ -41,6 +41,10 @@
   - [Catalog Website](https://geeedy.github.io/site/uslugi/razrabotka-saitov/sait-katalog/)
   - [Website Redesign](https://geeedy.github.io/site/uslugi/razrabotka-saitov/redizayn-sayta/)
   - [Website Maintenance](https://geeedy.github.io/site/uslugi/razrabotka-saitov/podderzhka-sayta/)
+  - [Promo Website](https://geeedy.github.io/site/uslugi/razrabotka-saitov/promo-sait/)
+  - [Marketplace Development](https://geeedy.github.io/site/uslugi/razrabotka-saitov/razrabotka-marketplace/)
+  - [Bitrix Online Store](https://geeedy.github.io/site/uslugi/razrabotka-saitov/internet-magazin/na-bitrikse/)
+  - [Tilda Online Store](https://geeedy.github.io/site/uslugi/razrabotka-saitov/internet-magazin/na-tilde/)
 - [CRM Implementation](https://geeedy.github.io/site/uslugi/vnedrenie-crm/): CRM implementation and integration: Bitrix24, amoCRM, end-to-end analytics
   - [Bitrix24](https://geeedy.github.io/site/uslugi/vnedrenie-crm/bitrix24/)
   - [amoCRM](https://geeedy.github.io/site/uslugi/vnedrenie-crm/amocrm/)
