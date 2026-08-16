@@ -37,6 +37,10 @@
   - [Website Migration](https://geeedy.github.io/site/uslugi/razrabotka-saitov/perenos-sayta/)
   - [Bitrix Website](https://geeedy.github.io/site/uslugi/razrabotka-saitov/sait-na-bitrikse/)
   - [Website Integration](https://geeedy.github.io/site/uslugi/razrabotka-saitov/integraciya-sayta/)
+  - [WordPress Website](https://geeedy.github.io/site/uslugi/razrabotka-saitov/sait-na-wordpress/)
+  - [Catalog Website](https://geeedy.github.io/site/uslugi/razrabotka-saitov/sait-katalog/)
+  - [Website Redesign](https://geeedy.github.io/site/uslugi/razrabotka-saitov/redizayn-sayta/)
+  - [Website Maintenance](https://geeedy.github.io/site/uslugi/razrabotka-saitov/podderzhka-sayta/)
 - [CRM Implementation](https://geeedy.github.io/site/uslugi/vnedrenie-crm/): CRM implementation and integration: Bitrix24, amoCRM, end-to-end analytics
   - [Bitrix24](https://geeedy.github.io/site/uslugi/vnedrenie-crm/bitrix24/)
   - [amoCRM](https://geeedy.github.io/site/uslugi/vnedrenie-crm/amocrm/)
