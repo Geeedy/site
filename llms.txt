@@ -17,11 +17,14 @@
   - [AI Sales Agent](https://geeedy.github.io/site/uslugi/ii-agenty/dlya-prodazh/)
   - [AI for Legal Teams](https://geeedy.github.io/site/uslugi/ii-agenty/dlya-yuristov/)
   - [AI Analytics](https://geeedy.github.io/site/uslugi/ii-agenty/ii-analitika/)
+  - [AI Assistant for Business](https://geeedy.github.io/site/uslugi/ii-agenty/ii-assistent-dlya-biznesa/)
+  - [Multi-Agent Systems](https://geeedy.github.io/site/uslugi/ii-agenty/multiagentnye-sistemy/)
   - [AI for HR](https://geeedy.github.io/site/uslugi/ii-agenty/dlya-hr/)
 - [AI Chatbots](https://geeedy.github.io/site/uslugi/chat-boty/): AI chatbots for websites, Telegram and other messengers
   - [Voice Bots](https://geeedy.github.io/site/uslugi/golosovye-boty/)
   - [GPT Chatbot](https://geeedy.github.io/site/uslugi/chat-boty/bot-na-gpt/)
   - [Booking Chatbot](https://geeedy.github.io/site/uslugi/chat-boty/dlya-zapisi/)
+  - [Support Chatbot](https://geeedy.github.io/site/uslugi/chat-boty/bot-podderzhki/)
   - [Website Chatbot](https://geeedy.github.io/site/uslugi/chat-boty/bot-na-sait/)
   - [Telegram Bot](https://geeedy.github.io/site/uslugi/chat-boty/telegram-bot/)
 - [Website Development](https://geeedy.github.io/site/uslugi/razrabotka-saitov/): Websites from landing pages to web applications and online stores
@@ -47,6 +50,7 @@
   - [CRM for Retail](https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-magazina/)
   - [CRM for Schools](https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-shkoly/)
   - [CRM for Law Firms](https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-yuristov/)
+  - [CRM for Fitness Clubs](https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-fitnes-kluba/)
   - [End-to-End Analytics](https://geeedy.github.io/site/uslugi/vnedrenie-crm/skvoznaya-analitika/)
 - [SEO Services](https://geeedy.github.io/site/uslugi/seo-prodvizhenie/): SEO for Yandex and Google, SEO audit, GEO/AEO optimization for AI answers
   - [SEO Audit](https://geeedy.github.io/site/uslugi/seo-prodvizhenie/seo-audit/)
