@@ -385,7 +385,13 @@ def render_blocks(blocks, slug, lang):
             out.append(f'<figure class="page-figure"><img src="{src}" alt="{esc(alt)}" loading="lazy" width="1600" height="1067"></figure>')
         elif t == 'info':
             path, cap = v
-            src = u('/assets/infographics/' + os.path.basename(path))
+            name = os.path.basename(path)
+            if lang == "en":
+                stem, ext = os.path.splitext(name)
+                en_name = f"{stem}-en{ext}"
+                if os.path.exists(os.path.join(ROOT, "assets", "infographics", en_name)):
+                    name = en_name
+            src = u('/assets/infographics/' + name)
             out.append(f'<figure class="page-figure page-figure--info"><img src="{src}" alt="{esc(cap)}" loading="lazy">'
                        f'<figcaption>{esc(cap)}</figcaption></figure>')
         elif t.startswith('cta_'):
