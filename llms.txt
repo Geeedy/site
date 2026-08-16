@@ -43,6 +43,10 @@
   - [CRM for Auto Service](https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-avtoservisa/)
   - [CRM for Beauty Salon](https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-salona-krasoty/)
   - [CRM for Clinics](https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-kliniki/)
+  - [CRM for Construction](https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-stroitelnoy-kompanii/)
+  - [CRM for Retail](https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-magazina/)
+  - [CRM for Schools](https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-shkoly/)
+  - [CRM for Law Firms](https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-yuristov/)
   - [End-to-End Analytics](https://geeedy.github.io/site/uslugi/vnedrenie-crm/skvoznaya-analitika/)
 - [SEO Services](https://geeedy.github.io/site/uslugi/seo-prodvizhenie/): SEO for Yandex and Google, SEO audit, GEO/AEO optimization for AI answers
   - [SEO Audit](https://geeedy.github.io/site/uslugi/seo-prodvizhenie/seo-audit/)
