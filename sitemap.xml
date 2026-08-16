@@ -1,1866 +1,1866 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/site/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://geeedy.github.io/site/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/"/>
+    <loc>https://skill-dev.online/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/"/>
+    <loc>https://skill-dev.online/ru/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/"/>
+    <loc>https://skill-dev.online/uslugi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/"/>
+    <loc>https://skill-dev.online/ru/uslugi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/kontakty/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/kontakty/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/kontakty/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/kontakty/"/>
+    <loc>https://skill-dev.online/kontakty/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/kontakty/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/kontakty/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/kontakty/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/kontakty/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/kontakty/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/kontakty/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/kontakty/"/>
+    <loc>https://skill-dev.online/ru/kontakty/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/kontakty/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/kontakty/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/kontakty/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/kejsy/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/kejsy/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/kejsy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/kejsy/"/>
-    <lastmod>2026-08-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://geeedy.github.io/site/ru/kejsy/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/kejsy/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/kejsy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/kejsy/"/>
+    <loc>https://skill-dev.online/kejsy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/kejsy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/kejsy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/kejsy/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/kejsy/claude-vps-sreda/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/kejsy/claude-vps-sreda/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/kejsy/claude-vps-sreda/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/kejsy/claude-vps-sreda/"/>
+    <loc>https://skill-dev.online/ru/kejsy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/kejsy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/kejsy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/kejsy/"/>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://skill-dev.online/kejsy/claude-vps-sreda/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/kejsy/claude-vps-sreda/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/kejsy/claude-vps-sreda/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/kejsy/claude-vps-sreda/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/case-vps-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/case-vps-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/kejsy/claude-vps-sreda/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/kejsy/claude-vps-sreda/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/kejsy/claude-vps-sreda/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/kejsy/claude-vps-sreda/"/>
+    <loc>https://skill-dev.online/ru/kejsy/claude-vps-sreda/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/kejsy/claude-vps-sreda/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/kejsy/claude-vps-sreda/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/kejsy/claude-vps-sreda/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/case-vps-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/case-vps-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/karta-sajta/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/karta-sajta/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/karta-sajta/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/karta-sajta/"/>
+    <loc>https://skill-dev.online/karta-sajta/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/karta-sajta/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/karta-sajta/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/karta-sajta/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/karta-sajta/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/karta-sajta/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/karta-sajta/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/karta-sajta/"/>
+    <loc>https://skill-dev.online/ru/karta-sajta/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/karta-sajta/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/karta-sajta/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/karta-sajta/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-ii/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/"/>
-    <lastmod>2026-08-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/vnedrenie-ii-hero.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/"/>
+    <loc>https://skill-dev.online/uslugi/vnedrenie-ii/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-ii/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-ii/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-ii/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/vnedrenie-ii-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/vnedrenie-ii-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/ii-agenty/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/ii-agenty/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/ii-agenty/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/ii-agenty/"/>
+    <loc>https://skill-dev.online/ru/uslugi/vnedrenie-ii/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-ii/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-ii/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-ii/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/ii-agenty-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/vnedrenie-ii-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/ii-agenty/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/ii-agenty/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/ii-agenty/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/ii-agenty/"/>
+    <loc>https://skill-dev.online/uslugi/ii-agenty/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/ii-agenty/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/ii-agenty/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/ii-agenty/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/ii-agenty-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/ii-agenty-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/chat-boty/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/chat-boty/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/chat-boty/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/chat-boty/"/>
+    <loc>https://skill-dev.online/ru/uslugi/ii-agenty/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/ii-agenty/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/ii-agenty/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/ii-agenty/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/chat-boty-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/ii-agenty-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/chat-boty/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/chat-boty/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/chat-boty/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/chat-boty/"/>
+    <loc>https://skill-dev.online/uslugi/chat-boty/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/chat-boty/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/chat-boty/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/chat-boty/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/chat-boty-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/chat-boty-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/razrabotka-saitov/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/"/>
+    <loc>https://skill-dev.online/ru/uslugi/chat-boty/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/chat-boty/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/chat-boty/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/chat-boty/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/razrabotka-saitov-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/chat-boty-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/"/>
+    <loc>https://skill-dev.online/uslugi/razrabotka-saitov/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/razrabotka-saitov/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/razrabotka-saitov/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/razrabotka-saitov/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/razrabotka-saitov-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/razrabotka-saitov-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-crm/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/"/>
+    <loc>https://skill-dev.online/ru/uslugi/razrabotka-saitov/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/razrabotka-saitov/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/razrabotka-saitov/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/razrabotka-saitov/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/vnedrenie-crm-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/razrabotka-saitov-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/"/>
+    <loc>https://skill-dev.online/uslugi/vnedrenie-crm/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/vnedrenie-crm-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/vnedrenie-crm-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/seo-prodvizhenie/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/seo-prodvizhenie/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/seo-prodvizhenie/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/seo-prodvizhenie/"/>
+    <loc>https://skill-dev.online/ru/uslugi/vnedrenie-crm/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/seo-prodvizhenie-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/vnedrenie-crm-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/seo-prodvizhenie/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/seo-prodvizhenie/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/seo-prodvizhenie/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/seo-prodvizhenie/"/>
+    <loc>https://skill-dev.online/uslugi/seo-prodvizhenie/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/seo-prodvizhenie/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/seo-prodvizhenie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/seo-prodvizhenie/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/seo-prodvizhenie-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/seo-prodvizhenie-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/golosovye-boty/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/golosovye-boty/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/golosovye-boty/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/golosovye-boty/"/>
+    <loc>https://skill-dev.online/ru/uslugi/seo-prodvizhenie/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/seo-prodvizhenie/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/seo-prodvizhenie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/seo-prodvizhenie/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/golosovye-boty-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/seo-prodvizhenie-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/golosovye-boty/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/golosovye-boty/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/golosovye-boty/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/golosovye-boty/"/>
+    <loc>https://skill-dev.online/uslugi/golosovye-boty/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/golosovye-boty/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/golosovye-boty/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/golosovye-boty/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/golosovye-boty-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/golosovye-boty-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/ii-agenty/dlya-prodazh/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/ii-agenty/dlya-prodazh/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/ii-agenty/dlya-prodazh/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/ii-agenty/dlya-prodazh/"/>
+    <loc>https://skill-dev.online/ru/uslugi/golosovye-boty/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/golosovye-boty/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/golosovye-boty/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/golosovye-boty/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://skill-dev.online/assets/img/golosovye-boty-hero.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://skill-dev.online/uslugi/ii-agenty/dlya-prodazh/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/ii-agenty/dlya-prodazh/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/ii-agenty/dlya-prodazh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/ii-agenty/dlya-prodazh/"/>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/ii-agenty/dlya-prodazh/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/ii-agenty/dlya-prodazh/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/ii-agenty/dlya-prodazh/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/ii-agenty/dlya-prodazh/"/>
+    <loc>https://skill-dev.online/ru/uslugi/ii-agenty/dlya-prodazh/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/ii-agenty/dlya-prodazh/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/ii-agenty/dlya-prodazh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/ii-agenty/dlya-prodazh/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/ii-agenty/dlya-yuristov/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/ii-agenty/dlya-yuristov/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/ii-agenty/dlya-yuristov/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/ii-agenty/dlya-yuristov/"/>
+    <loc>https://skill-dev.online/uslugi/ii-agenty/dlya-yuristov/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/ii-agenty/dlya-yuristov/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/ii-agenty/dlya-yuristov/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/ii-agenty/dlya-yuristov/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/ii-agenty/dlya-yuristov/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/ii-agenty/dlya-yuristov/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/ii-agenty/dlya-yuristov/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/ii-agenty/dlya-yuristov/"/>
+    <loc>https://skill-dev.online/ru/uslugi/ii-agenty/dlya-yuristov/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/ii-agenty/dlya-yuristov/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/ii-agenty/dlya-yuristov/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/ii-agenty/dlya-yuristov/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/ii-agenty/ii-analitika/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/ii-agenty/ii-analitika/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/ii-agenty/ii-analitika/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/ii-agenty/ii-analitika/"/>
+    <loc>https://skill-dev.online/uslugi/ii-agenty/ii-analitika/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/ii-agenty/ii-analitika/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/ii-agenty/ii-analitika/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/ii-agenty/ii-analitika/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/ii-analitika-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/ii-analitika-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/ii-agenty/ii-analitika/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/ii-agenty/ii-analitika/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/ii-agenty/ii-analitika/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/ii-agenty/ii-analitika/"/>
+    <loc>https://skill-dev.online/ru/uslugi/ii-agenty/ii-analitika/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/ii-agenty/ii-analitika/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/ii-agenty/ii-analitika/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/ii-agenty/ii-analitika/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/ii-analitika-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/ii-analitika-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/razrabotka-saitov/korporativnyi-sait/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/korporativnyi-sait/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/korporativnyi-sait/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/korporativnyi-sait/"/>
+    <loc>https://skill-dev.online/uslugi/razrabotka-saitov/korporativnyi-sait/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/razrabotka-saitov/korporativnyi-sait/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/razrabotka-saitov/korporativnyi-sait/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/razrabotka-saitov/korporativnyi-sait/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/korporativnyi-sait-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/korporativnyi-sait-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/korporativnyi-sait/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/korporativnyi-sait/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/korporativnyi-sait/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/korporativnyi-sait/"/>
+    <loc>https://skill-dev.online/ru/uslugi/razrabotka-saitov/korporativnyi-sait/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/razrabotka-saitov/korporativnyi-sait/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/razrabotka-saitov/korporativnyi-sait/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/razrabotka-saitov/korporativnyi-sait/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/korporativnyi-sait-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/korporativnyi-sait-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/razrabotka-saitov/internet-magazin/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/internet-magazin/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/internet-magazin/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/internet-magazin/"/>
+    <loc>https://skill-dev.online/uslugi/razrabotka-saitov/internet-magazin/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/razrabotka-saitov/internet-magazin/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/razrabotka-saitov/internet-magazin/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/razrabotka-saitov/internet-magazin/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/internet-magazin-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/internet-magazin-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/internet-magazin/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/internet-magazin/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/internet-magazin/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/internet-magazin/"/>
+    <loc>https://skill-dev.online/ru/uslugi/razrabotka-saitov/internet-magazin/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/razrabotka-saitov/internet-magazin/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/razrabotka-saitov/internet-magazin/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/razrabotka-saitov/internet-magazin/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/internet-magazin-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/internet-magazin-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/razrabotka-saitov/lending/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/lending/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/lending/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/lending/"/>
+    <loc>https://skill-dev.online/uslugi/razrabotka-saitov/lending/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/razrabotka-saitov/lending/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/razrabotka-saitov/lending/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/razrabotka-saitov/lending/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/lending-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/lending-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/lending/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/lending/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/lending/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/lending/"/>
+    <loc>https://skill-dev.online/ru/uslugi/razrabotka-saitov/lending/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/razrabotka-saitov/lending/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/razrabotka-saitov/lending/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/razrabotka-saitov/lending/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/lending-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/lending-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/razrabotka-saitov/sait-s-ii/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/sait-s-ii/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/sait-s-ii/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/sait-s-ii/"/>
+    <loc>https://skill-dev.online/uslugi/razrabotka-saitov/sait-s-ii/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/razrabotka-saitov/sait-s-ii/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/razrabotka-saitov/sait-s-ii/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/razrabotka-saitov/sait-s-ii/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/sait-s-ii-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/sait-s-ii-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/sait-s-ii/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/sait-s-ii/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/sait-s-ii/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/sait-s-ii/"/>
+    <loc>https://skill-dev.online/ru/uslugi/razrabotka-saitov/sait-s-ii/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/razrabotka-saitov/sait-s-ii/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/razrabotka-saitov/sait-s-ii/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/razrabotka-saitov/sait-s-ii/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/sait-s-ii-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/sait-s-ii-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/razrabotka-saitov/sait-na-tilde/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/sait-na-tilde/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/sait-na-tilde/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/sait-na-tilde/"/>
+    <loc>https://skill-dev.online/uslugi/razrabotka-saitov/sait-na-tilde/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/razrabotka-saitov/sait-na-tilde/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/razrabotka-saitov/sait-na-tilde/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/razrabotka-saitov/sait-na-tilde/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/sait-na-tilde-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/sait-na-tilde-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/sait-na-tilde/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/sait-na-tilde/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/sait-na-tilde/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/sait-na-tilde/"/>
+    <loc>https://skill-dev.online/ru/uslugi/razrabotka-saitov/sait-na-tilde/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/razrabotka-saitov/sait-na-tilde/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/razrabotka-saitov/sait-na-tilde/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/razrabotka-saitov/sait-na-tilde/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/sait-na-tilde-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/sait-na-tilde-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/razrabotka-saitov/veb-prilozheniya/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/veb-prilozheniya/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/veb-prilozheniya/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/veb-prilozheniya/"/>
+    <loc>https://skill-dev.online/uslugi/razrabotka-saitov/veb-prilozheniya/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/razrabotka-saitov/veb-prilozheniya/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/razrabotka-saitov/veb-prilozheniya/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/razrabotka-saitov/veb-prilozheniya/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/veb-prilozheniya-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/veb-prilozheniya-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/veb-prilozheniya/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/veb-prilozheniya/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/veb-prilozheniya/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/veb-prilozheniya/"/>
+    <loc>https://skill-dev.online/ru/uslugi/razrabotka-saitov/veb-prilozheniya/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/razrabotka-saitov/veb-prilozheniya/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/razrabotka-saitov/veb-prilozheniya/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/razrabotka-saitov/veb-prilozheniya/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/veb-prilozheniya-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/veb-prilozheniya-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-crm/bitrix24/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/bitrix24/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/bitrix24/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/bitrix24/"/>
+    <loc>https://skill-dev.online/uslugi/vnedrenie-crm/bitrix24/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/bitrix24/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/bitrix24/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/bitrix24/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/bitrix24-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/bitrix24-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/bitrix24/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/bitrix24/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/bitrix24/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/bitrix24/"/>
+    <loc>https://skill-dev.online/ru/uslugi/vnedrenie-crm/bitrix24/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/bitrix24/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/bitrix24/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/bitrix24/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/bitrix24-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/bitrix24-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-crm/amocrm/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/amocrm/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/amocrm/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/amocrm/"/>
+    <loc>https://skill-dev.online/uslugi/vnedrenie-crm/amocrm/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/amocrm/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/amocrm/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/amocrm/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/amocrm-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/amocrm-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/amocrm/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/amocrm/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/amocrm/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/amocrm/"/>
+    <loc>https://skill-dev.online/ru/uslugi/vnedrenie-crm/amocrm/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/amocrm/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/amocrm/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/amocrm/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/amocrm-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/amocrm-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/seo-prodvizhenie/seo-audit/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/seo-prodvizhenie/seo-audit/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/seo-prodvizhenie/seo-audit/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/seo-prodvizhenie/seo-audit/"/>
+    <loc>https://skill-dev.online/uslugi/seo-prodvizhenie/seo-audit/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/seo-prodvizhenie/seo-audit/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/seo-prodvizhenie/seo-audit/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/seo-prodvizhenie/seo-audit/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/seo-audit-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/seo-audit-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/seo-prodvizhenie/seo-audit/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/seo-prodvizhenie/seo-audit/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/seo-prodvizhenie/seo-audit/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/seo-prodvizhenie/seo-audit/"/>
+    <loc>https://skill-dev.online/ru/uslugi/seo-prodvizhenie/seo-audit/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/seo-prodvizhenie/seo-audit/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/seo-prodvizhenie/seo-audit/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/seo-prodvizhenie/seo-audit/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/seo-audit-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/seo-audit-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/seo-prodvizhenie/geo-aeo/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/seo-prodvizhenie/geo-aeo/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/seo-prodvizhenie/geo-aeo/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/seo-prodvizhenie/geo-aeo/"/>
+    <loc>https://skill-dev.online/uslugi/seo-prodvizhenie/geo-aeo/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/seo-prodvizhenie/geo-aeo/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/seo-prodvizhenie/geo-aeo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/seo-prodvizhenie/geo-aeo/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/geo-aeo-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/geo-aeo-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/seo-prodvizhenie/geo-aeo/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/seo-prodvizhenie/geo-aeo/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/seo-prodvizhenie/geo-aeo/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/seo-prodvizhenie/geo-aeo/"/>
+    <loc>https://skill-dev.online/ru/uslugi/seo-prodvizhenie/geo-aeo/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/seo-prodvizhenie/geo-aeo/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/seo-prodvizhenie/geo-aeo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/seo-prodvizhenie/geo-aeo/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/geo-aeo-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/geo-aeo-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/o-kompanii/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/o-kompanii/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/o-kompanii/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/o-kompanii/"/>
+    <loc>https://skill-dev.online/o-kompanii/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/o-kompanii/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/o-kompanii/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/o-kompanii/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/o-kompanii-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/o-kompanii-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/o-kompanii/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/o-kompanii/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/o-kompanii/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/o-kompanii/"/>
+    <loc>https://skill-dev.online/ru/o-kompanii/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/o-kompanii/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/o-kompanii/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/o-kompanii/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/o-kompanii-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/o-kompanii-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/politika/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/politika/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/politika/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/politika/"/>
+    <loc>https://skill-dev.online/politika/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/politika/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/politika/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/politika/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/politika/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/politika/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/politika/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/politika/"/>
+    <loc>https://skill-dev.online/ru/politika/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/politika/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/politika/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/politika/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-ii/audit-ii-strategiya/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/audit-ii-strategiya/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/audit-ii-strategiya/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/audit-ii-strategiya/"/>
+    <loc>https://skill-dev.online/uslugi/vnedrenie-ii/audit-ii-strategiya/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-ii/audit-ii-strategiya/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-ii/audit-ii-strategiya/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-ii/audit-ii-strategiya/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/audit-ii-strategiya-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/audit-ii-strategiya-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/audit-ii-strategiya/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/audit-ii-strategiya/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/audit-ii-strategiya/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/audit-ii-strategiya/"/>
+    <loc>https://skill-dev.online/ru/uslugi/vnedrenie-ii/audit-ii-strategiya/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-ii/audit-ii-strategiya/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-ii/audit-ii-strategiya/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-ii/audit-ii-strategiya/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/audit-ii-strategiya-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/audit-ii-strategiya-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-ii/avtomatizatsiya-dokumentooborota/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/avtomatizatsiya-dokumentooborota/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/avtomatizatsiya-dokumentooborota/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/avtomatizatsiya-dokumentooborota/"/>
+    <loc>https://skill-dev.online/uslugi/vnedrenie-ii/avtomatizatsiya-dokumentooborota/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-ii/avtomatizatsiya-dokumentooborota/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-ii/avtomatizatsiya-dokumentooborota/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-ii/avtomatizatsiya-dokumentooborota/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/avtomatizatsiya-dokumentooborota-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/avtomatizatsiya-dokumentooborota-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/avtomatizatsiya-dokumentooborota/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/avtomatizatsiya-dokumentooborota/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/avtomatizatsiya-dokumentooborota/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/avtomatizatsiya-dokumentooborota/"/>
+    <loc>https://skill-dev.online/ru/uslugi/vnedrenie-ii/avtomatizatsiya-dokumentooborota/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-ii/avtomatizatsiya-dokumentooborota/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-ii/avtomatizatsiya-dokumentooborota/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-ii/avtomatizatsiya-dokumentooborota/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/avtomatizatsiya-dokumentooborota-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/avtomatizatsiya-dokumentooborota-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-ii/ii-v-1c/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/ii-v-1c/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/ii-v-1c/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/ii-v-1c/"/>
+    <loc>https://skill-dev.online/uslugi/vnedrenie-ii/ii-v-1c/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-ii/ii-v-1c/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-ii/ii-v-1c/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-ii/ii-v-1c/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/ii-v-1c-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/ii-v-1c-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/ii-v-1c/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/ii-v-1c/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/ii-v-1c/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/ii-v-1c/"/>
+    <loc>https://skill-dev.online/ru/uslugi/vnedrenie-ii/ii-v-1c/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-ii/ii-v-1c/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-ii/ii-v-1c/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-ii/ii-v-1c/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/ii-v-1c-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/ii-v-1c-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-ii/obuchenie-ii/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/obuchenie-ii/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/obuchenie-ii/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/obuchenie-ii/"/>
+    <loc>https://skill-dev.online/uslugi/vnedrenie-ii/obuchenie-ii/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-ii/obuchenie-ii/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-ii/obuchenie-ii/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-ii/obuchenie-ii/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/obuchenie-ii-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/obuchenie-ii-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/obuchenie-ii/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/obuchenie-ii/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/obuchenie-ii/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/obuchenie-ii/"/>
+    <loc>https://skill-dev.online/ru/uslugi/vnedrenie-ii/obuchenie-ii/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-ii/obuchenie-ii/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-ii/obuchenie-ii/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-ii/obuchenie-ii/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/obuchenie-ii-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/obuchenie-ii-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-crm/bitrix24/nastroika/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/bitrix24/nastroika/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/bitrix24/nastroika/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/bitrix24/nastroika/"/>
+    <loc>https://skill-dev.online/uslugi/vnedrenie-crm/bitrix24/nastroika/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/bitrix24/nastroika/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/bitrix24/nastroika/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/bitrix24/nastroika/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/bitrix24/nastroika/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/bitrix24/nastroika/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/bitrix24/nastroika/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/bitrix24/nastroika/"/>
+    <loc>https://skill-dev.online/ru/uslugi/vnedrenie-crm/bitrix24/nastroika/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/bitrix24/nastroika/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/bitrix24/nastroika/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/bitrix24/nastroika/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-crm/bitrix24/korobochnaya-versiya/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/bitrix24/korobochnaya-versiya/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/bitrix24/korobochnaya-versiya/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/bitrix24/korobochnaya-versiya/"/>
+    <loc>https://skill-dev.online/uslugi/vnedrenie-crm/bitrix24/korobochnaya-versiya/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/bitrix24/korobochnaya-versiya/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/bitrix24/korobochnaya-versiya/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/bitrix24/korobochnaya-versiya/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/bitrix24/korobochnaya-versiya/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/bitrix24/korobochnaya-versiya/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/bitrix24/korobochnaya-versiya/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/bitrix24/korobochnaya-versiya/"/>
+    <loc>https://skill-dev.online/ru/uslugi/vnedrenie-crm/bitrix24/korobochnaya-versiya/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/bitrix24/korobochnaya-versiya/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/bitrix24/korobochnaya-versiya/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/bitrix24/korobochnaya-versiya/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-crm/avtomatizaciya-prodazh/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/avtomatizaciya-prodazh/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/avtomatizaciya-prodazh/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/avtomatizaciya-prodazh/"/>
+    <loc>https://skill-dev.online/uslugi/vnedrenie-crm/avtomatizaciya-prodazh/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/avtomatizaciya-prodazh/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/avtomatizaciya-prodazh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/avtomatizaciya-prodazh/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/avtomatizaciya-prodazh-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/avtomatizaciya-prodazh-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/avtomatizaciya-prodazh/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/avtomatizaciya-prodazh/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/avtomatizaciya-prodazh/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/avtomatizaciya-prodazh/"/>
+    <loc>https://skill-dev.online/ru/uslugi/vnedrenie-crm/avtomatizaciya-prodazh/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/avtomatizaciya-prodazh/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/avtomatizaciya-prodazh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/avtomatizaciya-prodazh/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/avtomatizaciya-prodazh-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/avtomatizaciya-prodazh-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-crm/audit-crm/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/audit-crm/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/audit-crm/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/audit-crm/"/>
+    <loc>https://skill-dev.online/uslugi/vnedrenie-crm/audit-crm/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/audit-crm/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/audit-crm/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/audit-crm/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/audit-crm-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/audit-crm-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/audit-crm/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/audit-crm/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/audit-crm/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/audit-crm/"/>
+    <loc>https://skill-dev.online/ru/uslugi/vnedrenie-crm/audit-crm/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/audit-crm/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/audit-crm/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/audit-crm/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/audit-crm-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/audit-crm-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-ii/avtomatizaciya-sklada/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/avtomatizaciya-sklada/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/avtomatizaciya-sklada/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/avtomatizaciya-sklada/"/>
+    <loc>https://skill-dev.online/uslugi/vnedrenie-ii/avtomatizaciya-sklada/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-ii/avtomatizaciya-sklada/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-ii/avtomatizaciya-sklada/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-ii/avtomatizaciya-sklada/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/avtomatizaciya-sklada-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/avtomatizaciya-sklada-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/avtomatizaciya-sklada/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/avtomatizaciya-sklada/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/avtomatizaciya-sklada/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/avtomatizaciya-sklada/"/>
+    <loc>https://skill-dev.online/ru/uslugi/vnedrenie-ii/avtomatizaciya-sklada/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-ii/avtomatizaciya-sklada/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-ii/avtomatizaciya-sklada/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-ii/avtomatizaciya-sklada/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/avtomatizaciya-sklada-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/avtomatizaciya-sklada-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-ii/avtomatizaciya-kliniki/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/avtomatizaciya-kliniki/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/avtomatizaciya-kliniki/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/avtomatizaciya-kliniki/"/>
+    <loc>https://skill-dev.online/uslugi/vnedrenie-ii/avtomatizaciya-kliniki/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-ii/avtomatizaciya-kliniki/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-ii/avtomatizaciya-kliniki/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-ii/avtomatizaciya-kliniki/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/avtomatizaciya-kliniki-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/avtomatizaciya-kliniki-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/avtomatizaciya-kliniki/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/avtomatizaciya-kliniki/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/avtomatizaciya-kliniki/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/avtomatizaciya-kliniki/"/>
+    <loc>https://skill-dev.online/ru/uslugi/vnedrenie-ii/avtomatizaciya-kliniki/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-ii/avtomatizaciya-kliniki/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-ii/avtomatizaciya-kliniki/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-ii/avtomatizaciya-kliniki/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/avtomatizaciya-kliniki-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/avtomatizaciya-kliniki-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-stomatologii/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-stomatologii/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-stomatologii/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-stomatologii/"/>
+    <loc>https://skill-dev.online/uslugi/vnedrenie-crm/dlya-stomatologii/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-stomatologii/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/dlya-stomatologii/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-stomatologii/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-stomatologii/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-stomatologii/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-stomatologii/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-stomatologii/"/>
+    <loc>https://skill-dev.online/ru/uslugi/vnedrenie-crm/dlya-stomatologii/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-stomatologii/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/dlya-stomatologii/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-stomatologii/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/ii-agenty/dlya-marketpleysov/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/ii-agenty/dlya-marketpleysov/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/ii-agenty/dlya-marketpleysov/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/ii-agenty/dlya-marketpleysov/"/>
+    <loc>https://skill-dev.online/uslugi/ii-agenty/dlya-marketpleysov/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/ii-agenty/dlya-marketpleysov/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/ii-agenty/dlya-marketpleysov/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/ii-agenty/dlya-marketpleysov/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/ii-agenty/dlya-marketpleysov/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/ii-agenty/dlya-marketpleysov/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/ii-agenty/dlya-marketpleysov/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/ii-agenty/dlya-marketpleysov/"/>
+    <loc>https://skill-dev.online/ru/uslugi/ii-agenty/dlya-marketpleysov/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/ii-agenty/dlya-marketpleysov/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/ii-agenty/dlya-marketpleysov/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/ii-agenty/dlya-marketpleysov/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/ii-agenty/dlya-hr/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/ii-agenty/dlya-hr/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/ii-agenty/dlya-hr/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/ii-agenty/dlya-hr/"/>
+    <loc>https://skill-dev.online/uslugi/ii-agenty/dlya-hr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/ii-agenty/dlya-hr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/ii-agenty/dlya-hr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/ii-agenty/dlya-hr/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/dlya-hr-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/dlya-hr-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/ii-agenty/dlya-hr/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/ii-agenty/dlya-hr/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/ii-agenty/dlya-hr/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/ii-agenty/dlya-hr/"/>
+    <loc>https://skill-dev.online/ru/uslugi/ii-agenty/dlya-hr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/ii-agenty/dlya-hr/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/ii-agenty/dlya-hr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/ii-agenty/dlya-hr/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/dlya-hr-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/dlya-hr-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/chat-boty/bot-na-sait/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/chat-boty/bot-na-sait/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/chat-boty/bot-na-sait/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/chat-boty/bot-na-sait/"/>
+    <loc>https://skill-dev.online/uslugi/chat-boty/bot-na-sait/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/chat-boty/bot-na-sait/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/chat-boty/bot-na-sait/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/chat-boty/bot-na-sait/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/bot-na-sait-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/bot-na-sait-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/chat-boty/bot-na-sait/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/chat-boty/bot-na-sait/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/chat-boty/bot-na-sait/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/chat-boty/bot-na-sait/"/>
+    <loc>https://skill-dev.online/ru/uslugi/chat-boty/bot-na-sait/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/chat-boty/bot-na-sait/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/chat-boty/bot-na-sait/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/chat-boty/bot-na-sait/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/bot-na-sait-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/bot-na-sait-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/chat-boty/telegram-bot/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/chat-boty/telegram-bot/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/chat-boty/telegram-bot/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/chat-boty/telegram-bot/"/>
+    <loc>https://skill-dev.online/uslugi/chat-boty/telegram-bot/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/chat-boty/telegram-bot/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/chat-boty/telegram-bot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/chat-boty/telegram-bot/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/telegram-bot-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/telegram-bot-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/chat-boty/telegram-bot/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/chat-boty/telegram-bot/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/chat-boty/telegram-bot/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/chat-boty/telegram-bot/"/>
+    <loc>https://skill-dev.online/ru/uslugi/chat-boty/telegram-bot/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/chat-boty/telegram-bot/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/chat-boty/telegram-bot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/chat-boty/telegram-bot/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/telegram-bot-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/telegram-bot-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-crm/skvoznaya-analitika/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/skvoznaya-analitika/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/skvoznaya-analitika/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/skvoznaya-analitika/"/>
+    <loc>https://skill-dev.online/uslugi/vnedrenie-crm/skvoznaya-analitika/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/skvoznaya-analitika/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/skvoznaya-analitika/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/skvoznaya-analitika/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/skvoznaya-analitika-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/skvoznaya-analitika-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/skvoznaya-analitika/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/skvoznaya-analitika/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/skvoznaya-analitika/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/skvoznaya-analitika/"/>
+    <loc>https://skill-dev.online/ru/uslugi/vnedrenie-crm/skvoznaya-analitika/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/skvoznaya-analitika/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/skvoznaya-analitika/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/skvoznaya-analitika/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/skvoznaya-analitika-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/skvoznaya-analitika-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-ii/prediktivnaya-analitika/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/prediktivnaya-analitika/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/prediktivnaya-analitika/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/prediktivnaya-analitika/"/>
+    <loc>https://skill-dev.online/uslugi/vnedrenie-ii/prediktivnaya-analitika/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-ii/prediktivnaya-analitika/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-ii/prediktivnaya-analitika/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-ii/prediktivnaya-analitika/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/prediktivnaya-analitika-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/prediktivnaya-analitika-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/prediktivnaya-analitika/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/prediktivnaya-analitika/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/prediktivnaya-analitika/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/prediktivnaya-analitika/"/>
+    <loc>https://skill-dev.online/ru/uslugi/vnedrenie-ii/prediktivnaya-analitika/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-ii/prediktivnaya-analitika/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-ii/prediktivnaya-analitika/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-ii/prediktivnaya-analitika/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/prediktivnaya-analitika-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/prediktivnaya-analitika-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-ii/generativnyy-ii/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/generativnyy-ii/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/generativnyy-ii/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/generativnyy-ii/"/>
+    <loc>https://skill-dev.online/uslugi/vnedrenie-ii/generativnyy-ii/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-ii/generativnyy-ii/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-ii/generativnyy-ii/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-ii/generativnyy-ii/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/generativnyy-ii-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/generativnyy-ii-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/generativnyy-ii/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/generativnyy-ii/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/generativnyy-ii/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/generativnyy-ii/"/>
+    <loc>https://skill-dev.online/ru/uslugi/vnedrenie-ii/generativnyy-ii/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-ii/generativnyy-ii/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-ii/generativnyy-ii/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-ii/generativnyy-ii/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/generativnyy-ii-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/generativnyy-ii-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-ii/kompyuternoe-zrenie/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/kompyuternoe-zrenie/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/kompyuternoe-zrenie/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/kompyuternoe-zrenie/"/>
+    <loc>https://skill-dev.online/uslugi/vnedrenie-ii/kompyuternoe-zrenie/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-ii/kompyuternoe-zrenie/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-ii/kompyuternoe-zrenie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-ii/kompyuternoe-zrenie/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/kompyuternoe-zrenie-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/kompyuternoe-zrenie-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/kompyuternoe-zrenie/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/kompyuternoe-zrenie/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/kompyuternoe-zrenie/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/kompyuternoe-zrenie/"/>
+    <loc>https://skill-dev.online/ru/uslugi/vnedrenie-ii/kompyuternoe-zrenie/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-ii/kompyuternoe-zrenie/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-ii/kompyuternoe-zrenie/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-ii/kompyuternoe-zrenie/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/kompyuternoe-zrenie-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/kompyuternoe-zrenie-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-ii/rechevaya-analitika/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/rechevaya-analitika/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/rechevaya-analitika/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/rechevaya-analitika/"/>
+    <loc>https://skill-dev.online/uslugi/vnedrenie-ii/rechevaya-analitika/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-ii/rechevaya-analitika/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-ii/rechevaya-analitika/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-ii/rechevaya-analitika/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/rechevaya-analitika-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/rechevaya-analitika-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/rechevaya-analitika/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/rechevaya-analitika/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/rechevaya-analitika/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/rechevaya-analitika/"/>
+    <loc>https://skill-dev.online/ru/uslugi/vnedrenie-ii/rechevaya-analitika/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-ii/rechevaya-analitika/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-ii/rechevaya-analitika/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-ii/rechevaya-analitika/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/rechevaya-analitika-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/rechevaya-analitika-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/chat-boty/bot-na-gpt/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/chat-boty/bot-na-gpt/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/chat-boty/bot-na-gpt/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/chat-boty/bot-na-gpt/"/>
+    <loc>https://skill-dev.online/uslugi/chat-boty/bot-na-gpt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/chat-boty/bot-na-gpt/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/chat-boty/bot-na-gpt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/chat-boty/bot-na-gpt/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/bot-na-gpt-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/bot-na-gpt-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/chat-boty/bot-na-gpt/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/chat-boty/bot-na-gpt/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/chat-boty/bot-na-gpt/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/chat-boty/bot-na-gpt/"/>
+    <loc>https://skill-dev.online/ru/uslugi/chat-boty/bot-na-gpt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/chat-boty/bot-na-gpt/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/chat-boty/bot-na-gpt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/chat-boty/bot-na-gpt/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/bot-na-gpt-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/bot-na-gpt-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-crm/bitrix24/integraciya/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/bitrix24/integraciya/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/bitrix24/integraciya/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/bitrix24/integraciya/"/>
+    <loc>https://skill-dev.online/uslugi/vnedrenie-crm/bitrix24/integraciya/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/bitrix24/integraciya/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/bitrix24/integraciya/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/bitrix24/integraciya/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/bitrix24/integraciya/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/bitrix24/integraciya/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/bitrix24/integraciya/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/bitrix24/integraciya/"/>
+    <loc>https://skill-dev.online/ru/uslugi/vnedrenie-crm/bitrix24/integraciya/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/bitrix24/integraciya/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/bitrix24/integraciya/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/bitrix24/integraciya/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/razrabotka-saitov/perenos-sayta/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/perenos-sayta/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/perenos-sayta/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/perenos-sayta/"/>
+    <loc>https://skill-dev.online/uslugi/razrabotka-saitov/perenos-sayta/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/razrabotka-saitov/perenos-sayta/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/razrabotka-saitov/perenos-sayta/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/razrabotka-saitov/perenos-sayta/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/perenos-sayta-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/perenos-sayta-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/perenos-sayta/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/perenos-sayta/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/perenos-sayta/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/perenos-sayta/"/>
+    <loc>https://skill-dev.online/ru/uslugi/razrabotka-saitov/perenos-sayta/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/razrabotka-saitov/perenos-sayta/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/razrabotka-saitov/perenos-sayta/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/razrabotka-saitov/perenos-sayta/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/perenos-sayta-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/perenos-sayta-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-crm/crm-dlya-malogo-biznesa/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/crm-dlya-malogo-biznesa/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/crm-dlya-malogo-biznesa/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/crm-dlya-malogo-biznesa/"/>
+    <loc>https://skill-dev.online/uslugi/vnedrenie-crm/crm-dlya-malogo-biznesa/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/crm-dlya-malogo-biznesa/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/crm-dlya-malogo-biznesa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/crm-dlya-malogo-biznesa/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/crm-dlya-malogo-biznesa-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/crm-dlya-malogo-biznesa-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/crm-dlya-malogo-biznesa/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/crm-dlya-malogo-biznesa/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/crm-dlya-malogo-biznesa/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/crm-dlya-malogo-biznesa/"/>
+    <loc>https://skill-dev.online/ru/uslugi/vnedrenie-crm/crm-dlya-malogo-biznesa/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/crm-dlya-malogo-biznesa/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/crm-dlya-malogo-biznesa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/crm-dlya-malogo-biznesa/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/crm-dlya-malogo-biznesa-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/crm-dlya-malogo-biznesa-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/chat-boty/dlya-zapisi/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/chat-boty/dlya-zapisi/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/chat-boty/dlya-zapisi/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/chat-boty/dlya-zapisi/"/>
+    <loc>https://skill-dev.online/uslugi/chat-boty/dlya-zapisi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/chat-boty/dlya-zapisi/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/chat-boty/dlya-zapisi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/chat-boty/dlya-zapisi/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/dlya-zapisi-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/dlya-zapisi-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/chat-boty/dlya-zapisi/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/chat-boty/dlya-zapisi/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/chat-boty/dlya-zapisi/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/chat-boty/dlya-zapisi/"/>
+    <loc>https://skill-dev.online/ru/uslugi/chat-boty/dlya-zapisi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/chat-boty/dlya-zapisi/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/chat-boty/dlya-zapisi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/chat-boty/dlya-zapisi/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/dlya-zapisi-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/dlya-zapisi-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-nedvizhimosti/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-nedvizhimosti/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-nedvizhimosti/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-nedvizhimosti/"/>
+    <loc>https://skill-dev.online/uslugi/vnedrenie-crm/dlya-nedvizhimosti/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-nedvizhimosti/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/dlya-nedvizhimosti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-nedvizhimosti/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-nedvizhimosti/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-nedvizhimosti/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-nedvizhimosti/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-nedvizhimosti/"/>
+    <loc>https://skill-dev.online/ru/uslugi/vnedrenie-crm/dlya-nedvizhimosti/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-nedvizhimosti/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/dlya-nedvizhimosti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-nedvizhimosti/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-avtoservisa/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-avtoservisa/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-avtoservisa/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-avtoservisa/"/>
+    <loc>https://skill-dev.online/uslugi/vnedrenie-crm/dlya-avtoservisa/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-avtoservisa/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/dlya-avtoservisa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-avtoservisa/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-avtoservisa/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-avtoservisa/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-avtoservisa/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-avtoservisa/"/>
+    <loc>https://skill-dev.online/ru/uslugi/vnedrenie-crm/dlya-avtoservisa/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-avtoservisa/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/dlya-avtoservisa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-avtoservisa/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-salona-krasoty/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-salona-krasoty/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-salona-krasoty/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-salona-krasoty/"/>
+    <loc>https://skill-dev.online/uslugi/vnedrenie-crm/dlya-salona-krasoty/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-salona-krasoty/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/dlya-salona-krasoty/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-salona-krasoty/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-salona-krasoty/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-salona-krasoty/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-salona-krasoty/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-salona-krasoty/"/>
+    <loc>https://skill-dev.online/ru/uslugi/vnedrenie-crm/dlya-salona-krasoty/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-salona-krasoty/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/dlya-salona-krasoty/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-salona-krasoty/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-ii/avtomatizaciya-proizvodstva/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/avtomatizaciya-proizvodstva/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/avtomatizaciya-proizvodstva/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/avtomatizaciya-proizvodstva/"/>
+    <loc>https://skill-dev.online/uslugi/vnedrenie-ii/avtomatizaciya-proizvodstva/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-ii/avtomatizaciya-proizvodstva/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-ii/avtomatizaciya-proizvodstva/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-ii/avtomatizaciya-proizvodstva/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/avtomatizaciya-proizvodstva-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/avtomatizaciya-proizvodstva-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/avtomatizaciya-proizvodstva/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/avtomatizaciya-proizvodstva/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/avtomatizaciya-proizvodstva/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/avtomatizaciya-proizvodstva/"/>
+    <loc>https://skill-dev.online/ru/uslugi/vnedrenie-ii/avtomatizaciya-proizvodstva/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-ii/avtomatizaciya-proizvodstva/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-ii/avtomatizaciya-proizvodstva/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-ii/avtomatizaciya-proizvodstva/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/avtomatizaciya-proizvodstva-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/avtomatizaciya-proizvodstva-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/razrabotka-saitov/sait-na-bitrikse/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/sait-na-bitrikse/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/sait-na-bitrikse/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/sait-na-bitrikse/"/>
+    <loc>https://skill-dev.online/uslugi/razrabotka-saitov/sait-na-bitrikse/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/razrabotka-saitov/sait-na-bitrikse/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/razrabotka-saitov/sait-na-bitrikse/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/razrabotka-saitov/sait-na-bitrikse/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/sait-na-bitrikse-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/sait-na-bitrikse-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/sait-na-bitrikse/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/sait-na-bitrikse/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/sait-na-bitrikse/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/sait-na-bitrikse/"/>
+    <loc>https://skill-dev.online/ru/uslugi/razrabotka-saitov/sait-na-bitrikse/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/razrabotka-saitov/sait-na-bitrikse/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/razrabotka-saitov/sait-na-bitrikse/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/razrabotka-saitov/sait-na-bitrikse/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/sait-na-bitrikse-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/sait-na-bitrikse-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/razrabotka-saitov/integraciya-sayta/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/integraciya-sayta/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/integraciya-sayta/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/integraciya-sayta/"/>
+    <loc>https://skill-dev.online/uslugi/razrabotka-saitov/integraciya-sayta/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/razrabotka-saitov/integraciya-sayta/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/razrabotka-saitov/integraciya-sayta/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/razrabotka-saitov/integraciya-sayta/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/integraciya-sayta-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/integraciya-sayta-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/integraciya-sayta/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/integraciya-sayta/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/integraciya-sayta/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/integraciya-sayta/"/>
+    <loc>https://skill-dev.online/ru/uslugi/razrabotka-saitov/integraciya-sayta/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/razrabotka-saitov/integraciya-sayta/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/razrabotka-saitov/integraciya-sayta/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/razrabotka-saitov/integraciya-sayta/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/integraciya-sayta-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/integraciya-sayta-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-kliniki/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-kliniki/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-kliniki/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-kliniki/"/>
+    <loc>https://skill-dev.online/uslugi/vnedrenie-crm/dlya-kliniki/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-kliniki/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/dlya-kliniki/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-kliniki/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-kliniki/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-kliniki/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-kliniki/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-kliniki/"/>
+    <loc>https://skill-dev.online/ru/uslugi/vnedrenie-crm/dlya-kliniki/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-kliniki/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/dlya-kliniki/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-kliniki/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-stroitelnoy-kompanii/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-stroitelnoy-kompanii/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-stroitelnoy-kompanii/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-stroitelnoy-kompanii/"/>
+    <loc>https://skill-dev.online/uslugi/vnedrenie-crm/dlya-stroitelnoy-kompanii/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-stroitelnoy-kompanii/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/dlya-stroitelnoy-kompanii/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-stroitelnoy-kompanii/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-stroitelnoy-kompanii/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-stroitelnoy-kompanii/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-stroitelnoy-kompanii/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-stroitelnoy-kompanii/"/>
+    <loc>https://skill-dev.online/ru/uslugi/vnedrenie-crm/dlya-stroitelnoy-kompanii/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-stroitelnoy-kompanii/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/dlya-stroitelnoy-kompanii/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-stroitelnoy-kompanii/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-magazina/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-magazina/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-magazina/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-magazina/"/>
+    <loc>https://skill-dev.online/uslugi/vnedrenie-crm/dlya-magazina/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-magazina/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/dlya-magazina/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-magazina/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-magazina/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-magazina/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-magazina/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-magazina/"/>
+    <loc>https://skill-dev.online/ru/uslugi/vnedrenie-crm/dlya-magazina/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-magazina/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/dlya-magazina/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-magazina/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-shkoly/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-shkoly/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-shkoly/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-shkoly/"/>
+    <loc>https://skill-dev.online/uslugi/vnedrenie-crm/dlya-shkoly/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-shkoly/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/dlya-shkoly/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-shkoly/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-shkoly/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-shkoly/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-shkoly/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-shkoly/"/>
+    <loc>https://skill-dev.online/ru/uslugi/vnedrenie-crm/dlya-shkoly/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-shkoly/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/dlya-shkoly/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-shkoly/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-yuristov/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-yuristov/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-yuristov/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-yuristov/"/>
+    <loc>https://skill-dev.online/uslugi/vnedrenie-crm/dlya-yuristov/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-yuristov/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/dlya-yuristov/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-yuristov/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-yuristov/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-yuristov/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-yuristov/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-yuristov/"/>
+    <loc>https://skill-dev.online/ru/uslugi/vnedrenie-crm/dlya-yuristov/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-yuristov/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/dlya-yuristov/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-yuristov/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/ii-agenty/ii-assistent-dlya-biznesa/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/ii-agenty/ii-assistent-dlya-biznesa/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/ii-agenty/ii-assistent-dlya-biznesa/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/ii-agenty/ii-assistent-dlya-biznesa/"/>
+    <loc>https://skill-dev.online/uslugi/ii-agenty/ii-assistent-dlya-biznesa/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/ii-agenty/ii-assistent-dlya-biznesa/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/ii-agenty/ii-assistent-dlya-biznesa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/ii-agenty/ii-assistent-dlya-biznesa/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/ii-assistent-dlya-biznesa-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/ii-assistent-dlya-biznesa-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/ii-agenty/ii-assistent-dlya-biznesa/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/ii-agenty/ii-assistent-dlya-biznesa/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/ii-agenty/ii-assistent-dlya-biznesa/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/ii-agenty/ii-assistent-dlya-biznesa/"/>
+    <loc>https://skill-dev.online/ru/uslugi/ii-agenty/ii-assistent-dlya-biznesa/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/ii-agenty/ii-assistent-dlya-biznesa/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/ii-agenty/ii-assistent-dlya-biznesa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/ii-agenty/ii-assistent-dlya-biznesa/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/ii-assistent-dlya-biznesa-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/ii-assistent-dlya-biznesa-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/ii-agenty/multiagentnye-sistemy/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/ii-agenty/multiagentnye-sistemy/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/ii-agenty/multiagentnye-sistemy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/ii-agenty/multiagentnye-sistemy/"/>
+    <loc>https://skill-dev.online/uslugi/ii-agenty/multiagentnye-sistemy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/ii-agenty/multiagentnye-sistemy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/ii-agenty/multiagentnye-sistemy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/ii-agenty/multiagentnye-sistemy/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/multiagentnye-sistemy-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/multiagentnye-sistemy-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/ii-agenty/multiagentnye-sistemy/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/ii-agenty/multiagentnye-sistemy/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/ii-agenty/multiagentnye-sistemy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/ii-agenty/multiagentnye-sistemy/"/>
+    <loc>https://skill-dev.online/ru/uslugi/ii-agenty/multiagentnye-sistemy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/ii-agenty/multiagentnye-sistemy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/ii-agenty/multiagentnye-sistemy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/ii-agenty/multiagentnye-sistemy/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/multiagentnye-sistemy-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/multiagentnye-sistemy-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-fitnes-kluba/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-fitnes-kluba/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-fitnes-kluba/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-fitnes-kluba/"/>
+    <loc>https://skill-dev.online/uslugi/vnedrenie-crm/dlya-fitnes-kluba/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-fitnes-kluba/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/dlya-fitnes-kluba/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-fitnes-kluba/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-fitnes-kluba/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-fitnes-kluba/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-crm/dlya-fitnes-kluba/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-crm/dlya-fitnes-kluba/"/>
+    <loc>https://skill-dev.online/ru/uslugi/vnedrenie-crm/dlya-fitnes-kluba/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-fitnes-kluba/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/dlya-fitnes-kluba/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/dlya-fitnes-kluba/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/chat-boty/bot-podderzhki/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/chat-boty/bot-podderzhki/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/chat-boty/bot-podderzhki/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/chat-boty/bot-podderzhki/"/>
+    <loc>https://skill-dev.online/uslugi/chat-boty/bot-podderzhki/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/chat-boty/bot-podderzhki/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/chat-boty/bot-podderzhki/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/chat-boty/bot-podderzhki/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/bot-podderzhki-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/bot-podderzhki-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/chat-boty/bot-podderzhki/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/chat-boty/bot-podderzhki/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/chat-boty/bot-podderzhki/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/chat-boty/bot-podderzhki/"/>
+    <loc>https://skill-dev.online/ru/uslugi/chat-boty/bot-podderzhki/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/chat-boty/bot-podderzhki/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/chat-boty/bot-podderzhki/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/chat-boty/bot-podderzhki/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/bot-podderzhki-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/bot-podderzhki-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/razrabotka-saitov/sait-na-wordpress/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/sait-na-wordpress/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/sait-na-wordpress/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/sait-na-wordpress/"/>
+    <loc>https://skill-dev.online/uslugi/razrabotka-saitov/sait-na-wordpress/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/razrabotka-saitov/sait-na-wordpress/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/razrabotka-saitov/sait-na-wordpress/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/razrabotka-saitov/sait-na-wordpress/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/sait-na-wordpress-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/sait-na-wordpress-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/sait-na-wordpress/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/sait-na-wordpress/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/sait-na-wordpress/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/sait-na-wordpress/"/>
+    <loc>https://skill-dev.online/ru/uslugi/razrabotka-saitov/sait-na-wordpress/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/razrabotka-saitov/sait-na-wordpress/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/razrabotka-saitov/sait-na-wordpress/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/razrabotka-saitov/sait-na-wordpress/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/sait-na-wordpress-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/sait-na-wordpress-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/razrabotka-saitov/sait-katalog/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/sait-katalog/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/sait-katalog/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/sait-katalog/"/>
+    <loc>https://skill-dev.online/uslugi/razrabotka-saitov/sait-katalog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/razrabotka-saitov/sait-katalog/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/razrabotka-saitov/sait-katalog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/razrabotka-saitov/sait-katalog/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/sait-katalog-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/sait-katalog-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/sait-katalog/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/sait-katalog/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/sait-katalog/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/sait-katalog/"/>
+    <loc>https://skill-dev.online/ru/uslugi/razrabotka-saitov/sait-katalog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/razrabotka-saitov/sait-katalog/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/razrabotka-saitov/sait-katalog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/razrabotka-saitov/sait-katalog/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/sait-katalog-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/sait-katalog-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/razrabotka-saitov/redizayn-sayta/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/redizayn-sayta/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/redizayn-sayta/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/redizayn-sayta/"/>
+    <loc>https://skill-dev.online/uslugi/razrabotka-saitov/redizayn-sayta/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/razrabotka-saitov/redizayn-sayta/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/razrabotka-saitov/redizayn-sayta/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/razrabotka-saitov/redizayn-sayta/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/redizayn-sayta-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/redizayn-sayta-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/redizayn-sayta/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/redizayn-sayta/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/redizayn-sayta/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/redizayn-sayta/"/>
+    <loc>https://skill-dev.online/ru/uslugi/razrabotka-saitov/redizayn-sayta/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/razrabotka-saitov/redizayn-sayta/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/razrabotka-saitov/redizayn-sayta/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/razrabotka-saitov/redizayn-sayta/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/redizayn-sayta-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/redizayn-sayta-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/razrabotka-saitov/podderzhka-sayta/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/podderzhka-sayta/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/podderzhka-sayta/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/podderzhka-sayta/"/>
+    <loc>https://skill-dev.online/uslugi/razrabotka-saitov/podderzhka-sayta/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/razrabotka-saitov/podderzhka-sayta/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/razrabotka-saitov/podderzhka-sayta/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/razrabotka-saitov/podderzhka-sayta/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/podderzhka-sayta-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/podderzhka-sayta-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/podderzhka-sayta/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/podderzhka-sayta/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/podderzhka-sayta/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/podderzhka-sayta/"/>
+    <loc>https://skill-dev.online/ru/uslugi/razrabotka-saitov/podderzhka-sayta/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/razrabotka-saitov/podderzhka-sayta/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/razrabotka-saitov/podderzhka-sayta/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/razrabotka-saitov/podderzhka-sayta/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/podderzhka-sayta-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/podderzhka-sayta-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/razrabotka-saitov/promo-sait/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/promo-sait/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/promo-sait/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/promo-sait/"/>
+    <loc>https://skill-dev.online/uslugi/razrabotka-saitov/promo-sait/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/razrabotka-saitov/promo-sait/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/razrabotka-saitov/promo-sait/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/razrabotka-saitov/promo-sait/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/promo-sait-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/promo-sait-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/promo-sait/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/promo-sait/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/promo-sait/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/promo-sait/"/>
+    <loc>https://skill-dev.online/ru/uslugi/razrabotka-saitov/promo-sait/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/razrabotka-saitov/promo-sait/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/razrabotka-saitov/promo-sait/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/razrabotka-saitov/promo-sait/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/promo-sait-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/promo-sait-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/razrabotka-saitov/razrabotka-marketplace/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/razrabotka-marketplace/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/razrabotka-marketplace/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/razrabotka-marketplace/"/>
+    <loc>https://skill-dev.online/uslugi/razrabotka-saitov/razrabotka-marketplace/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/razrabotka-saitov/razrabotka-marketplace/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/razrabotka-saitov/razrabotka-marketplace/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/razrabotka-saitov/razrabotka-marketplace/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/razrabotka-marketplace-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/razrabotka-marketplace-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/razrabotka-marketplace/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/razrabotka-marketplace/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/razrabotka-marketplace/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/razrabotka-marketplace/"/>
+    <loc>https://skill-dev.online/ru/uslugi/razrabotka-saitov/razrabotka-marketplace/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/razrabotka-saitov/razrabotka-marketplace/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/razrabotka-saitov/razrabotka-marketplace/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/razrabotka-saitov/razrabotka-marketplace/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/razrabotka-marketplace-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/razrabotka-marketplace-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/razrabotka-saitov/internet-magazin/na-bitrikse/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/internet-magazin/na-bitrikse/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/internet-magazin/na-bitrikse/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/internet-magazin/na-bitrikse/"/>
+    <loc>https://skill-dev.online/uslugi/razrabotka-saitov/internet-magazin/na-bitrikse/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/razrabotka-saitov/internet-magazin/na-bitrikse/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/razrabotka-saitov/internet-magazin/na-bitrikse/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/razrabotka-saitov/internet-magazin/na-bitrikse/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/internet-magazin/na-bitrikse/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/internet-magazin/na-bitrikse/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/internet-magazin/na-bitrikse/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/internet-magazin/na-bitrikse/"/>
+    <loc>https://skill-dev.online/ru/uslugi/razrabotka-saitov/internet-magazin/na-bitrikse/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/razrabotka-saitov/internet-magazin/na-bitrikse/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/razrabotka-saitov/internet-magazin/na-bitrikse/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/razrabotka-saitov/internet-magazin/na-bitrikse/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/razrabotka-saitov/internet-magazin/na-tilde/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/internet-magazin/na-tilde/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/internet-magazin/na-tilde/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/internet-magazin/na-tilde/"/>
+    <loc>https://skill-dev.online/uslugi/razrabotka-saitov/internet-magazin/na-tilde/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/razrabotka-saitov/internet-magazin/na-tilde/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/razrabotka-saitov/internet-magazin/na-tilde/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/razrabotka-saitov/internet-magazin/na-tilde/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/internet-magazin/na-tilde/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/internet-magazin/na-tilde/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/razrabotka-saitov/internet-magazin/na-tilde/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/razrabotka-saitov/internet-magazin/na-tilde/"/>
+    <loc>https://skill-dev.online/ru/uslugi/razrabotka-saitov/internet-magazin/na-tilde/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/razrabotka-saitov/internet-magazin/na-tilde/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/razrabotka-saitov/internet-magazin/na-tilde/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/razrabotka-saitov/internet-magazin/na-tilde/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-ii/ii-baza-znaniy/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/ii-baza-znaniy/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/ii-baza-znaniy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/ii-baza-znaniy/"/>
+    <loc>https://skill-dev.online/uslugi/vnedrenie-ii/ii-baza-znaniy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-ii/ii-baza-znaniy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-ii/ii-baza-znaniy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-ii/ii-baza-znaniy/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/ii-baza-znaniy-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/ii-baza-znaniy-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/ii-baza-znaniy/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/ii-baza-znaniy/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/ii-baza-znaniy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/ii-baza-znaniy/"/>
+    <loc>https://skill-dev.online/ru/uslugi/vnedrenie-ii/ii-baza-znaniy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-ii/ii-baza-znaniy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-ii/ii-baza-znaniy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-ii/ii-baza-znaniy/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/ii-baza-znaniy-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/ii-baza-znaniy-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/vnedrenie-ii/nlp-analiz-obrashcheniy/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/nlp-analiz-obrashcheniy/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/nlp-analiz-obrashcheniy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/nlp-analiz-obrashcheniy/"/>
+    <loc>https://skill-dev.online/uslugi/vnedrenie-ii/nlp-analiz-obrashcheniy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-ii/nlp-analiz-obrashcheniy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-ii/nlp-analiz-obrashcheniy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-ii/nlp-analiz-obrashcheniy/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/nlp-analiz-obrashcheniy-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/nlp-analiz-obrashcheniy-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/nlp-analiz-obrashcheniy/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/nlp-analiz-obrashcheniy/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/vnedrenie-ii/nlp-analiz-obrashcheniy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/vnedrenie-ii/nlp-analiz-obrashcheniy/"/>
+    <loc>https://skill-dev.online/ru/uslugi/vnedrenie-ii/nlp-analiz-obrashcheniy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-ii/nlp-analiz-obrashcheniy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-ii/nlp-analiz-obrashcheniy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-ii/nlp-analiz-obrashcheniy/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/nlp-analiz-obrashcheniy-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/nlp-analiz-obrashcheniy-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/ii-agenty/dlya-dokumentooborota/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/ii-agenty/dlya-dokumentooborota/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/ii-agenty/dlya-dokumentooborota/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/ii-agenty/dlya-dokumentooborota/"/>
+    <loc>https://skill-dev.online/uslugi/ii-agenty/dlya-dokumentooborota/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/ii-agenty/dlya-dokumentooborota/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/ii-agenty/dlya-dokumentooborota/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/ii-agenty/dlya-dokumentooborota/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/ii-agenty/dlya-dokumentooborota/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/ii-agenty/dlya-dokumentooborota/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/ii-agenty/dlya-dokumentooborota/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/ii-agenty/dlya-dokumentooborota/"/>
+    <loc>https://skill-dev.online/ru/uslugi/ii-agenty/dlya-dokumentooborota/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/ii-agenty/dlya-dokumentooborota/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/ii-agenty/dlya-dokumentooborota/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/ii-agenty/dlya-dokumentooborota/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/ii-agenty/dlya-finansov/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/ii-agenty/dlya-finansov/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/ii-agenty/dlya-finansov/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/ii-agenty/dlya-finansov/"/>
+    <loc>https://skill-dev.online/uslugi/ii-agenty/dlya-finansov/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/ii-agenty/dlya-finansov/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/ii-agenty/dlya-finansov/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/ii-agenty/dlya-finansov/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/ii-agenty/dlya-finansov/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/ii-agenty/dlya-finansov/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/ii-agenty/dlya-finansov/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/ii-agenty/dlya-finansov/"/>
+    <loc>https://skill-dev.online/ru/uslugi/ii-agenty/dlya-finansov/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/ii-agenty/dlya-finansov/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/ii-agenty/dlya-finansov/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/ii-agenty/dlya-finansov/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/chat-boty/bot-dlya-avito/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/chat-boty/bot-dlya-avito/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/chat-boty/bot-dlya-avito/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/chat-boty/bot-dlya-avito/"/>
+    <loc>https://skill-dev.online/uslugi/chat-boty/bot-dlya-avito/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/chat-boty/bot-dlya-avito/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/chat-boty/bot-dlya-avito/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/chat-boty/bot-dlya-avito/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/bot-dlya-avito-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/bot-dlya-avito-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/chat-boty/bot-dlya-avito/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/chat-boty/bot-dlya-avito/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/chat-boty/bot-dlya-avito/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/chat-boty/bot-dlya-avito/"/>
+    <loc>https://skill-dev.online/ru/uslugi/chat-boty/bot-dlya-avito/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/chat-boty/bot-dlya-avito/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/chat-boty/bot-dlya-avito/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/chat-boty/bot-dlya-avito/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/bot-dlya-avito-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/bot-dlya-avito-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/chat-boty/max-bot/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/chat-boty/max-bot/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/chat-boty/max-bot/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/chat-boty/max-bot/"/>
+    <loc>https://skill-dev.online/uslugi/chat-boty/max-bot/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/chat-boty/max-bot/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/chat-boty/max-bot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/chat-boty/max-bot/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/max-bot-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/max-bot-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/chat-boty/max-bot/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/chat-boty/max-bot/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/chat-boty/max-bot/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/chat-boty/max-bot/"/>
+    <loc>https://skill-dev.online/ru/uslugi/chat-boty/max-bot/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/chat-boty/max-bot/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/chat-boty/max-bot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/chat-boty/max-bot/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/max-bot-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/max-bot-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/chat-boty/vk-bot/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/chat-boty/vk-bot/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/chat-boty/vk-bot/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/chat-boty/vk-bot/"/>
+    <loc>https://skill-dev.online/uslugi/chat-boty/vk-bot/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/chat-boty/vk-bot/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/chat-boty/vk-bot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/chat-boty/vk-bot/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/vk-bot-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/vk-bot-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/chat-boty/vk-bot/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/chat-boty/vk-bot/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/chat-boty/vk-bot/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/chat-boty/vk-bot/"/>
+    <loc>https://skill-dev.online/ru/uslugi/chat-boty/vk-bot/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/chat-boty/vk-bot/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/chat-boty/vk-bot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/chat-boty/vk-bot/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/vk-bot-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/vk-bot-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/uslugi/chat-boty/kviz-bot/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/chat-boty/kviz-bot/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/chat-boty/kviz-bot/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/chat-boty/kviz-bot/"/>
+    <loc>https://skill-dev.online/uslugi/chat-boty/kviz-bot/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/chat-boty/kviz-bot/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/chat-boty/kviz-bot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/chat-boty/kviz-bot/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/kviz-bot-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/kviz-bot-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://geeedy.github.io/site/ru/uslugi/chat-boty/kviz-bot/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/chat-boty/kviz-bot/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/chat-boty/kviz-bot/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/chat-boty/kviz-bot/"/>
+    <loc>https://skill-dev.online/ru/uslugi/chat-boty/kviz-bot/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/chat-boty/kviz-bot/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/chat-boty/kviz-bot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/chat-boty/kviz-bot/"/>
     <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://geeedy.github.io/site/assets/img/kviz-bot-hero.jpg</image:loc>
+      <image:loc>https://skill-dev.online/assets/img/kviz-bot-hero.jpg</image:loc>
     </image:image>
   </url>
 </urlset>
