@@ -13,12 +13,16 @@
   - [Computer Vision](https://geeedy.github.io/site/uslugi/vnedrenie-ii/kompyuternoe-zrenie/)
   - [Speech Analytics](https://geeedy.github.io/site/uslugi/vnedrenie-ii/rechevaya-analitika/)
   - [Manufacturing Automation](https://geeedy.github.io/site/uslugi/vnedrenie-ii/avtomatizaciya-proizvodstva/)
+  - [AI Knowledge Base (RAG)](https://geeedy.github.io/site/uslugi/vnedrenie-ii/ii-baza-znaniy/)
+  - [NLP Text Analysis](https://geeedy.github.io/site/uslugi/vnedrenie-ii/nlp-analiz-obrashcheniy/)
 - [AI Agents](https://geeedy.github.io/site/uslugi/ii-agenty/): AI agents that handle sales, legal, HR and analytics workflows
   - [AI Sales Agent](https://geeedy.github.io/site/uslugi/ii-agenty/dlya-prodazh/)
   - [AI for Legal Teams](https://geeedy.github.io/site/uslugi/ii-agenty/dlya-yuristov/)
   - [AI Analytics](https://geeedy.github.io/site/uslugi/ii-agenty/ii-analitika/)
   - [AI Assistant for Business](https://geeedy.github.io/site/uslugi/ii-agenty/ii-assistent-dlya-biznesa/)
   - [Multi-Agent Systems](https://geeedy.github.io/site/uslugi/ii-agenty/multiagentnye-sistemy/)
+  - [AI Document Agent](https://geeedy.github.io/site/uslugi/ii-agenty/dlya-dokumentooborota/)
+  - [AI Finance Agent](https://geeedy.github.io/site/uslugi/ii-agenty/dlya-finansov/)
   - [AI for HR](https://geeedy.github.io/site/uslugi/ii-agenty/dlya-hr/)
 - [AI Chatbots](https://geeedy.github.io/site/uslugi/chat-boty/): AI chatbots for websites, Telegram and other messengers
   - [Voice Bots](https://geeedy.github.io/site/uslugi/golosovye-boty/)
