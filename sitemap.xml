@@ -1599,4 +1599,100 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://geeedy.github.io/site/uslugi/chat-boty/bot-dlya-avito/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/chat-boty/bot-dlya-avito/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/chat-boty/bot-dlya-avito/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/chat-boty/bot-dlya-avito/"/>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://geeedy.github.io/site/assets/img/bot-dlya-avito-hero.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://geeedy.github.io/site/ru/uslugi/chat-boty/bot-dlya-avito/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/chat-boty/bot-dlya-avito/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/chat-boty/bot-dlya-avito/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/chat-boty/bot-dlya-avito/"/>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://geeedy.github.io/site/assets/img/bot-dlya-avito-hero.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://geeedy.github.io/site/uslugi/chat-boty/max-bot/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/chat-boty/max-bot/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/chat-boty/max-bot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/chat-boty/max-bot/"/>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://geeedy.github.io/site/assets/img/max-bot-hero.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://geeedy.github.io/site/ru/uslugi/chat-boty/max-bot/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/chat-boty/max-bot/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/chat-boty/max-bot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/chat-boty/max-bot/"/>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://geeedy.github.io/site/assets/img/max-bot-hero.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://geeedy.github.io/site/uslugi/chat-boty/vk-bot/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/chat-boty/vk-bot/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/chat-boty/vk-bot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/chat-boty/vk-bot/"/>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://geeedy.github.io/site/assets/img/vk-bot-hero.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://geeedy.github.io/site/ru/uslugi/chat-boty/vk-bot/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/chat-boty/vk-bot/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/chat-boty/vk-bot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/chat-boty/vk-bot/"/>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://geeedy.github.io/site/assets/img/vk-bot-hero.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://geeedy.github.io/site/uslugi/chat-boty/kviz-bot/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/chat-boty/kviz-bot/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/chat-boty/kviz-bot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/chat-boty/kviz-bot/"/>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://geeedy.github.io/site/assets/img/kviz-bot-hero.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://geeedy.github.io/site/ru/uslugi/chat-boty/kviz-bot/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://geeedy.github.io/site/uslugi/chat-boty/kviz-bot/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geeedy.github.io/site/ru/uslugi/chat-boty/kviz-bot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geeedy.github.io/site/uslugi/chat-boty/kviz-bot/"/>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://geeedy.github.io/site/assets/img/kviz-bot-hero.jpg</image:loc>
+    </image:image>
+  </url>
 </urlset>

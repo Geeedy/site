@@ -29,6 +29,10 @@
   - [GPT Chatbot](https://geeedy.github.io/site/uslugi/chat-boty/bot-na-gpt/)
   - [Booking Chatbot](https://geeedy.github.io/site/uslugi/chat-boty/dlya-zapisi/)
   - [Support Chatbot](https://geeedy.github.io/site/uslugi/chat-boty/bot-podderzhki/)
+  - [Avito Chatbot](https://geeedy.github.io/site/uslugi/chat-boty/bot-dlya-avito/)
+  - [MAX Chatbot](https://geeedy.github.io/site/uslugi/chat-boty/max-bot/)
+  - [VK Chatbot](https://geeedy.github.io/site/uslugi/chat-boty/vk-bot/)
+  - [Quiz Bot](https://geeedy.github.io/site/uslugi/chat-boty/kviz-bot/)
   - [Website Chatbot](https://geeedy.github.io/site/uslugi/chat-boty/bot-na-sait/)
   - [Telegram Bot](https://geeedy.github.io/site/uslugi/chat-boty/telegram-bot/)
 - [Website Development](https://geeedy.github.io/site/uslugi/razrabotka-saitov/): Websites from landing pages to web applications and online stores
