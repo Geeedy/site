@@ -916,6 +916,54 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://skill-dev.online/uslugi/vnedrenie-crm/crm-dlya-malogo-biznesa/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/crm-dlya-malogo-biznesa/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/crm-dlya-malogo-biznesa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/crm-dlya-malogo-biznesa/"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://skill-dev.online/assets/img/crm-dlya-malogo-biznesa-hero.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://skill-dev.online/ru/uslugi/vnedrenie-crm/crm-dlya-malogo-biznesa/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/crm-dlya-malogo-biznesa/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/crm-dlya-malogo-biznesa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/crm-dlya-malogo-biznesa/"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://skill-dev.online/assets/img/crm-dlya-malogo-biznesa-hero.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://skill-dev.online/uslugi/chat-boty/dlya-zapisi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/chat-boty/dlya-zapisi/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/chat-boty/dlya-zapisi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/chat-boty/dlya-zapisi/"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://skill-dev.online/assets/img/dlya-zapisi-hero.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://skill-dev.online/ru/uslugi/chat-boty/dlya-zapisi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/chat-boty/dlya-zapisi/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/chat-boty/dlya-zapisi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/chat-boty/dlya-zapisi/"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://skill-dev.online/assets/img/dlya-zapisi-hero.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://skill-dev.online/uslugi/chat-boty/bot-podderzhki/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/chat-boty/bot-podderzhki/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/chat-boty/bot-podderzhki/"/>
@@ -985,6 +1033,54 @@
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://skill-dev.online/assets/img/max-bot-hero.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://skill-dev.online/uslugi/chat-boty/vk-bot/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/chat-boty/vk-bot/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/chat-boty/vk-bot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/chat-boty/vk-bot/"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://skill-dev.online/assets/img/vk-bot-hero.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://skill-dev.online/ru/uslugi/chat-boty/vk-bot/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/chat-boty/vk-bot/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/chat-boty/vk-bot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/chat-boty/vk-bot/"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://skill-dev.online/assets/img/vk-bot-hero.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://skill-dev.online/uslugi/chat-boty/kviz-bot/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/chat-boty/kviz-bot/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/chat-boty/kviz-bot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/chat-boty/kviz-bot/"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://skill-dev.online/assets/img/kviz-bot-hero.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://skill-dev.online/ru/uslugi/chat-boty/kviz-bot/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/chat-boty/kviz-bot/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/chat-boty/kviz-bot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/chat-boty/kviz-bot/"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://skill-dev.online/assets/img/kviz-bot-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
@@ -1219,54 +1315,6 @@
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://skill-dev.online/assets/img/perenos-sayta-hero.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://skill-dev.online/uslugi/vnedrenie-crm/crm-dlya-malogo-biznesa/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/crm-dlya-malogo-biznesa/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/crm-dlya-malogo-biznesa/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/crm-dlya-malogo-biznesa/"/>
-    <lastmod>2026-08-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://skill-dev.online/assets/img/crm-dlya-malogo-biznesa-hero.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://skill-dev.online/ru/uslugi/vnedrenie-crm/crm-dlya-malogo-biznesa/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/vnedrenie-crm/crm-dlya-malogo-biznesa/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/vnedrenie-crm/crm-dlya-malogo-biznesa/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/vnedrenie-crm/crm-dlya-malogo-biznesa/"/>
-    <lastmod>2026-08-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://skill-dev.online/assets/img/crm-dlya-malogo-biznesa-hero.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://skill-dev.online/uslugi/chat-boty/dlya-zapisi/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/chat-boty/dlya-zapisi/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/chat-boty/dlya-zapisi/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/chat-boty/dlya-zapisi/"/>
-    <lastmod>2026-08-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://skill-dev.online/assets/img/dlya-zapisi-hero.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://skill-dev.online/ru/uslugi/chat-boty/dlya-zapisi/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/chat-boty/dlya-zapisi/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/chat-boty/dlya-zapisi/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/chat-boty/dlya-zapisi/"/>
-    <lastmod>2026-08-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://skill-dev.online/assets/img/dlya-zapisi-hero.jpg</image:loc>
     </image:image>
   </url>
   <url>
@@ -1814,53 +1862,5 @@
     <lastmod>2026-08-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://skill-dev.online/uslugi/chat-boty/vk-bot/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/chat-boty/vk-bot/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/chat-boty/vk-bot/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/chat-boty/vk-bot/"/>
-    <lastmod>2026-08-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://skill-dev.online/assets/img/vk-bot-hero.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://skill-dev.online/ru/uslugi/chat-boty/vk-bot/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/chat-boty/vk-bot/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/chat-boty/vk-bot/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/chat-boty/vk-bot/"/>
-    <lastmod>2026-08-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://skill-dev.online/assets/img/vk-bot-hero.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://skill-dev.online/uslugi/chat-boty/kviz-bot/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/chat-boty/kviz-bot/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/chat-boty/kviz-bot/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/chat-boty/kviz-bot/"/>
-    <lastmod>2026-08-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://skill-dev.online/assets/img/kviz-bot-hero.jpg</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://skill-dev.online/ru/uslugi/chat-boty/kviz-bot/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://skill-dev.online/uslugi/chat-boty/kviz-bot/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://skill-dev.online/ru/uslugi/chat-boty/kviz-bot/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://skill-dev.online/uslugi/chat-boty/kviz-bot/"/>
-    <lastmod>2026-08-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://skill-dev.online/assets/img/kviz-bot-hero.jpg</image:loc>
-    </image:image>
   </url>
 </urlset>
